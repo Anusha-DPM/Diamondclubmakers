@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ImageSlider from "@/components/ImageSlider";
 import ContentSection from "@/components/ContentSection";
+import CaseStudies from "@/components/CaseStudies";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <ImageSlider />
       <ContentSection />
+      <CaseStudies />
     </div>
   );
 }
