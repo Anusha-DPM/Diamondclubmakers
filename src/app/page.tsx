@@ -6,6 +6,7 @@ import CaseStudies from "@/components/CaseStudies";
 import WhatILearnedInDCM from "@/components/WhatILearnedInDCM";
 import VideoSection from "@/components/VideoSection";
 import LearnHowSection from "@/components/LearnHowSection";
+import DiamondClubMakerSection from "@/components/DiamondClubMakerSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WhatILearnedInDCM />
       <VideoSection />
       <LearnHowSection />
+      <DiamondClubMakerSection />
     </div>
   );
 }
