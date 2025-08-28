@@ -11,7 +11,7 @@ const LearnHowSection = () => {
           className="font-sansation-regular text-[#004681] mb-8 sm:mb-10 lg:mb-12"
           style={{ fontSize: '27px' }}
         >
-          It Pays to "Learn How" From Extraordinary Experts:
+          It Pays to &quot;Learn How&quot; From Extraordinary Experts:
         </h2>
 
         {/* Central Content Box */}
@@ -42,7 +42,7 @@ const LearnHowSection = () => {
               lineHeight: '1.1'
             }}
           >
-            Learn "How" From North America's Largest Solo Doctor Invisalign Provider!
+            Learn &quot;How&quot; From North America&apos;s Largest Solo Doctor Invisalign Provider!
           </p>
         </div>
 
