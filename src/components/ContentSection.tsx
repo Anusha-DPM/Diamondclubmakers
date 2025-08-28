@@ -1,4 +1,40 @@
+"use client";
+
+import { useEffect, useState } from 'react';
+
 const ContentSection = () => {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const testimonials = [
+    {
+      text: "Feeling blessed to be part of this group and being able to put these systems to work at the start of ownership has been incredibly powerful. This has added over 200k to my practice over these 6 months. I&apos;ve reached platinum and I know Diamond is in reach by December. It&apos;s incredible. I am looking forward to continuing being...",
+      name: "Joshua Chupp DCM Yoda"
+    },
+    {
+      text: "My sad post to this group that brought me immense joy for the past 6 months. We laughed, we cried, we stressed, we conquered more than we ever thought. We are better for knowing one another, creating a new world of 35 friends who were absolutely strangers 6 months ago. I come from a place of gratitude, a heart filled...",
+      name: "Linty John-Varghese DCM Yoda"
+    },
+    {
+      text: "I am actually sad that this class is coming to an end. Best course I ever took. This is going to leave a long-lasting impact on my practice and personal life. Thanks a lot everyone for sharing your experiences. I truly appreciate @Michael for creating this what&apos;s app group energy.",
+      name: "Dalvir Pannu"
+    },
+    {
+      text: "Last official Friday post! A huge thanks to Dr Wollock again for sharing his wealth of knowledge with us! And taking the time, no matter what the day and hour, to reply to our questions and give us stellar advice and guidance. To be honest, I didn&apos;t realize what I was getting into when I signed up for this...",
+      name: "Cara Schantz DCM Yoda"
+    },
+    {
+      text: "It&apos;s been a crazy 6 months...Michael you are driven, direct, determined.... All qualities that I admire and respect. I thank you for providing a forum that unites likeminded individuals to support and share. This journey was absolutely worth my time and money. To be able to stay associated with you and the elite group of DCM Pitt is a...",
+      name: "Dr. Frank Neves - DCM Pitt"
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
+
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,7 +65,7 @@ const ContentSection = () => {
                 Diamond Club Makers addresses Invisalign failures, patient management, and increasing profitability through comprehensive mentorship and proven methodologies.
               </p>
               <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
-                For a one-time fee of <span className="font-bold text-[#004681]">$10,879</span>, you'll receive six months of continuous access to my proven mentorship, including <span className="font-bold">24 focused online lessons</span> and tips, tricks, and proven pathways to success. This investment is around what you probably charge for two Invisalign cases.
+                For a one-time fee of <span className="font-bold text-[#004681]">$10,879</span>, you&apos;ll receive six months of continuous access to my proven mentorship, including <span className="font-bold">24 focused online lessons</span> and tips, tricks, and proven pathways to success. This investment is around what you probably charge for two Invisalign cases.
               </p>
               <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
                 Come learn how to take your practice to the next level. From Bronze to Diamond in six months. All you need is the desire to be the most you can be.
@@ -51,7 +87,7 @@ const ContentSection = () => {
                 <li className="flex items-start">
                   <span className="text-black mr-3 mt-2 w-2 h-2 bg-black rounded-full flex-shrink-0"></span>
                   <span className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '16px', lineHeight: '1.5' }}>
-                    As of 2024 <span className="font-bold">one-third of ALL North American GP Diamonds</span> have been created through DCM. Several starting from only Gold to become Diamonds. One starting from Bronze. With over 60 Diamonds and Diamond Plus's created to date DCM provides the most consistent and profitable path for anyone with desire to achieve Diamond.
+                    As of 2024 <span className="font-bold">one-third of ALL North American GP Diamonds</span> have been created through DCM. Several starting from only Gold to become Diamonds. One starting from Bronze. With over 60 Diamonds and Diamond Plus&apos;s created to date DCM provides the most consistent and profitable path for anyone with desire to achieve Diamond.
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -63,7 +99,7 @@ const ContentSection = () => {
                 <li className="flex items-start">
                   <span className="text-black mr-3 mt-2 w-2 h-2 bg-black rounded-full flex-shrink-0"></span>
                   <span className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '16px', lineHeight: '1.5' }}>
-                    Most DCM dentists at least <span className="font-bold">double their profit per hour</span> on their Invisalign cases. All while significantly and profoundly reducing their amount of doctor time and their overall chair time. This frees up a significant amount of time and space to do the most profitable thing they do, restorative. And that has a huge impact on the overall practice's collections.
+                    Most DCM dentists at least <span className="font-bold">double their profit per hour</span> on their Invisalign cases. All while significantly and profoundly reducing their amount of doctor time and their overall chair time. This frees up a significant amount of time and space to do the most profitable thing they do, restorative. And that has a huge impact on the overall practice&apos;s collections.
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -112,7 +148,7 @@ const ContentSection = () => {
                 <li className="flex items-start">
                   <span className="text-black mr-3 mt-2 w-2 h-2 bg-black rounded-full flex-shrink-0"></span>
                   <span className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '16px', lineHeight: '1.5' }}>
-                    Expand case types you're comfortable doing to grow your case numbers.
+                    Expand case types you&apos;re comfortable doing to grow your case numbers.
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -154,7 +190,7 @@ const ContentSection = () => {
                 <li className="flex items-start">
                   <span className="text-black mr-3 mt-2 w-2 h-2 bg-black rounded-full flex-shrink-0"></span>
                   <span className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '16px', lineHeight: '1.5' }}>
-                    Since it's all on your phone at your convenience on a daily basis, you avoid travel and the significant cost of being away from your business, especially since the amount of material in this course would require at minimum of in-person training
+                    Since it&apos;s all on your phone at your convenience on a daily basis, you avoid travel and the significant cost of being away from your business, especially since the amount of material in this course would require at minimum of in-person training
                   </span>
                 </li>
               </ul>
@@ -170,8 +206,27 @@ const ContentSection = () => {
               </p>
               <div className="bg-[#008080] p-6 rounded-lg">
                 <p className="font-sansation-regular text-white leading-relaxed" style={{ fontSize: '17px' }}>
-                  "I have learned a tremendous amount the past 6 months about Invisalign of course, but also about how to improve my dental practice overall and about myself. I love all of you and I'm proud to be a part of this group. Thank you for everything Dr. W!"
+                  &quot;I have learned a tremendous amount the past 6 months about Invisalign of course, but also about how to improve my dental practice overall and about myself. I love all of you and I&apos;m proud to be a part of this group. Thank you for everything Dr. W!&quot;
                 </p>
+              </div>
+            </div>
+
+            {/* Testimonials Carousel */}
+            <div className="mb-8">
+              <h2 className="font-sansation-regular font-bold text-[#212529] mb-6" style={{ fontSize: '27px' }}>
+                More DCM Success Stories
+              </h2>
+              <div className="relative overflow-hidden">
+                <div className="transition-opacity duration-1000 ease-in-out">
+                  <div className="bg-[#008080] p-6 rounded-lg">
+                    <p className="font-sansation-regular text-white leading-relaxed mb-4" style={{ fontSize: '17px' }}>
+                      &quot;{testimonials[currentTestimonial].text}&quot;
+                    </p>
+                    <p className="font-sansation-regular text-white text-right" style={{ fontSize: '15px' }}>
+                      {testimonials[currentTestimonial].name}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

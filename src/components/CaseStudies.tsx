@@ -1,3 +1,5 @@
+import React from 'react';
+
 const CaseStudies = () => {
   return (
     <section className="bg-white py-8 sm:py-12 lg:py-16">
@@ -10,7 +12,7 @@ const CaseStudies = () => {
         
         {/* Introduction */}
         <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed mb-4 text-left" style={{ fontSize: '17px' }}>
-          I gave a lecture (one of very few I ever give) at Align GP Summit in 2021. I picked three cases (out of 5-8 daily average) finishing the very day I was actually writing the lecture. None are special, none are great, none are the "perfect" cases most lecturers and consultants show everyone. They are just three average cases.
+          I gave a lecture (one of very few I ever give) at Align GP Summit in 2021. I picked three cases (out of 5-8 daily average) finishing the very day I was actually writing the lecture. None are special, none are great, none are the &quot;perfect&quot; cases most lecturers and consultants show everyone. They are just three average cases.
         </p>
         
         {/* Statistics Section - Changed to vertical stack */}
@@ -59,7 +61,7 @@ const CaseStudies = () => {
         {/* Program Benefits */}
         <div className="mb-8">
           <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed mb-2" style={{ fontSize: '17px' }}>
-            Compared to hygiene & restorative, this is off the charts! Labor and materials are roughly the same as running hygiene but your hygiene program doesn't pull in nearly that much an hour. Not to mention all the other value of selfies, testimonials, reviews, referrals, and more that DCM shows you how to gain from your cases. Including all the restorative that comes from this new patient source.
+            Compared to hygiene &amp; restorative, this is off the charts! Labor and materials are roughly the same as running hygiene but your hygiene program doesn&apos;t pull in nearly that much an hour. Not to mention all the other value of selfies, testimonials, reviews, referrals, and more that DCM shows you how to gain from your cases. Including all the restorative that comes from this new patient source.
           </p>
           <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed mb-2" style={{ fontSize: '17px' }}>
             The learning lesson is the little amount of time when using DCM protocols and principles. How little doctor time. How little chair time I use to achieve these average results.
@@ -105,7 +107,7 @@ const CaseStudies = () => {
               Anthony L.
             </h3>
             <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed mb-4" style={{ fontSize: '17px' }}>
-              Generalized moderate crowding with severe crowding on #22 and crossbite #27. Doctor time was 24 minutes, chair time 3 hours 40 minutes. Anthony had one correction and posted a "Wollock selfie" which was reposted and printed.
+              Generalized moderate crowding with severe crowding on #22 and crossbite #27. Doctor time was 24 minutes, chair time 3 hours 40 minutes. Anthony had one correction and posted a &quot;Wollock selfie&quot; which was reposted and printed.
             </p>
           </div>
           
@@ -125,7 +127,7 @@ const CaseStudies = () => {
               Gordon G.
             </h3>
             <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed mb-6" style={{ fontSize: '17px' }}>
-              Generalized moderate crowding with severe crowding on #26 as well as crossbite #26. Doctor time was 19 minutes, chair time 3 hours. Gordon was very happy with the "life changing" result and was asked to tell others.
+              Generalized moderate crowding with severe crowding on #26 as well as crossbite #26. Doctor time was 19 minutes, chair time 3 hours. Gordon was very happy with the &quot;life changing&quot; result and was asked to tell others.
             </p>
             
             {/* Before/After Images and Video */}
