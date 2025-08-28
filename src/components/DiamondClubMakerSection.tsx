@@ -42,7 +42,7 @@ const DiamondClubMakerSection = () => {
             className="font-sansation-regular text-[#004681] mb-6 sm:mb-8 lg:mb-10"
             style={{ fontSize: '27px' }}
           >
-            Let's do DCM Math
+            Let&apos;s do DCM Math
           </h2>
           
           <div className="space-y-4 sm:space-y-6">

@@ -96,7 +96,7 @@ const VideoSection = () => {
     }
   };
 
-  const renderThumbnail = (video: any) => {
+  const renderThumbnail = (video: { id: string; title: string; heading: string }) => {
     if (thumbnailErrors[video.id]) {
       // Show fallback placeholder
       return (
@@ -134,7 +134,7 @@ const VideoSection = () => {
           {/* Video Grid - 2x2 Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             
-            {videos.map((video, index) => (
+            {videos.map((video) => (
               <div key={video.id} className="space-y-4">
                 <h2 className="font-sansation-regular text-[#004681] text-center" style={{ fontSize: '27px' }}>
                   {video.heading}
