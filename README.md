@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Diamond Club Makers - Next.js Website
+
+A modern, responsive website built with Next.js and Tailwind CSS, featuring a beautiful header design that matches the provided screenshot.
+
+## Features
+
+- **Responsive Design**: Fully responsive layout that works on desktop, tablet, and mobile
+- **Modern UI**: Built with Tailwind CSS for consistent, beautiful styling
+- **Custom Fonts**: Uses Sansation font family for navigation and text
+- **Interactive Elements**: Hover effects and active states for navigation items
+- **Gold Gradient Header**: Beautiful gradient background matching the design
+
+## Project Structure
+
+```
+diamondclubmakers/
+├── src/
+│   ├── app/
+│   │   ├── globals.css          # Global styles and font imports
+│   │   ├── layout.tsx           # Root layout component
+│   │   └── page.tsx             # Home page with Header component
+│   └── components/
+│       └── Header.tsx           # Header component with navigation
+├── public/
+│   └── fonts/                   # Font files directory
+├── tailwind.config.ts           # Tailwind CSS configuration
+└── package.json                 # Project dependencies
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd diamondclubmakers
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Important**: Download the Sansation font files:
+   - You need to obtain the actual Sansation font files (`.woff2` and `.woff`) from a legitimate source
+   - Place them in the `public/fonts/` directory:
+     - `sansation-regular.woff2`
+     - `sansation-regular.woff`
+     - `sansation-bold.woff2`
+     - `sansation-bold.woff`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Start the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-To learn more about Next.js, take a look at the following resources:
+## Font Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project requires the Sansation font family. You can:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Purchase the font** from the official source
+2. **Use a web font service** like Google Fonts (if available)
+3. **Replace with a similar font** by updating the CSS and Tailwind config
 
-## Deploy on Vercel
+### Alternative Font Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you can't obtain Sansation fonts, you can replace them with similar alternatives:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Update `src/app/globals.css` to use alternative fonts
+2. Update `tailwind.config.ts` with the new font families
+3. Update the Header component to use the new font classes
+
+## Design Features
+
+### Header Component
+- **Background**: Gold gradient from amber-700 to yellow-400
+- **Navigation**: Centered menu with pipe separators
+- **Colors**: Dark blue (#003366) for text, with hover effects
+- **Responsive**: Stacks vertically on mobile, horizontal on desktop
+- **Active State**: Blue underline for the current page
+
+### Responsive Behavior
+- **Mobile**: Logo, menu, and button stack vertically
+- **Tablet**: Elements remain in a single row with adjusted spacing
+- **Desktop**: Full horizontal layout with proper spacing
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## Customization
+
+### Colors
+- Primary blue: `#003366`
+- Hover blue: `#004080`
+- Gold gradient: `from-amber-700 via-amber-500 to-yellow-400`
+
+### Fonts
+- Navigation text: `sansation-regular`
+- Logo and emphasis: `sansation-bold`
+
+### Spacing
+- Mobile: `px-4 py-4`
+- Desktop: `px-6 py-4` (larger screens)
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+For support or questions, please open an issue in the repository.
