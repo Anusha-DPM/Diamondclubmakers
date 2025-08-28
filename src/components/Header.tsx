@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header className="relative border-t border-gray-100" style={{
+    <header className="sticky top-0 z-50 border-t border-gray-100 shadow-lg" style={{
       background: 'linear-gradient(to right, rgb(188, 153, 61), rgb(248, 242, 163))'
     }}>
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">

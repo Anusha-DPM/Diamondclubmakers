@@ -4,6 +4,8 @@ import ImageSlider from "@/components/ImageSlider";
 import ContentSection from "@/components/ContentSection";
 import CaseStudies from "@/components/CaseStudies";
 import WhatILearnedInDCM from "@/components/WhatILearnedInDCM";
+import VideoSection from "@/components/VideoSection";
+import LearnHowSection from "@/components/LearnHowSection";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <ContentSection />
       <CaseStudies />
       <WhatILearnedInDCM />
+      <VideoSection />
+      <LearnHowSection />
     </div>
   );
 }
