@@ -201,34 +201,29 @@ const ContentSection = () => {
               <h2 className="font-sansation-regular font-bold text-[#212529] mb-4" style={{ fontSize: '27px' }}>
                 What the DCM Classes are Saying
               </h2>
-              <p className="font-sansation-regular text-[#6b6b6b] mb-4 text-right" style={{ fontSize: '15px' }}>
-                Dr. Lauren Lee - DCM Norton
-              </p>
-              <div className="bg-[#008080] p-6 rounded-lg">
-                <p className="font-sansation-regular text-white leading-relaxed" style={{ fontSize: '17px' }}>
-                  &quot;I have learned a tremendous amount the past 6 months about Invisalign of course, but also about how to improve my dental practice overall and about myself. I love all of you and I&apos;m proud to be a part of this group. Thank you for everything Dr. W!&quot;
-                </p>
-              </div>
-            </div>
-
-            {/* Testimonials Carousel */}
-            <div className="mb-8">
-              <h2 className="font-sansation-regular font-bold text-[#212529] mb-6" style={{ fontSize: '27px' }}>
-                More DCM Success Stories
-              </h2>
+              
+              {/* Testimonial Carousel */}
               <div className="relative overflow-hidden">
-                <div className="transition-opacity duration-1000 ease-in-out">
-                  <div className="bg-[#008080] p-6 rounded-lg">
-                    <p className="font-sansation-regular text-white leading-relaxed mb-4" style={{ fontSize: '17px' }}>
-                      &quot;{testimonials[currentTestimonial].text}&quot;
-                    </p>
-                    <p className="font-sansation-regular text-white text-right" style={{ fontSize: '15px' }}>
-                      {testimonials[currentTestimonial].name}
-                    </p>
-                  </div>
+                <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}>
+                  {testimonials.map((testimonial, index) => (
+                    <div key={index} className="w-full flex-shrink-0">
+                      {/* Name above the box */}
+                      <p className="font-sansation-regular text-[#6b6b6b] mb-4 text-right" style={{ fontSize: '15px' }}>
+                        {testimonial.name}
+                      </p>
+                      {/* Testimonial box */}
+                      <div className="bg-[#24c5b9] p-6 rounded-lg">
+                        <p className="font-sansation-regular text-white leading-relaxed" style={{ fontSize: '17px' }}>
+                          &quot;{testimonial.text}&quot;
+                        </p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </div>
