@@ -41,7 +41,7 @@ const DCMDiamondsSection = () => {
   // Auto carousel effect
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % doctors.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 4) % Math.ceil(doctors.length / 4));
     }, 3000); // Change every 3 seconds
 
     return () => clearInterval(interval);
@@ -83,56 +83,56 @@ const DCMDiamondsSection = () => {
     <section className="bg-white py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main Heading */}
-        <h1 
-          className="font-sansation-regular text-[#004681] mb-8 sm:mb-10 lg:mb-12"
-          style={{ fontSize: '30px' }}
-        >
-          DCM Diamonds
-        </h1>
+                 <h1 
+           className="font-sansation-regular text-[#004681] mb-2"
+           style={{ fontSize: '30px' }}
+         >
+           DCM Diamonds
+         </h1>
 
-        {/* Introductory Text */}
-        <p 
-          className="font-sansation-regular text-[#6b6b6b] mb-12 sm:mb-16 lg:mb-20 max-w-4xl mx-auto leading-relaxed"
-          style={{ fontSize: '17px' }}
-        >
-          Congratulations to the many DCM graduates who have now reached Diamond or even Diamond Plus. These are some of the top Invisalign GP dentists in all of North America. Their desire to be better has guided their successful climb to the top. Well done!
-        </p>
+         {/* Introductory Text */}
+         <p 
+           className="font-sansation-regular text-[#6b6b6b] mb-4 max-w-6xl mx-auto leading-relaxed text-left"
+           style={{ fontSize: '17px' }}
+         >
+           Congratulations to the many DCM graduates who have now reached Diamond or even Diamond Plus. These are some of the top Invisalign GP dentists in all of North America. Their desire to be better has guided their successful climb to the top. Well done!
+         </p>
 
         {/* Carousel Section with Navigation */}
         <div className="relative">
           {/* Auto Carousel Container */}
           <div className="relative overflow-hidden bg-[#fafafa] rounded-lg p-8">
-            <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-              {doctors.map((doctor) => (
-                <div key={doctor.id} className="w-full flex-shrink-0 px-4">
-                  <div className="bg-white rounded-lg p-6 sm:p-8 max-w-md mx-auto border border-gray-200">
-                    {/* Doctor Image */}
-                    <div className="w-24 h-24 mx-auto mb-4 overflow-hidden bg-gray-200 flex items-center justify-center">
-                      <img
-                        src={getDoctorImage(doctor)}
-                        alt={doctor.name}
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                          const parent = target.parentElement;
-                          if (parent) {
-                            parent.innerHTML = `
-                              <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                                <span class="text-white text-2xl font-bold">${doctor.name.split(' ')[1]}</span>
-                              </div>
-                            `;
-                          }
-                        }}
-                      />
-                    </div>
+                         <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentIndex * 25}%)` }}>
+               {doctors.map((doctor) => (
+                 <div key={doctor.id} className="w-1/4 flex-shrink-0 px-4">
+                   <div className="p-6 sm:p-8 max-w-md mx-auto">
+                                         {/* Doctor Image */}
+                     <div className="w-24 h-24 mx-auto mb-4 overflow-hidden bg-gray-200 flex items-center justify-center border border-gray-300 rounded">
+                       <img
+                         src={getDoctorImage(doctor)}
+                         alt={doctor.name}
+                         className="w-full h-full object-cover"
+                         onError={(e) => {
+                           const target = e.target as HTMLImageElement;
+                           target.style.display = 'none';
+                           const parent = target.parentElement;
+                           if (parent) {
+                             parent.innerHTML = `
+                               <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+                                 <span class="text-white text-2xl font-bold">${doctor.name.split(' ')[1]}</span>
+                               </div>
+                             `;
+                           }
+                         }}
+                       />
+                     </div>
 
                                          {/* Doctor Name with Diamonds */}
                      <div className="flex items-center justify-center mb-4">
                        <h3 className="font-sansation-regular text-[#004681] font-semibold mr-2" style={{ fontSize: '15px' }}>
                          {doctor.name}
                        </h3>
-                       <span className="text-2xl sm:text-3xl">
+                       <span className="text-base" style={{ fontSize: '15px' }}>
                          {renderDiamonds(doctor.diamondCount)}
                        </span>
                      </div>
@@ -160,25 +160,25 @@ const DCMDiamondsSection = () => {
           </div>
 
           {/* Previous/Next Buttons - Outside Carousel */}
-          <button
-            onClick={() => setCurrentIndex((prev) => (prev - 1 + doctors.length) % doctors.length)}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full transition-colors duration-200 z-10"
-            aria-label="Previous doctor"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
+                     <button
+             onClick={() => setCurrentIndex((prev) => (prev - 1 + Math.ceil(doctors.length / 4)) % Math.ceil(doctors.length / 4))}
+             className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full transition-colors duration-200 z-10"
+             aria-label="Previous doctor"
+           >
+             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+             </svg>
+           </button>
 
-          <button
-            onClick={() => setCurrentIndex((prev) => (prev + 1) % doctors.length)}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full transition-colors duration-200 z-10"
-            aria-label="Next doctor"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+           <button
+             onClick={() => setCurrentIndex((prev) => (prev + 1) % Math.ceil(doctors.length / 4))}
+             className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full transition-colors duration-200 z-10"
+             aria-label="Next doctor"
+           >
+             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+             </svg>
+           </button>
         </div>
       </div>
     </section>
