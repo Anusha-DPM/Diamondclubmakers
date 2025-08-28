@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import ImageSlider from "@/components/ImageSlider";
 import ContentSection from "@/components/ContentSection";
 import CaseStudies from "@/components/CaseStudies";
+import WhatILearnedInDCM from "@/components/WhatILearnedInDCM";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ImageSlider />
       <ContentSection />
       <CaseStudies />
+      <WhatILearnedInDCM />
     </div>
   );
 }
