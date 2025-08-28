@@ -7,19 +7,16 @@ import WhatILearnedInDCM from "@/components/WhatILearnedInDCM";
 import VideoSection from "@/components/VideoSection";
 import LearnHowSection from "@/components/LearnHowSection";
 import DiamondClubMakerSection from "@/components/DiamondClubMakerSection";
+import DCMDiamondsSection from "@/components/DCMDiamondsSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <HeroSection />
-      <ImageSlider />
-      <ContentSection />
-      <CaseStudies />
+    <main className="min-h-screen">
       <WhatILearnedInDCM />
       <VideoSection />
       <LearnHowSection />
+      <DCMDiamondsSection />
       <DiamondClubMakerSection />
-    </div>
+    </main>
   );
 }
