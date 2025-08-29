@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface DCMDoctor {
   id: number;
@@ -283,26 +284,28 @@ const DCMDiamondsSection = () => {
                    <div className="text-center">
                                          {/* Doctor Image - Square */}
                      <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto mb-4 overflow-hidden shadow-md">
-                      <img
+                      <Image
                         src={doctor.image}
                         alt={doctor.name}
+                        width={128}
+                        height={128}
                         className="w-full h-full object-cover"
-                                                 onError={(e) => {
-                           const target = e.target as HTMLImageElement;
-                           target.style.display = 'none';
-                           const parent = target.parentElement;
-                           if (parent) {
-                             const fallbackDiv = document.createElement('div');
-                             fallbackDiv.className = 'w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center';
-                             
-                             const span = document.createElement('span');
-                             span.className = 'text-white text-lg sm:text-xl font-bold';
-                             span.textContent = doctor.name.split(' ')[1];
-                             
-                             fallbackDiv.appendChild(span);
-                             parent.appendChild(fallbackDiv);
-                           }
-                         }}
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const parent = target.parentElement;
+                          if (parent) {
+                            const fallbackDiv = document.createElement('div');
+                            fallbackDiv.className = 'w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center';
+                            
+                            const span = document.createElement('span');
+                            span.className = 'text-white text-lg sm:text-xl font-bold';
+                            span.textContent = doctor.name.split(' ')[1];
+                            
+                            fallbackDiv.appendChild(span);
+                            parent.appendChild(fallbackDiv);
+                          }
+                        }}
                       />
                     </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const InTheirOwnWordsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -422,9 +423,11 @@ const InTheirOwnWordsSection = () => {
                          {/* Video Thumbnail - shown when not playing */}
                          {playingVideoIndex !== index && (
                            <>
-                             <img 
+                             <Image 
                                src={testimonial.thumbnail} 
                                alt={testimonial.name}
+                               width={200}
+                               height={300}
                                className="w-[200px] h-[300px] object-cover"
                              />
                              

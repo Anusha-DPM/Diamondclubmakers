@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const VideoSection = () => {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
@@ -114,10 +115,12 @@ const VideoSection = () => {
     }
 
     return (
-      <img
+      <Image
         data-video-id={video.id}
         src={getThumbnailUrl(video.id)}
         alt={video.title}
+        width={640}
+        height={360}
         className="w-full h-full object-cover"
         onError={() => handleImageError(video.id, 0)}
         onLoad={() => console.log(`✅ Thumbnail loaded for: ${video.id}`)}

@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 
 const DCMClassesSection = () => {
   return (
@@ -52,9 +53,11 @@ const DCMClassesSection = () => {
             {/* DCM First */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/dcm-first.jpg" 
                   alt="DCM First Class"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>
@@ -63,9 +66,11 @@ const DCMClassesSection = () => {
             {/* DCM Second */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/dcm-second.jpg" 
                   alt="DCM Second Class"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>
@@ -74,9 +79,11 @@ const DCMClassesSection = () => {
             {/* DCM Third */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/dcm-third.png" 
                   alt="DCM Third Class"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>
@@ -85,9 +92,11 @@ const DCMClassesSection = () => {
             {/* DCM Fourth */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/dcm-fourth.png" 
                   alt="DCM Fourth Class"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>
@@ -96,9 +105,11 @@ const DCMClassesSection = () => {
             {/* DCM Fifth */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/dcm-fifth.jpg" 
                   alt="DCM Fifth Class"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>
@@ -107,9 +118,11 @@ const DCMClassesSection = () => {
             {/* DCM Sixth */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/dcm-sixth.png" 
                   alt="DCM Sixth Class"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>
@@ -118,9 +131,11 @@ const DCMClassesSection = () => {
             {/* DCM Seventh */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/dcm-seventh.jpg" 
                   alt="DCM Seventh Class"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>
@@ -129,9 +144,11 @@ const DCMClassesSection = () => {
             {/* DCM 8-1 */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/dcm8-1.png" 
                   alt="DCM 8-1 Class"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>
@@ -140,9 +157,11 @@ const DCMClassesSection = () => {
             {/* Diamond Grey */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/diamond-grey.png" 
                   alt="Diamond Grey"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>
@@ -151,9 +170,11 @@ const DCMClassesSection = () => {
             {/* Lucky 1 */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/lucky-1.png" 
                   alt="Lucky 1"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>
@@ -162,9 +183,11 @@ const DCMClassesSection = () => {
             {/* Main DCM */}
             <div className="flex flex-col items-center min-w-[280px] sm:min-w-[220px] lg:min-w-[200px]">
               <div className="relative">
-                <img 
+                <Image 
                   src="/DCM class/main-dcm.png" 
                   alt="Main DCM"
+                  width={200}
+                  height={200}
                   className="w-auto h-[200px] object-contain"
                 />
               </div>

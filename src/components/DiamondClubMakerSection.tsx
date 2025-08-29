@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Image from 'next/image';
 import AboutDrWollockSection from './AboutDrWollockSection';
 import DCMClassesSection from './DCMClassesSection';
 import DCMCourseStructureSection from './DCMCourseStructureSection';
@@ -134,9 +135,11 @@ const DiamondClubMakerSection = () => {
                  {/* Video Thumbnail - shown when not playing */}
                  {playingVideoIndex !== 0 && (
                    <>
-                     <img 
+                     <Image 
                        src="/1.jpg"
                        alt="Helga Idrizi"
+                       width={256}
+                       height={256}
                        className="w-full h-64 object-cover rounded-lg"
                      />
                      {/* Play Button Overlay - Clickable */}
@@ -185,9 +188,11 @@ const DiamondClubMakerSection = () => {
                  {/* Video Thumbnail - shown when not playing */}
                  {playingVideoIndex !== 1 && (
                    <>
-                     <img 
+                     <Image 
                        src="/2.jpg"
                        alt="Moshe Rechthand"
+                       width={256}
+                       height={256}
                        className="w-full h-64 object-cover rounded-lg"
                      />
                      {/* Play Button Overlay - Clickable */}
@@ -236,9 +241,11 @@ const DiamondClubMakerSection = () => {
                  {/* Video Thumbnail - shown when not playing */}
                  {playingVideoIndex !== 2 && (
                    <>
-                     <img 
+                     <Image 
                        src="/3.jpg"
                        alt="Rebecca Charpentier"
+                       width={256}
+                       height={256}
                        className="w-full h-64 object-cover rounded-lg"
                      />
                      {/* Play Button Overlay - Clickable */}
@@ -336,17 +343,17 @@ const DiamondClubMakerSection = () => {
              <div className="space-y-6">
                {/* Paragraph 1 */}
                <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
-                 Since being certified by Align in 2001, I had been hovering around 40 cases a year. While having greater experience than the average GP doing 15 a year, I still really had no idea what I was doing. I thought that's what Align was doing. That was and is a naïve idea. I attended all the CE on Invisalign that there was. At the time it was entirely orthodontists who lectured, and they spoke a different language then us as GP's. They also had very little interest in having GP's compete for what was their exclusive market segment. But I knew that I only referred out 5-15% of my patient's RCT's, extractions, kids, perio, etc… But why am I referring out 100% of my patients ortho needs. After searching far and wide, I found the one non-orthodontist Invisalign lecturer. He was just starting his lecture career. In fact, I believe I was at one of his first lectures outside New York where he was practicing at the time. After seeing Dr David Galler speak on GST (Galler Spacing Technique) at an Align Dinner CE at Maggiano's in King of Prussia PA, I was hooked. We exchanged phone numbers (WhatsApp wasn't even a twinkle in anyone's eye).
+                 Since being certified by Align in 2001, I had been hovering around 40 cases a year. While having greater experience than the average GP doing 15 a year, I still really had no idea what I was doing. I thought that&apos;s what Align was doing. That was and is a naïve idea. I attended all the CE on Invisalign that there was. At the time it was entirely orthodontists who lectured, and they spoke a different language then us as GP&apos;s. They also had very little interest in having GP&apos;s compete for what was their exclusive market segment. But I knew that I only referred out 5-15% of my patient&apos;s RCT&apos;s, extractions, kids, perio, etc… But why am I referring out 100% of my patients ortho needs. After searching far and wide, I found the one non-orthodontist Invisalign lecturer. He was just starting his lecture career. In fact, I believe I was at one of his first lectures outside New York where he was practicing at the time. After seeing Dr David Galler speak on GST (Galler Spacing Technique) at an Align Dinner CE at Maggiano&apos;s in King of Prussia PA, I was hooked. We exchanged phone numbers (WhatsApp wasn&apos;t even a twinkle in anyone&apos;s eye).
                </p>
 
                {/* Paragraph 2 */}
                <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
-                 When David began his Reingage series long ago, I called him, and he gave me a choice of where I could go. Yeah, as then and now, its waiting list only. I choose a short drive to Terrytown NY. Went up for a Thursday morning and at the end of the day I discovered there was another day of the class. I called my team and cancelled my patient schedule; I couldn't miss the second day. Just after, I became President of that class, the Empire Aligners. My Invisalign production jumped from 40 to 80 that year, but that wasn't enough. I started playing the Align Advantage game, thinking saving money by doing more cases was the only path. While I have been at Diamond and Diamond Plus since 2017, what I learned and teach in DCM is that saving from Aligns Advantage game is small compared to the time saving I show DCM doctors, the savings in making Invisalign significantly more predictable, and the exponential growth effect that Invisalign facilitates throughout my entire GP practice.
+                 When David began his Reingage series long ago, I called him, and he gave me a choice of where I could go. Yeah, as then and now, its waiting list only. I choose a short drive to Terrytown NY. Went up for a Thursday morning and at the end of the day I discovered there was another day of the class. I called my team and cancelled my patient schedule; I couldn&apos;t miss the second day. Just after, I became President of that class, the Empire Aligners. My Invisalign production jumped from 40 to 80 that year, but that wasn&apos;t enough. I started playing the Align Advantage game, thinking saving money by doing more cases was the only path. While I have been at Diamond and Diamond Plus since 2017, what I learned and teach in DCM is that saving from Aligns Advantage game is small compared to the time saving I show DCM doctors, the savings in making Invisalign significantly more predictable, and the exponential growth effect that Invisalign facilitates throughout my entire GP practice.
                </p>
 
                                {/* Paragraph 3 */}
                 <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
-                  At some point in this journey Frank Quinn at the time Align's North American Sales and Special Markets VP turned to me on one of our many conversations over Perfect Manhattans and said I was a "Unicorn". That what I was doing with Invisalign as a GP was unique and not reproducible. This challenged a very core belief I have of myself, that I am not special. That what I do is reproducible. And that each and every one of you can achieve any and all I have and more. That's what I strive to help each DCM doctor with.
+                  At some point in this journey Frank Quinn at the time Align&apos;s North American Sales and Special Markets VP turned to me on one of our many conversations over Perfect Manhattans and said I was a "Unicorn". That what I was doing with Invisalign as a GP was unique and not reproducible. This challenged a very core belief I have of myself, that I am not special. That what I do is reproducible. And that each and every one of you can achieve any and all I have and more. That&apos;s what I strive to help each DCM doctor with.
                 </p>
 
                                                   {/* Invisalign Awards and Badges Section */}
@@ -354,162 +361,198 @@ const DiamondClubMakerSection = () => {
                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-4 md:gap-6">
                      {/* Elite Provider 2007 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo1.png" 
                          alt="Invisalign 2007 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Elite Provider 2008 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo2.png" 
                          alt="Invisalign 2008 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Elite Provider 2009 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo3.png" 
                          alt="Invisalign 2009 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Elite Provider 2010 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo4.png" 
                          alt="Invisalign 2010 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Elite Provider 2011 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo5.png" 
                          alt="Invisalign 2011 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Elite Provider 2012 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo6.png" 
                          alt="Invisalign 2012 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Elite Provider 2013 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo7.jpg" 
                          alt="Invisalign 2013 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Elite Provider 2014 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo8.png" 
                          alt="Invisalign 2014 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Elite Provider 2015 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo9.png" 
                          alt="Invisalign 2015 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Elite Provider 2016 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo10.png" 
                          alt="Invisalign 2016 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Elite Provider 2017 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo11.png" 
                          alt="Invisalign 2017 Elite Provider"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Diamond+ 2018 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo12.png" 
                          alt="Diamond+ Invisalign Provider 2018"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
 
                      {/* Diamond+ Top 1% 2019 */}
                      <div className="flex flex-col items-center justify-center text-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo13.png" 
                          alt="Diamond+ Top 1% Invisalign Provider 2019"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain mx-auto"
                        />
                      </div>
 
                      {/* Diamond+ Top 1% 2020 */}
                      <div className="flex flex-col items-center justify-center text-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo14.jpg" 
                          alt="Diamond+ Top 1% Invisalign Provider 2020"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain mx-auto"
                        />
                      </div>
 
                      {/* Diamond+ Top 1% 2021 */}
                      <div className="flex flex-col items-center justify-center text-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo15.jpg" 
                          alt="Diamond+ Top 1% Invisalign Provider 2021"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain mx-auto"
                        />
                      </div>
 
                      {/* Diamond+ Top 1% 2022 */}
                      <div className="flex flex-col items-center justify-center text-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo17.jpg" 
                          alt="Diamond+ Top 1% Invisalign Provider 2022"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain mx-auto"
                        />
                      </div>
 
                      {/* Diamond+ Top 1% 2023 */}
                      <div className="flex flex-col items-center justify-center text-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo18.jpg" 
                          alt="Diamond+ Top 1% Invisalign Provider 2023"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain mx-auto"
                        />
                      </div>
 
                      {/* Blue Diamond+ 2024 */}
                      <div className="flex flex-col items-center">
-                       <img 
+                       <Image 
                          src="/invisalign-logo19.jpg" 
                          alt="Blue Diamond+ Invisalign Provider 2024"
+                         width={75}
+                         height={75}
                          className="w-[75px] h-auto object-contain"
                        />
                      </div>
