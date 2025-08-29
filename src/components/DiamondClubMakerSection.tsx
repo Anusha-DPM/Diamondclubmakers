@@ -3,6 +3,9 @@
 import { useState } from 'react';
 import AboutDrWollockSection from './AboutDrWollockSection';
 import DCMClassesSection from './DCMClassesSection';
+import DCMCourseStructureSection from './DCMCourseStructureSection';
+import Footer from './Footer';
+import InTheirOwnWordsSection from './InTheirOwnWordsSection';
 
 const DiamondClubMakerSection = () => {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
@@ -278,6 +281,9 @@ const DiamondClubMakerSection = () => {
           </div>
         </div>
 
+        {/* In Their Own Words Section */}
+        <InTheirOwnWordsSection />
+
                                               {/* About Dr. Michael I. Wollock Section */}
           <AboutDrWollockSection />
 
@@ -470,42 +476,48 @@ const DiamondClubMakerSection = () => {
             </div>
           </div>
 
-          {/* New Section: Why Reinvent the Wheel */}
-          <div className="bg-white pt-0 pb-12 sm:pb-16 lg:pb-20">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="space-y-6">
-                {/* Main Text Block */}
-                <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
-                  Why reinvent the wheel when I can show you the blueprints that will help you to build what I have. Join me on your journey to become the pinnacle Invisalign provider in your community. To position your office for success during difficult business headwinds. Stop being the workhorse that is towing the cart weighed down by an unmotivated group of employees. Start spreading your wings to become a unicorn leading your Team to new heights.
-                </p>
+                     {/* New Section: Why Reinvent the Wheel */}
+           <div className="bg-white pt-0 pb-0">
+             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+               <div className="space-y-6">
+                 {/* Main Text Block */}
+                 <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
+                   Why reinvent the wheel when I can show you the blueprints that will help you to build what I have. Join me on your journey to become the pinnacle Invisalign provider in your community. To position your office for success during difficult business headwinds. Stop being the workhorse that is towing the cart weighed down by an unmotivated group of employees. Start spreading your wings to become a unicorn leading your Team to new heights.
+                 </p>
 
-                {/* Apply Now Button */}
-                <div className="mb-6">
-                  <button 
-                    className="font-sansation-regular text-white font-semibold hover:opacity-90 transition-opacity duration-200"
-                    style={{ 
-                      fontSize: '16px',
-                      backgroundColor: '#004681',
-                      padding: '6px 15px',
-                      borderRadius: '0'
-                    }}
-                  >
-                    Apply Now
-                  </button>
-                </div>
+                 {/* Apply Now Button */}
+                 <div className="mb-6">
+                   <button 
+                     className="font-sansation-regular text-white font-semibold hover:opacity-90 transition-opacity duration-200"
+                     style={{ 
+                       fontSize: '16px',
+                       backgroundColor: '#004681',
+                       padding: '6px 15px',
+                       borderRadius: '0'
+                     }}
+                   >
+                     Apply Now
+                   </button>
+                 </div>
 
-                {/* Secondary Text Block */}
-                <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed italic" style={{ fontSize: '17px' }}>
-                  The online six-month class starts every July and January. But fills up long before. You can add your name to our next classes waiting list by applying now. Early applicants are given preference.
-                                 </p>
+                 {/* Secondary Text Block */}
+                 <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed italic" style={{ fontSize: '17px' }}>
+                   The online six-month class starts every July and January. But fills up long before. You can add your name to our next classes waiting list by applying now. Early applicants are given preference.
+                 </p>
                </div>
              </div>
            </div>
 
-          {/* DCM Classes Section - Now Last */}
-          <DCMClassesSection />
-         </section>
-   );
- };
+                       {/* DCM Classes Section */}
+            <DCMClassesSection />
+            
+                        {/* DCM Course Structure Section */}
+            <DCMCourseStructureSection />
+            
+            {/* Footer */}
+            <Footer />
+          </section>
+    );
+  };
 
 export default DiamondClubMakerSection;
