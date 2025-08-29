@@ -383,7 +383,7 @@ const InTheirOwnWordsSection = () => {
 
   const currentTestimonial = testimonials[currentIndex];
 
-  const handleVideoClick = (index) => {
+  const handleVideoClick = (index: number) => {
     setPlayingVideoIndex(index);
   };
 
