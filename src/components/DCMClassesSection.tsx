@@ -2,7 +2,7 @@
 
 const DCMClassesSection = () => {
   return (
-    <div className="bg-white py-12 sm:py-16 lg:py-20 w-full">
+    <div className="bg-white pt-12 sm:pt-16 lg:pt-20 w-full" style={{ paddingBottom: '50px' }}>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <h2 

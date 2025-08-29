@@ -8,6 +8,7 @@ import VideoSection from "@/components/VideoSection";
 import LearnHowSection from "@/components/LearnHowSection";
 import DiamondClubMakerSection from "@/components/DiamondClubMakerSection";
 import DCMDiamondsSection from "@/components/DCMDiamondsSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <LearnHowSection />
       <DCMDiamondsSection />
       <DiamondClubMakerSection />
+      <Footer />
     </main>
   );
 }

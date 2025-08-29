@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 const InTheirOwnWordsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [playingVideoIndex, setPlayingVideoIndex] = useState(null);
 
   // Comprehensive testimonial data with all 30 testimonials
   const testimonials = [
@@ -383,12 +383,11 @@ const InTheirOwnWordsSection = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   const handleVideoClick = (index) => {
-    setCurrentIndex(index);
-    setIsPlaying(true);
+    setPlayingVideoIndex(index);
   };
 
   const handleVideoEnd = () => {
-    setIsPlaying(false);
+    setPlayingVideoIndex(null);
   };
 
   return (
@@ -421,7 +420,7 @@ const InTheirOwnWordsSection = () => {
                      <div className="relative w-[200px] h-[300px]">
                        <div className="relative w-[200px] h-[300px] rounded-lg overflow-hidden shadow-lg">
                          {/* Video Thumbnail - shown when not playing */}
-                         {!isPlaying && (
+                         {playingVideoIndex !== index && (
                            <>
                              <img 
                                src={testimonial.thumbnail} 
@@ -446,16 +445,16 @@ const InTheirOwnWordsSection = () => {
                          )}
                          
                                                    {/* Video Element - shown when playing */}
-                          {isPlaying && currentIndex === index && (
+                          {playingVideoIndex === index && (
                             <video 
                               className="w-[200px] h-[300px] object-cover"
                               src={testimonial.video}
                               controls
                               autoPlay
                               muted
-                              onEnded={() => setIsPlaying(false)}
-                              onPause={() => setIsPlaying(false)}
-                              onPlay={() => setIsPlaying(true)}
+                              onEnded={() => setPlayingVideoIndex(null)}
+                              onPause={() => setPlayingVideoIndex(null)}
+                              onPlay={() => setPlayingVideoIndex(index)}
                             />
                           )}
                        </div>
