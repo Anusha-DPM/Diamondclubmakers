@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const InTheirOwnWordsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [playingVideoIndex, setPlayingVideoIndex] = useState(null);
+  const [playingVideoIndex, setPlayingVideoIndex] = useState<number | null>(null);
 
   // Comprehensive testimonial data with all 30 testimonials
   const testimonials = [
