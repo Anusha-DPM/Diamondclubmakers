@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from 'react';
+import AboutDrWollockSection from './AboutDrWollockSection';
+import DCMClassesSection from './DCMClassesSection';
 
 const DiamondClubMakerSection = () => {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
@@ -245,25 +247,25 @@ const DiamondClubMakerSection = () => {
         <div className="bg-white py-12 sm:py-16 lg:py-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             {/* Heading */}
-                         <h2 
-               className="font-sansation-regular text-[#004681] mb-4"
-               style={{ fontSize: '30px' }}
-             >
-               Are You Ready to Join the Diamond Club Makers?
-             </h2>
+            <h2 
+              className="font-sansation-regular text-[#004681] mb-4"
+              style={{ fontSize: '30px', marginBottom: '20px' }}
+            >
+              Are You Ready to Join the Diamond Club Makers?
+            </h2>
 
-             {/* Apply Now Button */}
-             <div className="mb-4">
-               <button 
-                 className="font-sansation-regular bg-[#029fde] text-white px-10 py-2.5 rounded-lg hover:bg-[#0288c7] transition-colors duration-200 font-semibold"
-                 style={{ fontSize: '20px' }}
-               >
-                 Apply Now
-               </button>
-             </div>
+            {/* Apply Now Button */}
+            <div className="mb-4">
+              <button 
+                className="font-sansation-regular bg-[#029fde] text-white px-10 py-2.5 hover:bg-[#0288c7] transition-colors duration-200 font-semibold"
+                style={{ fontSize: '20px', borderRadius: '5px' }}
+              >
+                Apply Now
+              </button>
+            </div>
 
-             {/* Descriptive Text */}
-             <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed max-w-4xl mx-auto" style={{ fontSize: '17px' }}>
+            {/* Descriptive Text */}
+            <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed max-w-4xl mx-auto" style={{ fontSize: '17px', paddingTop: '20px', paddingLeft: '110px', paddingRight: '110px' }}>
               For more information email us at{' '}
               <a 
                 href="mailto:michaeliwollock@hotmail.com" 
@@ -275,7 +277,234 @@ const DiamondClubMakerSection = () => {
             </p>
           </div>
         </div>
-      </section>
+
+                                              {/* About Dr. Michael I. Wollock Section */}
+          <AboutDrWollockSection />
+
+                   {/* Additional Content Section - Full Width */}
+          <div className="bg-white pt-0 pb-12 sm:pb-16 lg:pb-20">
+           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div className="space-y-6">
+               {/* Paragraph 1 */}
+               <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
+                 Since being certified by Align in 2001, I had been hovering around 40 cases a year. While having greater experience than the average GP doing 15 a year, I still really had no idea what I was doing. I thought that's what Align was doing. That was and is a naïve idea. I attended all the CE on Invisalign that there was. At the time it was entirely orthodontists who lectured, and they spoke a different language then us as GP's. They also had very little interest in having GP's compete for what was their exclusive market segment. But I knew that I only referred out 5-15% of my patient's RCT's, extractions, kids, perio, etc… But why am I referring out 100% of my patients ortho needs. After searching far and wide, I found the one non-orthodontist Invisalign lecturer. He was just starting his lecture career. In fact, I believe I was at one of his first lectures outside New York where he was practicing at the time. After seeing Dr David Galler speak on GST (Galler Spacing Technique) at an Align Dinner CE at Maggiano's in King of Prussia PA, I was hooked. We exchanged phone numbers (WhatsApp wasn't even a twinkle in anyone's eye).
+               </p>
+
+               {/* Paragraph 2 */}
+               <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
+                 When David began his Reingage series long ago, I called him, and he gave me a choice of where I could go. Yeah, as then and now, its waiting list only. I choose a short drive to Terrytown NY. Went up for a Thursday morning and at the end of the day I discovered there was another day of the class. I called my team and cancelled my patient schedule; I couldn't miss the second day. Just after, I became President of that class, the Empire Aligners. My Invisalign production jumped from 40 to 80 that year, but that wasn't enough. I started playing the Align Advantage game, thinking saving money by doing more cases was the only path. While I have been at Diamond and Diamond Plus since 2017, what I learned and teach in DCM is that saving from Aligns Advantage game is small compared to the time saving I show DCM doctors, the savings in making Invisalign significantly more predictable, and the exponential growth effect that Invisalign facilitates throughout my entire GP practice.
+               </p>
+
+                               {/* Paragraph 3 */}
+                <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
+                  At some point in this journey Frank Quinn at the time Align's North American Sales and Special Markets VP turned to me on one of our many conversations over Perfect Manhattans and said I was a "Unicorn". That what I was doing with Invisalign as a GP was unique and not reproducible. This challenged a very core belief I have of myself, that I am not special. That what I do is reproducible. And that each and every one of you can achieve any and all I have and more. That's what I strive to help each DCM doctor with.
+                </p>
+
+                                                  {/* Invisalign Awards and Badges Section */}
+                 <div className="mt-12">
+                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-4 md:gap-6">
+                     {/* Elite Provider 2007 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo1.png" 
+                         alt="Invisalign 2007 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Elite Provider 2008 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo2.png" 
+                         alt="Invisalign 2008 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Elite Provider 2009 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo3.png" 
+                         alt="Invisalign 2009 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Elite Provider 2010 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo4.png" 
+                         alt="Invisalign 2010 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Elite Provider 2011 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo5.png" 
+                         alt="Invisalign 2011 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Elite Provider 2012 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo6.png" 
+                         alt="Invisalign 2012 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Elite Provider 2013 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo7.jpg" 
+                         alt="Invisalign 2013 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Elite Provider 2014 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo8.png" 
+                         alt="Invisalign 2014 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Elite Provider 2015 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo9.png" 
+                         alt="Invisalign 2015 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Elite Provider 2016 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo10.png" 
+                         alt="Invisalign 2016 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Elite Provider 2017 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo11.png" 
+                         alt="Invisalign 2017 Elite Provider"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Diamond+ 2018 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo12.png" 
+                         alt="Diamond+ Invisalign Provider 2018"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+
+                     {/* Diamond+ Top 1% 2019 */}
+                     <div className="flex flex-col items-center justify-center text-center">
+                       <img 
+                         src="/invisalign-logo13.png" 
+                         alt="Diamond+ Top 1% Invisalign Provider 2019"
+                         className="w-[75px] h-auto object-contain mx-auto"
+                       />
+                     </div>
+
+                     {/* Diamond+ Top 1% 2020 */}
+                     <div className="flex flex-col items-center justify-center text-center">
+                       <img 
+                         src="/invisalign-logo14.jpg" 
+                         alt="Diamond+ Top 1% Invisalign Provider 2020"
+                         className="w-[75px] h-auto object-contain mx-auto"
+                       />
+                     </div>
+
+                     {/* Diamond+ Top 1% 2021 */}
+                     <div className="flex flex-col items-center justify-center text-center">
+                       <img 
+                         src="/invisalign-logo15.jpg" 
+                         alt="Diamond+ Top 1% Invisalign Provider 2021"
+                         className="w-[75px] h-auto object-contain mx-auto"
+                       />
+                     </div>
+
+                     {/* Diamond+ Top 1% 2022 */}
+                     <div className="flex flex-col items-center justify-center text-center">
+                       <img 
+                         src="/invisalign-logo17.jpg" 
+                         alt="Diamond+ Top 1% Invisalign Provider 2022"
+                         className="w-[75px] h-auto object-contain mx-auto"
+                       />
+                     </div>
+
+                     {/* Diamond+ Top 1% 2023 */}
+                     <div className="flex flex-col items-center justify-center text-center">
+                       <img 
+                         src="/invisalign-logo18.jpg" 
+                         alt="Diamond+ Top 1% Invisalign Provider 2023"
+                         className="w-[75px] h-auto object-contain mx-auto"
+                       />
+                     </div>
+
+                     {/* Blue Diamond+ 2024 */}
+                     <div className="flex flex-col items-center">
+                       <img 
+                         src="/invisalign-logo19.jpg" 
+                         alt="Blue Diamond+ Invisalign Provider 2024"
+                         className="w-[75px] h-auto object-contain"
+                       />
+                     </div>
+                   </div>
+                                   </div>
+              </div>
+            </div>
+          </div>
+
+          {/* New Section: Why Reinvent the Wheel */}
+          <div className="bg-white pt-0 pb-12 sm:pb-16 lg:pb-20">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="space-y-6">
+                {/* Main Text Block */}
+                <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
+                  Why reinvent the wheel when I can show you the blueprints that will help you to build what I have. Join me on your journey to become the pinnacle Invisalign provider in your community. To position your office for success during difficult business headwinds. Stop being the workhorse that is towing the cart weighed down by an unmotivated group of employees. Start spreading your wings to become a unicorn leading your Team to new heights.
+                </p>
+
+                {/* Apply Now Button */}
+                <div className="mb-6">
+                  <button 
+                    className="font-sansation-regular text-white font-semibold hover:opacity-90 transition-opacity duration-200"
+                    style={{ 
+                      fontSize: '16px',
+                      backgroundColor: '#004681',
+                      padding: '6px 15px',
+                      borderRadius: '0'
+                    }}
+                  >
+                    Apply Now
+                  </button>
+                </div>
+
+                {/* Secondary Text Block */}
+                <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed italic" style={{ fontSize: '17px' }}>
+                  The online six-month class starts every July and January. But fills up long before. You can add your name to our next classes waiting list by applying now. Early applicants are given preference.
+                                 </p>
+               </div>
+             </div>
+           </div>
+
+          {/* DCM Classes Section - Now Last */}
+          <DCMClassesSection />
+         </section>
    );
  };
 
