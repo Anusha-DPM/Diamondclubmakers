@@ -13,6 +13,24 @@ interface DCMDoctor {
 
 const DCMDiamondsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [cardsPerView, setCardsPerView] = useState(5);
+
+  // Set cards per view based on screen size
+  useEffect(() => {
+    const updateCardsPerView = () => {
+      if (window.innerWidth >= 1024) {
+        setCardsPerView(5); // Desktop: 5 cards
+      } else if (window.innerWidth >= 768) {
+        setCardsPerView(3); // Tablet: 3 cards
+      } else {
+        setCardsPerView(1); // Mobile: 1 card
+      }
+    };
+
+    updateCardsPerView();
+    window.addEventListener('resize', updateCardsPerView);
+    return () => window.removeEventListener('resize', updateCardsPerView);
+  }, []);
 
   const doctors: DCMDoctor[] = [
     { 
@@ -248,20 +266,23 @@ const DCMDiamondsSection = () => {
             </svg>
           </button>
 
-          {/* Carousel Container */}
-          <div className="overflow-hidden">
-            <div 
-              className="flex transition-transform duration-700 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * (100 / 5)}%)` }}
-            >
-              {doctors.map((doctor, index) => (
-                <div 
-                  key={doctor.id} 
-                  className="w-1/5 flex-shrink-0 px-3 sm:px-4 lg:px-6"
-                >
-                  <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-                    {/* Doctor Image - Square */}
-                    <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto mb-4 overflow-hidden rounded-lg shadow-md">
+                                {/* Carousel Container */}
+            <div className="overflow-hidden bg-[#fafafa] rounded-lg p-8">
+              <div 
+                className="flex transition-transform duration-700 ease-in-out"
+                style={{ 
+                  transform: `translateX(-${currentIndex * (100 / cardsPerView)}%)` 
+                }}
+              >
+                {doctors.map((doctor, index) => (
+                                     <div 
+                     key={doctor.id} 
+                     className="w-full sm:w-1/3 lg:w-1/5 flex-shrink-0 px-1"
+                     style={{ width: `${100 / cardsPerView}%` }}
+                   >
+                   <div className="text-center">
+                                         {/* Doctor Image - Square */}
+                     <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto mb-4 overflow-hidden shadow-md">
                       <img
                         src={doctor.image}
                         alt={doctor.name}
