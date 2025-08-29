@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import NextImage from 'next/image';
 
 const VideoSection = () => {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
@@ -115,7 +115,7 @@ const VideoSection = () => {
     }
 
     return (
-      <Image
+      <NextImage
         data-video-id={video.id}
         src={getThumbnailUrl(video.id)}
         alt={video.title}

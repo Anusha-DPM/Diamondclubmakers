@@ -353,7 +353,7 @@ const DiamondClubMakerSection = () => {
 
                                {/* Paragraph 3 */}
                 <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed" style={{ fontSize: '17px' }}>
-                  At some point in this journey Frank Quinn at the time Align&apos;s North American Sales and Special Markets VP turned to me on one of our many conversations over Perfect Manhattans and said I was a "Unicorn". That what I was doing with Invisalign as a GP was unique and not reproducible. This challenged a very core belief I have of myself, that I am not special. That what I do is reproducible. And that each and every one of you can achieve any and all I have and more. That&apos;s what I strive to help each DCM doctor with.
+                  At some point in this journey Frank Quinn at the time Align&apos;s North American Sales and Special Markets VP turned to me on one of our many conversations over Perfect Manhattans and said I was a &quot;Unicorn&quot;. That what I was doing with Invisalign as a GP was unique and not reproducible. This challenged a very core belief I have of myself, that I am not special. That what I do is reproducible. And that each and every one of you can achieve any and all I have and more. That&apos;s what I strive to help each DCM doctor with.
                 </p>
 
                                                   {/* Invisalign Awards and Badges Section */}
