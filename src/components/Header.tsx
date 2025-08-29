@@ -1,12 +1,20 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
-  const [activeItem, setActiveItem] = useState('Home');
+  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const menuItems = ['Home', 'Apply', 'Community', 'Submit', 'Other'];
+  const menuItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Apply', path: '/apply' },
+    { name: 'Community', path: '/community' },
+    { name: 'Submit', path: '/submit' },
+    { name: 'Other', path: '/other' }
+  ];
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -32,14 +40,12 @@ const Header = () => {
           <nav className={`flex items-center justify-center ${isMobileMenuOpen ? 'block' : 'hidden'} md:flex`}>
             <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-1 sm:space-x-2 md:space-x-3">
               {menuItems.map((item, index) => (
-                <li key={item} className="flex items-center">
-                  <button
-                    onClick={() => {
-                      setActiveItem(item);
-                      setIsMobileMenuOpen(false);
-                    }}
+                <li key={item.name} className="flex items-center">
+                  <Link
+                    href={item.path}
+                    onClick={() => setIsMobileMenuOpen(false)}
                     className={`px-1 sm:px-2 md:px-3 py-1 font-sansation-regular transition-colors duration-200 ${
-                      activeItem === item 
+                      pathname === item.path 
                         ? 'text-[#004681] border-b-2 border-[#029fde]' 
                         : 'text-[#004681] hover:text-[#024093]'
                     }`}
@@ -48,8 +54,8 @@ const Header = () => {
                       minWidth: 'max-content'
                     }}
                   >
-                    {item}
-                  </button>
+                    {item.name}
+                  </Link>
                   {index < menuItems.length - 1 && (
                     <span className="hidden md:inline text-[#004681] mx-1 sm:mx-1.5 md:mx-2">|</span>
                   )}

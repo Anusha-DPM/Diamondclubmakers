@@ -58,9 +58,9 @@ const Footer = () => {
               <span className="mx-3 text-[#003366]">|</span>
               <a href="#" className="hover:underline transition-colors duration-200">DCMer Community</a>
               <span className="mx-3 text-[#003366]">|</span>
-              <a href="#" className="hover:underline transition-colors duration-200">Application</a>
+              <a href="/apply" className="hover:underline transition-colors duration-200">Application</a>
               <span className="mx-3 text-[#003366]">|</span>
-              <a href="#" className="hover:underline transition-colors duration-200">Payment</a>
+              <a href="/payment" className="hover:underline transition-colors duration-200">Payment</a>
             </p>
           </div>
         </div>
