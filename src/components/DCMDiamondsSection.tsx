@@ -287,18 +287,22 @@ const DCMDiamondsSection = () => {
                         src={doctor.image}
                         alt={doctor.name}
                         className="w-full h-full object-cover"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                          const parent = target.parentElement;
-                          if (parent) {
-                            parent.innerHTML = `
-                              <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                                <span class="text-white text-lg sm:text-xl font-bold">${doctor.name.split(' ')[1]}</span>
-                              </div>
-                            `;
-                          }
-                        }}
+                                                 onError={(e) => {
+                           const target = e.target as HTMLImageElement;
+                           target.style.display = 'none';
+                           const parent = target.parentElement;
+                           if (parent) {
+                             const fallbackDiv = document.createElement('div');
+                             fallbackDiv.className = 'w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center';
+                             
+                             const span = document.createElement('span');
+                             span.className = 'text-white text-lg sm:text-xl font-bold';
+                             span.textContent = doctor.name.split(' ')[1];
+                             
+                             fallbackDiv.appendChild(span);
+                             parent.appendChild(fallbackDiv);
+                           }
+                         }}
                       />
                     </div>
 
