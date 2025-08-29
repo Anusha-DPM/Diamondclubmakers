@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 
 const AboutDrWollockSection = () => {
   return (
@@ -29,9 +30,11 @@ const AboutDrWollockSection = () => {
           {/* Right Column - Image */}
           <div className="lg:col-span-3 flex justify-center lg:justify-start lg:pl-4">
             <div className="relative">
-                             <img 
+                             <Image 
                  src="/about.jpg"
                  alt="Dr. Michael I. Wollock"
+                 width={400}
+                 height={300}
                  className="w-full max-w-sm lg:max-w-md object-cover"
                  style={{ height: '300px', marginTop: '50px' }}
                />

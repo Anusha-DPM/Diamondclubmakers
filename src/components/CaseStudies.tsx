@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const CaseStudies = () => {
   return (
@@ -133,19 +134,19 @@ const CaseStudies = () => {
             {/* Before/After Images and Video */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mb-6">
               <div className="text-center">
-                <img src="/case-1.jpeg" alt="Gordon G. Before - Smile" className="w-full h-48 object-contain bg-gray-100" />
+                <Image src="/case-1.jpeg" alt="Gordon G. Before - Smile" width={192} height={192} className="w-full h-48 object-contain bg-gray-100" />
               </div>
               <div className="text-center">
-                <img src="/case-2.jpeg" alt="Gordon G. After - Smile" className="w-full h-48 object-contain bg-gray-100" />
+                <Image src="/case-2.jpeg" alt="Gordon G. After - Smile" width={192} height={192} className="w-full h-48 object-contain bg-gray-100" />
               </div>
               <div className="text-center">
-                <img src="/case-3.jpeg" alt="Gordon G. Upper Arch" className="w-full h-48 object-contain bg-gray-100" />
+                <Image src="/case-3.jpeg" alt="Gordon G. Upper Arch" width={192} height={192} className="w-full h-48 object-contain bg-gray-100" />
               </div>
               <div className="text-center">
-                <img src="/case-4.jpeg" alt="Gordon G. Lower Arch" className="w-full h-48 object-contain bg-gray-100" />
+                <Image src="/case-4.jpeg" alt="Gordon G. Lower Arch" width={192} height={192} className="w-full h-48 object-contain bg-gray-100" />
               </div>
               <div className="text-center">
-                <img src="/Thumb.jpg" alt="Gordon G. Thumb" className="w-full h-48 object-contain bg-gray-100" />
+                <Image src="/Thumb.jpg" alt="Gordon G. Thumb" width={192} height={192} className="w-full h-48 object-contain bg-gray-100" />
               </div>
             </div>
           </div>
