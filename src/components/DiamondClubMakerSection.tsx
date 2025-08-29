@@ -1,6 +1,18 @@
 "use client";
 
+import { useState } from 'react';
+
 const DiamondClubMakerSection = () => {
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+
+  const openVideo = (videoSrc: string) => {
+    setSelectedVideo(videoSrc);
+  };
+
+  const closeVideo = () => {
+    setSelectedVideo(null);
+  };
+
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -106,8 +118,165 @@ const DiamondClubMakerSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
-};
+
+             {/* Video Section with 4 columns (3 videos + 1 empty) */}
+       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+        <div className="grid grid-cols-4 gap-6">
+                     {/* Video 1 - Helga Idrizi */}
+           <div className="col-span-1">
+             <div className="relative">
+                               <div className="relative cursor-pointer group" onClick={() => openVideo('/Helga-Idrizi.mp4')}>
+                  <img 
+                    src="/1.jpg"
+                    alt="Helga Idrizi"
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                 {/* Play Button Overlay */}
+                 <div className="absolute inset-0 flex items-center justify-center">
+                   <div className="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-lg group-hover:bg-opacity-100 transition-all duration-200">
+                     <svg className="w-8 h-8 text-[#004681] ml-1" fill="currentColor" viewBox="0 0 24 24">
+                       <path d="M8 5v14l11-7z"/>
+                     </svg>
+                   </div>
+                 </div>
+               </div>
+               <div className="mt-3">
+                 <p className="font-sansation-regular text-[#004681]" style={{ fontSize: '17px' }}>
+                   Helga Idrizi, DCM Rebellion
+                 </p>
+                 <p className="font-sansation-regular text-[#004681]" style={{ fontSize: '17px' }}>
+                   Jumped three tiers during the class and two more after for a total of five tiers
+                 </p>
+               </div>
+             </div>
+           </div>
+
+                     {/* Video 2 - Moshe Rechthand */}
+           <div className="col-span-1">
+             <div className="relative">
+                               <div className="relative cursor-pointer group" onClick={() => openVideo('/Moshe-Rechthand.mp4')}>
+                  <img 
+                    src="/2.jpg"
+                    alt="Moshe Rechthand"
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                 {/* Play Button Overlay */}
+                 <div className="absolute inset-0 flex items-center justify-center">
+                   <div className="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-lg group-hover:bg-opacity-100 transition-all duration-200">
+                     <svg className="w-8 h-8 text-[#004681] ml-1" fill="currentColor" viewBox="0 0 24 24">
+                       <path d="M8 5v14l11-7z"/>
+                     </svg>
+                   </div>
+                 </div>
+               </div>
+               <div className="mt-3">
+                 <p className="font-sansation-regular text-[#004681]" style={{ fontSize: '17px' }}>
+                   Moshe Rechthand, DCM Yoda
+                 </p>
+                 <p className="font-sansation-regular text-[#004681]" style={{ fontSize: '17px' }}>
+                   Jumped three tiers
+                 </p>
+               </div>
+             </div>
+           </div>
+
+                     {/* Video 3 - Rebecca Charpentier */}
+           <div className="col-span-1">
+             <div className="relative">
+                               <div className="relative cursor-pointer group" onClick={() => openVideo('/Rebecca-Charpentier.mp4')}>
+                  <img 
+                    src="/3.jpg"
+                    alt="Rebecca Charpentier"
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                 {/* Play Button Overlay */}
+                 <div className="absolute inset-0 flex items-center justify-center">
+                   <div className="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-lg group-hover:bg-opacity-100 transition-all duration-200">
+                     <svg className="w-8 h-8 text-[#004681] ml-1" fill="currentColor" viewBox="0 0 24 24">
+                       <path d="M8 5v14l11-7z"/>
+                     </svg>
+                   </div>
+                 </div>
+               </div>
+               <div className="mt-3">
+                 <p className="font-sansation-regular text-[#004681]" style={{ fontSize: '17px' }}>
+                   Rebecca Charpentier, DCM Rebellion
+                 </p>
+                 <p className="font-sansation-regular text-[#004681]" style={{ fontSize: '17px' }}>
+                   Jumped one tier
+                 </p>
+               </div>
+             </div>
+           </div>
+
+          {/* Empty 4th column */}
+          <div className="col-span-1">
+            {/* Empty space */}
+                     </div>
+         </div>
+       </div>
+
+               {/* Video Modal */}
+        {selectedVideo && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+            <div className="relative max-w-4xl w-full">
+              {/* Close Button */}
+              <button
+                onClick={closeVideo}
+                className="absolute -top-12 right-0 text-white text-4xl hover:text-gray-300 transition-colors z-10"
+              >
+                ×
+              </button>
+              
+              {/* Video Player */}
+              <video
+                className="w-full h-auto max-h-[80vh] rounded-lg"
+                controls
+                autoPlay
+              >
+                <source src={selectedVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        )}
+
+        {/* Call-to-Action Section */}
+        <div className="bg-white py-12 sm:py-16 lg:py-20">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            {/* Heading */}
+                         <h2 
+               className="font-sansation-regular text-[#004681] mb-4"
+               style={{ fontSize: '30px' }}
+             >
+               Are You Ready to Join the Diamond Club Makers?
+             </h2>
+
+             {/* Apply Now Button */}
+             <div className="mb-4">
+               <button 
+                 className="font-sansation-regular bg-[#029fde] text-white px-10 py-2.5 rounded-lg hover:bg-[#0288c7] transition-colors duration-200 font-semibold"
+                 style={{ fontSize: '20px' }}
+               >
+                 Apply Now
+               </button>
+             </div>
+
+             {/* Descriptive Text */}
+             <p className="font-sansation-regular text-[#6b6b6b] leading-relaxed max-w-4xl mx-auto" style={{ fontSize: '17px' }}>
+              For more information email us at{' '}
+              <a 
+                href="mailto:michaeliwollock@hotmail.com" 
+                className="text-[#004681] hover:underline transition-all duration-200"
+              >
+                michaeliwollock@hotmail.com
+              </a>
+              . We are currently accepting applicants. Classes usually start in January and July but are formed in the months prior. Early applications are given preference.
+            </p>
+          </div>
+        </div>
+      </section>
+   );
+ };
 
 export default DiamondClubMakerSection;

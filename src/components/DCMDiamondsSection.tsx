@@ -80,17 +80,17 @@ const DCMDiamondsSection = () => {
   };
 
   return (
-    <section className="bg-white py-12 sm:py-16 lg:py-20">
+    <section className="bg-white py-4 sm:py-6 lg:py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main Heading */}
-                 <h1 
-           className="font-sansation-regular text-[#004681] mb-2"
-           style={{ fontSize: '30px' }}
-         >
-           DCM Diamonds
-         </h1>
+        <h1 
+          className="font-sansation-regular text-[#004681] mb-2"
+          style={{ fontSize: '30px' }}
+        >
+          DCM Diamonds
+        </h1>
 
-         {/* Introductory Text */}
+        {/* Introductory Text */}
          <p 
            className="font-sansation-regular text-[#6b6b6b] mb-4 max-w-6xl mx-auto leading-relaxed text-left"
            style={{ fontSize: '17px' }}
@@ -181,6 +181,8 @@ const DCMDiamondsSection = () => {
            </button>
         </div>
       </div>
+
+
     </section>
   );
 };

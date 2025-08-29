@@ -100,7 +100,7 @@ const WhatILearnedInDCM = () => {
   const currentCase = caseStudies[currentSlide];
 
   return (
-         <section className="bg-white py-8 sm:py-12 lg:py-4">
+                   <section className="bg-white py-0 sm:py-2 lg:py-1">
              <div className="max-w-4xl mx-auto px-2 sm:px-3 lg:px-4">
         {/* Main Heading with Navigation */}
         <div className="flex items-center justify-between mb-8">
@@ -157,6 +157,7 @@ const WhatILearnedInDCM = () => {
             ))}
           </div>
         </div>
+
 
         
       </div>

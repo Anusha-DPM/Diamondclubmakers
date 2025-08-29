@@ -12,6 +12,11 @@ import DCMDiamondsSection from "@/components/DCMDiamondsSection";
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <Header />
+      <HeroSection />
+      <ImageSlider />
+      <ContentSection />
+      <CaseStudies />
       <WhatILearnedInDCM />
       <VideoSection />
       <LearnHowSection />
