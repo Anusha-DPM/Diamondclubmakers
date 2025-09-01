@@ -12,7 +12,7 @@ const WhatILearnedInDCM = () => {
       profit: "Inv Profit: was $328/hr, with DCM $1301/hr",
       content: [
         "Meet Jonathan-",
-        "Existing patient we had talked about misalignment and open bite. Patient abfractions galore and got an occlusal guard prior to invisalign. Patient CC - I just want to save my teeth, I don't want any more abfractions.",
+        "Existing patient we had talked about misalignment and open bite. Patient abfractions galore and got an occlusal guard prior to invisalign. Patient CC - I just want to save my teeth, I don&apos;t want any more abfractions.",
         "F@ck my life!!!! This case took forever!!!! You can see why I did not think that CAT was profitable!!!",
         "10hrs and 45min",
         "13 months.",

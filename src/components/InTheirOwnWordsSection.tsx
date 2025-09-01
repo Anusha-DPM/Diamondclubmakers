@@ -90,7 +90,7 @@ const InTheirOwnWordsSection = () => {
       video: "/doctor-video/dr-simranjit-bawa-video.mp4",
       thumbnail: "/doctors/dr-simranjit-bawa-video.png",
       content: [
-        "If you are committed and dedicated and willing to put in the work, and you're looking to take your practice to the next level and become the best Invisalign® doctor in your community, you have to take this course, without a doubt."
+        "If you are committed and dedicated and willing to put in the work, and you&apos;re looking to take your practice to the next level and become the best Invisalign® doctor in your community, you have to take this course, without a doubt."
       ]
     },
     {
@@ -191,7 +191,7 @@ const InTheirOwnWordsSection = () => {
       video: "/doctor-video/dr-william-sung.mp4",
       thumbnail: "/doctors/dr-william-sung.png",
       content: [
-        "Out of the group that I'm currently with, I was probably one of the least-experienced providers in the group. However, the things that he's taught just makes you a lot more confident, makes you more efficient with Invisalign® so that way you're able to increase your production while minimizing chair time, and some of the things he teaches you can also apply to other facets of dentistry, which I really appreciated."
+        "Out of the group that I&apos;m currently with, I was probably one of the least-experienced providers in the group. However, the things that he&apos;s taught just makes you a lot more confident, makes you more efficient with Invisalign® so that way you&apos;re able to increase your production while minimizing chair time, and some of the things he teaches you can also apply to other facets of dentistry, which I really appreciated."
       ]
     },
     {
@@ -225,8 +225,8 @@ const InTheirOwnWordsSection = () => {
       video: "/doctor-video/dr-jim-olsen.mp4",
       thumbnail: "/doctors/dr-jim-olsen.png",
       content: [
-        "Thanks to Dr. Michael Wollock and his system, me and my team were able to achieve Diamond in just over five months. I can't express my gratitude adequately to Dr. Wollock for showing me the way, for giving us an outline on how to get this done.",
-        "If you're considering joining the Diamond Club, I think you really need to do it. It will change your practice and it will give you confidence in doing more Invisalign® and you'll do it better than ever."
+        "Thanks to Dr. Michael Wollock and his system, me and my team were able to achieve Diamond in just over five months. I can&apos;t express my gratitude adequately to Dr. Wollock for showing me the way, for giving us an outline on how to get this done.",
+        "If you&apos;re considering joining the Diamond Club, I think you really need to do it. It will change your practice and it will give you confidence in doing more Invisalign® and you&apos;ll do it better than ever."
       ]
     },
     {
@@ -237,7 +237,7 @@ const InTheirOwnWordsSection = () => {
       video: "/doctor-video/Dr-Shari-Morningstar.mp4",
       thumbnail: "/doctors/Dr-Shari-Morningstar.png",
       content: [
-        "I've got to tell you, this is unlike any mentoring program that I have ever been involved with. You have daily contact with Dr. Wollock and all your other team members. Every week, you get a lesson, and I have to say that that has taken me out of my comfort zone, going over those lessons…and it's paid off.",
+        "I&apos;ve got to tell you, this is unlike any mentoring program that I have ever been involved with. You have daily contact with Dr. Wollock and all your other team members. Every week, you get a lesson, and I have to say that that has taken me out of my comfort zone, going over those lessons…and it&apos;s paid off.",
         "I have increased my production over 200%, tripling my cases. But we know it's not just about the numbers, I have learned to break down barriers, barriers I didn't know existed in my practice."
       ]
     },
@@ -273,7 +273,7 @@ const InTheirOwnWordsSection = () => {
       video: "/doctor-video/testimonials-shauna-HD-720p.mp4",
       thumbnail: "/doctors/testimonials-shauna-HD-720p.png",
       content: [
-        "Since 2016, I've been able to grow Invisalign in my office and I've become a Gold+ Provider, and most recently we've hit Platinum. I owe a lot of my successs to Dr. Michael Wollock. Without his guidance, I don't think that I would have been able to hit these goals that I had set for myself."
+        "Since 2016, I&apos;ve been able to grow Invisalign in my office and I&apos;ve become a Gold+ Provider, and most recently we&apos;ve hit Platinum. I owe a lot of my successs to Dr. Michael Wollock. Without his guidance, I don&apos;t think that I would have been able to hit these goals that I had set for myself."
       ]
     },
     {
@@ -285,7 +285,7 @@ const InTheirOwnWordsSection = () => {
       thumbnail: "/doctors/dr-johnson-video-HD-720p.png",
       content: [
         "I had the good fortune five years ago of meeting Dr. Mike Wollock at a dental conference. Prior to that, the 5 years prior, I did 40 cases, which was averaging about eight cases a year of Invisalign. Since meeting Mike with his leadership and guidance, we've upped that to 325 cases in the next 5 years…",
-        "I can't say enough what Mike has done for my practice. I know if you choose to go in and have Mike be your leader, your educator, that you won't regret it."
+        "I can&apos;t say enough what Mike has done for my practice. I know if you choose to go in and have Mike be your leader, your educator, that you won&apos;t regret it."
       ]
     },
     {
@@ -320,7 +320,7 @@ const InTheirOwnWordsSection = () => {
       video: "/Amir-Daoud.mp4",
       thumbnail: "/doctors/Amir-Daoud.png",
       content: [
-        "I urge anybody who is serious about increasing their numbers of Invisalign®, not just increasing numbers but also looking at some of the systems that they have in their practice, to seriously consider taking this. I'm a big believer in 'Numbers don't lie'…prior to taking the Diamond Club, my best ever six months was Platinum, which was 65 cases.",
+        "I urge anybody who is serious about increasing their numbers of Invisalign®, not just increasing numbers but also looking at some of the systems that they have in their practice, to seriously consider taking this. I&apos;m a big believer in &apos;Numbers don&apos;t lie&apos;…prior to taking the Diamond Club, my best ever six months was Platinum, which was 65 cases.",
         "I'm four months into it…and I'm at 95 cases as of today, with still two months to go, so I'm actually on pace to hit Diamond."
       ]
     },
@@ -354,7 +354,7 @@ const InTheirOwnWordsSection = () => {
       video: "/doctor-video/Dr-Deepthy-Thomas.mp4",
       thumbnail: "/doctors/Dr-Deepthy-Thomas.png",
       content: [
-        "There was a lot of ups and downs in my Invisalign® journey. I've been doing Invisalign® for 8-10 years…Dr. Mike, he gives you and teaches you a blueprint of what works and how he's able to scale things and to be the Diamond+ Provider that he is."
+        "There was a lot of ups and downs in my Invisalign® journey. I&apos;ve been doing Invisalign® for 8-10 years…Dr. Mike, he gives you and teaches you a blueprint of what works and how he&apos;s able to scale things and to be the Diamond+ Provider that he is."
       ]
     }
   ];

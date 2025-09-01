@@ -17,7 +17,7 @@ const PaymentInfoSection = () => {
               className="font-sansation-regular text-base sm:text-lg lg:text-[17px] text-[#6b6b6b] leading-relaxed"
               style={{ fontSize: '17px', color: '#6b6b6b' }}
             >
-              This payment form is for applicants that have been accepted to the Diamond Club Makers program.
+              This payment form is for applicants that have been accepted to the Diamond Club Makers&apos; program.
             </p>
           </div>
 

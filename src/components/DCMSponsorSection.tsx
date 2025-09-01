@@ -38,7 +38,7 @@ const DCMSponsorSection = () => {
               className="font-sansation-regular text-base sm:text-lg lg:text-[17px] text-[#6b6b6b] leading-relaxed"
               style={{ fontSize: '17px', color: '#6b6b6b' }}
             >
-              PhillyStudentDoctors is a 501(c)(3) non-profit organization founded in 2022 whose purpose is to create a community of support for Black student doctors in health professional programs throughout Philadelphia. Black students in health professional programs are usually one of a few and typically don't have as much support as their majority counterparts. PhillyStudentDoctors was founded by Temple Dental and Drexel Medical students who desired to connect and bond with other students like themselves.
+              PhillyStudentDoctors is a 501(c)(3) non-profit organization founded in 2022 whose purpose is to create a community of support for Black student doctors in health professional programs throughout Philadelphia. Black students in health professional programs are usually one of a few and typically don&apos;t have as much support as their majority counterparts. PhillyStudentDoctors was founded by Temple Dental and Drexel Medical students who desired to connect and bond with other students like themselves.
             </p>
           </div>
         </div>
