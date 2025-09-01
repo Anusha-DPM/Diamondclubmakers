@@ -75,7 +75,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Adriann Hooks",
       location: "Kittanning, PA",
       title: "Armstrong Dental Care",
-      content: "Dr. Adriann Hooks found the pot of gold under the rainbow. \"My rural not high income small town practice increased revenue 440K in that year from what I learned in DCM.\"",
+             content: "Dr. Adriann Hooks found the pot of gold under the rainbow. &quot;My rural not high income small town practice increased revenue 440K in that year from what I learned in DCM.&quot;",
       thumbnail: "/doctors/dr-hooks-HD-720p.png"
     },
     {
@@ -83,7 +83,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr Dan Blazo",
       location: "Dearborn, Michigan",
       title: "Advanced Smile",
-      content: "Prior to starting DCM, I really struggled to increase my Invialisgn® case count, and just didn't have that confidence when it came to handling some of the more advanced cases, so I decided to join DCM, and man, it has been the best investment of my career. Learning from Dr. Michael Wollock has completely changed my office in all areas, Invisalign®, restorative, hygiene, everything.",
+             content: "Prior to starting DCM, I really struggled to increase my Invialisgn® case count, and just didn&apos;t have that confidence when it came to handling some of the more advanced cases, so I decided to join DCM, and man, it has been the best investment of my career. Learning from Dr. Michael Wollock has completely changed my office in all areas, Invisalign®, restorative, hygiene, everything.",
       thumbnail: "/doctors/dr-dan-blazo.png"
     },
     {
@@ -91,7 +91,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Brock Arms",
       location: "Cadillac, Michigan",
       title: "Lifesmiles Dentistry",
-      content: "I was one of those dentists that dabbled in Invisalign® for several years, never breaking free from the Silver level. I attended Reingage with Dr. Geller this past December and saw with new eyes the incredible potential with Invisalign® in my practice. So I really wanted to implement things as fast and effectively as possible, and I heard about Dr. Wollock's DCM class, and I signed up with that…never looked back. I went from Silver to Platinum in four and a half months.",
+             content: "I was one of those dentists that dabbled in Invisalign® for several years, never breaking free from the Silver level. I attended Reingage with Dr. Geller this past December and saw with new eyes the incredible potential with Invisalign® in my practice. So I really wanted to implement things as fast and effectively as possible, and I heard about Dr. Wollock&apos;s DCM class, and I signed up with that…never looked back. I went from Silver to Platinum in four and a half months.",
       thumbnail: "/doctors/dr-brock-arms.png"
     },
     {
@@ -179,7 +179,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr Rob Herron",
       location: "Columbus, Kansas",
       title: "Herron Regional Dental Center",
-      content: "Everyone thinks, \"Well, it's to help people that are struggling,\" but nothing could be less true. In our class…we had people that we're doing under 10 cases a year, and then you had people like me who were doing Platinum…but we had people that were over 100 every six months. And while the name is Diamond Club Makers…that's a goal, and I think that's a goal for everyone. But I watched everyone who put Mike's princples to use, did better.",
+             content: "Everyone thinks, &quot;Well, it&apos;s to help people that are struggling,&quot; but nothing could be less true. In our class…we had people that we&apos;re doing under 10 cases a year, and then you had people like me who were doing Platinum…but we had people that were over 100 every six months. And while the name is Diamond Club Makers…that&apos;s a goal, and I think that&apos;s a goal for everyone. But I watched everyone who put Mike&apos;s princples to use, did better.",
       thumbnail: "/doctors/dr-rob-herron.png"
     },
     {
@@ -203,7 +203,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr Shari Morningstar",
       location: "Royal Oak, Michigan",
       title: "Gustafson & Morningstar Dentistry",
-      content: "I've got to tell you, this is unlike any mentoring program that I have ever been involved with. You have daily contact with Dr. Wollock and all your other team members. Every week, you get a lesson, and I have to say that that has taken me out of my comfort zone, going over those lessons…and it's paid off. I have increased my production over 200%, tripling my cases. But we know it's not just about the numbers, I have learned to break down barriers, barriers I didn't know existed in my practice.",
+             content: "I&apos;ve got to tell you, this is unlike any mentoring program that I have ever been involved with. You have daily contact with Dr. Wollock and all your other team members. Every week, you get a lesson, and I have to say that that has taken me out of my comfort zone, going over those lessons…and it&apos;s paid off. I have increased my production over 200%, tripling my cases. But we know it&apos;s not just about the numbers, I have learned to break down barriers, barriers I didn&apos;t know existed in my practice.",
       thumbnail: "/doctors/Dr-Shari-Morningstar.png"
     },
     {
@@ -211,7 +211,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Amelia Chan",
       location: "Toronto, Canada",
       title: "Downtown Dentistry",
-      content: "I am the owner and principal dentist at Downtown Dentistry. I am currently a platinum plus Invisalign Provider with many thanks to Dr. Mike Wollock for all his fabulous guidance and support since 2016. He has amazing tips and I have followed through with almost every one of them. I am now starting at least 15 cases per month and finishing many cases on time! Before I met Dr. Mike, I might have started only 1 case per month. I've also been awarded the Galler Invisalign trophy for being a group member of top Invisalign providers in North America. Being part of the Galler group and knowing Dr. Mike has been a huge game changer in my life and career. I highly recommend that you connect with Dr. Mike Wollock and you will see a huge difference shortly.",
+             content: "I am the owner and principal dentist at Downtown Dentistry. I am currently a platinum plus Invisalign Provider with many thanks to Dr. Mike Wollock for all his fabulous guidance and support since 2016. He has amazing tips and I have followed through with almost every one of them. I am now starting at least 15 cases per month and finishing many cases on time! Before I met Dr. Mike, I might have started only 1 case per month. I&apos;ve also been awarded the Galler Invisalign trophy for being a group member of top Invisalign providers in North America. Being part of the Galler group and knowing Dr. Mike has been a huge game changer in my life and career. I highly recommend that you connect with Dr. Mike Wollock and you will see a huge difference shortly.",
       thumbnail: "/doctors/dr-amelia-chan-video-HD-720p.png"
     },
     {
@@ -227,7 +227,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Shauna Basil",
       location: "Westwood, Massachusetts",
       title: "Dental Arts of Westwood",
-      content: "Since 2016, I've been able to grow Invisalign in my office and I've become a Gold+ Provider, and most recently we've hit Platinum. I owe a lot of my successs to Dr. Michael Wollock. Without his guidance, I don't think that I would have been able to hit these goals that I had set for myself.",
+             content: "Since 2016, I&apos;ve been able to grow Invisalign in my office and I&apos;ve become a Gold+ Provider, and most recently we&apos;ve hit Platinum. I owe a lot of my successs to Dr. Michael Wollock. Without his guidance, I don&apos;t think that I would have been able to hit these goals that I had set for myself.",
       thumbnail: "/doctors/testimonials-shauna-HD-720p.png"
     },
     {
@@ -259,7 +259,7 @@ const DCMTestimonialsSection = () => {
       name: "Amir Daoud, DDS",
       location: "Clearwater, FL",
       title: "Feather Sound Smiles",
-      content: "I urge anybody who is serious about increasing their numbers of Invisalign®, not just increasing numbers but also looking at some of the systems that they have in their practice, to seriously consider taking this. I'm a big believer in \"Numbers don't lie\"…prior to taking the Diamond Club, my best ever six months was Platinum, which was 65 cases. I'm four months into it…and I'm at 95 cases as of today, with still two months to go, so I'm actually on pace to hit Diamond.",
+             content: "I urge anybody who is serious about increasing their numbers of Invisalign®, not just increasing numbers but also looking at some of the systems that they have in their practice, to seriously consider taking this. I&apos;m a big believer in &quot;Numbers don&apos;t lie&quot;…prior to taking the Diamond Club, my best ever six months was Platinum, which was 65 cases. I&apos;m four months into it…and I&apos;m at 95 cases as of today, with still two months to go, so I&apos;m actually on pace to hit Diamond.",
       thumbnail: "/doctors/Amir-Daoud.png"
     },
     {
