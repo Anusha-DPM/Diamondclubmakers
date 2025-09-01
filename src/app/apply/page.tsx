@@ -4,7 +4,6 @@ import ImageSlider from "@/components/ImageSlider";
 import ApplyInfoSection from "@/components/ApplyInfoSection";
 import GHLApplyForm from "@/components/GHLApplyForm";
 import DCMClassesSection from "@/components/DCMClassesSection";
-import ApplicationForm from "@/components/ApplicationForm";
 import Footer from "@/components/Footer";
 
 export default function Apply() {
@@ -15,7 +14,6 @@ export default function Apply() {
       <ImageSlider />
       <ApplyInfoSection />
       <GHLApplyForm />
-      <ApplicationForm />
       <DCMClassesSection />
       <Footer />
     </main>
