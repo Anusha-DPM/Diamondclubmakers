@@ -5,10 +5,12 @@ import Footer from "@/components/Footer";
 
 export default function Submit() {
   return (
-    <main>
+    <main className="min-h-screen flex flex-col">
       <Header />
       <SubmitHeroSection />
-      <SubmitButton />
+      <div className="flex-1 flex items-center justify-center bg-white">
+        <SubmitButton />
+      </div>
       <Footer />
     </main>
   );
