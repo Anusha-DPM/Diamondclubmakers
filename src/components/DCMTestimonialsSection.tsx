@@ -99,7 +99,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr Simranjit Bawa",
       location: "North Potomac, Maryland",
       title: "Potomac Crown Dentistry",
-      content: "If you are committed and dedicated and willing to put in the work, and you're looking to take your practice to the next level and become the best Invisalign® doctor in your community, you have to take this course, without a doubt.",
+             content: "If you are committed and dedicated and willing to put in the work, and you&apos;re looking to take your practice to the next level and become the best Invisalign® doctor in your community, you have to take this course, without a doubt.",
       thumbnail: "/doctors/dr-simranjit-bawa-video.png"
     },
     {
@@ -107,7 +107,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr Karen Ho",
       location: "Alhambra, California",
       title: "Palm View Dental",
-      content: "I learned so much in these last six months, and with Mike's help, I was able to jump from Platinum to Diamond Top 1% Provider. All within six months.",
+             content: "I learned so much in these last six months, and with Mike&apos;s help, I was able to jump from Platinum to Diamond Top 1% Provider. All within six months.",
       thumbnail: "/doctors/dr-karen-ho-video.png"
     },
     {
@@ -123,7 +123,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr Saba Rizvi",
       location: "Plantation, FL",
       title: "My Dentist for Life",
-      content: "It has really helped my practice increase in numbers, we're doing a lot more Invisalign®. And it's not just Invisalign®, but in every aspect, all the procedures we are doing. It just makes you a more efficient dentist, because time is the most valuable thing that we have.",
+             content: "It has really helped my practice increase in numbers, we&apos;re doing a lot more Invisalign®. And it&apos;s not just Invisalign®, but in every aspect, all the procedures we are doing. It just makes you a more efficient dentist, because time is the most valuable thing that we have.",
       thumbnail: "/doctors/dr-sabra-rizvi.png"
     },
     {
@@ -139,7 +139,7 @@ const DCMTestimonialsSection = () => {
       name: "Cara Lund",
       location: "Stoneham, Massachusetts",
       title: "Lund Dental Associates",
-      content: "In terms of the program, you really get the ins and outs of everything, from pricing to marketing to advertising to the appointments, everything that you could want to know about how someone who's super successful with Invisalign® does it.",
+             content: "In terms of the program, you really get the ins and outs of everything, from pricing to marketing to advertising to the appointments, everything that you could want to know about how someone who&apos;s super successful with Invisalign® does it.",
       thumbnail: "/doctors/dr-cara-lund.png"
     },
     {
@@ -147,7 +147,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Arezoo Nasiry",
       location: "Los Angeles, California",
       title: "LA Dental Clinic",
-      content: "I was at a Gold Plus and I was thinking to myself that there's no way this course on a WhatsApp chat is going to get me to Diamond. But I found that Mike's teachings not only helped us to get to Diamond in Invisalign®, but we've been able to use a lot of the same systems for other parts of our practice as well.",
+             content: "I was at a Gold Plus and I was thinking to myself that there&apos;s no way this course on a WhatsApp chat is going to get me to Diamond. But I found that Mike&apos;s teachings not only helped us to get to Diamond in Invisalign®, but we&apos;ve been able to use a lot of the same systems for other parts of our practice as well.",
       thumbnail: "/doctors/dr-arezoo-nasiry.png"
     },
     {
@@ -155,7 +155,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr Andrew Paek",
       location: "Jersey City, New Jersey",
       title: "Jersey City Dental Center",
-      content: "It's an amazing course, and it will change not only the way you provide Invisalign®, but also the way you run your practice, market, all aspects of being a clinician and a business owner.",
+             content: "It&apos;s an amazing course, and it will change not only the way you provide Invisalign®, but also the way you run your practice, market, all aspects of being a clinician and a business owner.",
       thumbnail: "/doctors/dr-andrew-paek.png"
     },
     {
@@ -163,7 +163,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr Azy Nasiry",
       location: "Los Angeles, California",
       title: "LA Dental Clinic",
-      content: "This course has been absolutely invaluable to me. He doesn't only teach you how to market to bring in those kinds of cases, but how to do your Clinchecks properly so that you can manage that kind of volume, how to set up your office so that your team can process the cases for you…but the most important thing that I've learned here is how to achieve my goals.",
+             content: "This course has been absolutely invaluable to me. He doesn&apos;t only teach you how to market to bring in those kinds of cases, but how to do your Clinchecks properly so that you can manage that kind of volume, how to set up your office so that your team can process the cases for you…but the most important thing that I&apos;ve learned here is how to achieve my goals.",
       thumbnail: "/doctors/dr-asy-nasiry.png"
     },
     {
@@ -171,7 +171,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr William Sung",
       location: "Richmond, Texas",
       title: "Grand Mission Dentistry",
-      content: "Out of the group that I'm currently with, I was probably one of the least-experienced providers in the group. However, the things that he's taught just makes you a lot more confident, makes you more efficient with Invisalign® so that way you're able to increase your production while minimizing chair time, and some of the things he teaches you can also apply to other facets of dentistry, which I really appreciated.",
+             content: "Out of the group that I&apos;m currently with, I was probably one of the least-experienced providers in the group. However, the things that he&apos;s taught just makes you a lot more confident, makes you more efficient with Invisalign® so that way you&apos;re able to increase your production while minimizing chair time, and some of the things he teaches you can also apply to other facets of dentistry, which I really appreciated.",
       thumbnail: "/doctors/dr-william-sung.png"
     },
     {
@@ -187,7 +187,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr Jaime Breziner",
       location: "La Jolla, California",
       title: "La Jolla Family Smile Design",
-      content: "It was a great game changer. I do a lot of Invisalign® now, I do it much faster, I can expedite the cases through the pipeline very quick, because of the knowledge that I gained through DCM…it's worth every penny and I would do it all over again.",
+             content: "It was a great game changer. I do a lot of Invisalign® now, I do it much faster, I can expedite the cases through the pipeline very quick, because of the knowledge that I gained through DCM…it&apos;s worth every penny and I would do it all over again.",
       thumbnail: "/doctors/dr-jaime-breziner.png"
     },
     {
@@ -195,7 +195,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr Jim Olsen",
       location: "Ann Arbor, Michigan",
       title: "James Olsen DDS",
-      content: "Thanks to Dr. Michael Wollock and his system, me and my team were able to achieve Diamond in just over five months. I can't express my gratitude adequately to Dr. Wollock for showing me the way, for giving us an outline on how to get this done. If you're considering joining the Diamond Club, I think you really need to do it. It will change your practice and it will give you confidence in doing more Invisalign® and you'll do it better than ever.",
+             content: "Thanks to Dr. Michael Wollock and his system, me and my team were able to achieve Diamond in just over five months. I can&apos;t express my gratitude adequately to Dr. Wollock for showing me the way, for giving us an outline on how to get this done. If you&apos;re considering joining the Diamond Club, I think you really need to do it. It will change your practice and it will give you confidence in doing more Invisalign® and you&apos;ll do it better than ever.",
       thumbnail: "/doctors/dr-jim-olsen.png"
     },
     {
@@ -235,7 +235,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Edward G. Johnson",
       location: "Bedminster, New Jersey",
       title: "Johnson Family & Cosmetic Dentistry",
-      content: "I had the good fortune five years ago of meeting Dr. Mike Wollock at a dental conference. Prior to that, the 5 years prior, I did 40 cases, which was averaging about eight cases a year of Invisalign. Since meeting Mike with his leadership and guidance, we've upped that to 325 cases in the next 5 years… I can't say enough what Mike has done for my practice. I know if you choose to go in and have Mike be your leader, your educator, that you won't regret it.",
+             content: "I had the good fortune five years ago of meeting Dr. Mike Wollock at a dental conference. Prior to that, the 5 years prior, I did 40 cases, which was averaging about eight cases a year of Invisalign. Since meeting Mike with his leadership and guidance, we&apos;ve upped that to 325 cases in the next 5 years… I can&apos;t say enough what Mike has done for my practice. I know if you choose to go in and have Mike be your leader, your educator, that you won&apos;t regret it.",
       thumbnail: "/doctors/dr-johnson-video-HD-720p.png"
     },
     {
@@ -243,7 +243,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Danny Lawen",
       location: "Halifax, Nova Scotia, Canada",
       title: "Lawen Dentistry",
-      content: "I was lucky enough to be selected as part of the first ever Diamond Club Maker study group hosted by Dr. Mike Wollock…we were able to increase our case numbers, probably about by double. We're on pace to become a Diamond level for the first time ever, so we're pretty excited about that. Currently in under four months we've done more cases than we normally would do in around seven or eight months.",
+             content: "I was lucky enough to be selected as part of the first ever Diamond Club Maker study group hosted by Dr. Mike Wollock…we were able to increase our case numbers, probably about by double. We&apos;re on pace to become a Diamond level for the first time ever, so we&apos;re pretty excited about that. Currently in under four months we&apos;ve done more cases than we normally would do in around seven or eight months.",
       thumbnail: "/doctors/dr-lawen-video.png"
     },
     {
@@ -251,7 +251,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Lindsay Papac",
       location: "Auburn, WA",
       title: "Great Northwest Dental",
-      content: "I feel less overwhelmed about all the cases I'm managing and taking on, I have more efficient systems in place, my assistants are more efficient, my use of time is better and it's constantly improving. So I would say that if someone is looking to be challenged, to be pushed, to be better at what they're doing…this is the right thing to do and you won't be disappointed doing this program.",
+             content: "I feel less overwhelmed about all the cases I&apos;m managing and taking on, I have more efficient systems in place, my assistants are more efficient, my use of time is better and it&apos;s constantly improving. So I would say that if someone is looking to be challenged, to be pushed, to be better at what they&apos;re doing…this is the right thing to do and you won&apos;t be disappointed doing this program.",
       thumbnail: "/doctors/Dr-Lindsey-Papac.png"
     },
     {
@@ -267,7 +267,7 @@ const DCMTestimonialsSection = () => {
       name: "Aman Bhullar",
       location: "San Jose, CA",
       title: "The Glen Dental, CEO of 3dimplants educational services",
-      content: "Jumping in with the DCM and Mike's leadership allowed her to do more cases and acquire new patients into the practice. That turned into other treatment…that treatment turned into more crown and bridge, more restorations, more fillings, more hygiene appointments into the practice, so it's really allowed her to increase her revenue from a practice that's still doing over a million in a three-day work-week to almost fifty per cent more in the first 6 months of 2021.",
+             content: "Jumping in with the DCM and Mike&apos;s leadership allowed her to do more cases and acquire new patients into the practice. That turned into other treatment…that treatment turned into more crown and bridge, more restorations, more fillings, more hygiene appointments into the practice, so it&apos;s really allowed her to increase her revenue from a practice that&apos;s still doing over a million in a three-day work-week to almost fifty per cent more in the first 6 months of 2021.",
       thumbnail: "/doctors/bhullar-testimonial.png"
     },
     {
@@ -283,7 +283,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Deepthy Thomas",
       location: "San Ramon, California",
       title: "Reflections Dental Spa",
-      content: "There was a lot of ups and downs in my Invisalign® journey. I've been doing Invisalign® for 8-10 years…Dr. Mike, he gives you and teaches you a blueprint of what works and how he's able to scale things and to be the Diamond+ Provider that he is.",
+             content: "There was a lot of ups and downs in my Invisalign® journey. I&apos;ve been doing Invisalign® for 8-10 years…Dr. Mike, he gives you and teaches you a blueprint of what works and how he&apos;s able to scale things and to be the Diamond+ Provider that he is.",
       thumbnail: "/doctors/Dr-Deepthy-Thomas.png"
     }
   ];
