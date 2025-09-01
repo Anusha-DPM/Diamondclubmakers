@@ -4,7 +4,7 @@ import Image from 'next/image';
 const StepByStepGuideSection = () => {
   return (
     <section className="bg-white py-10 sm:py-12 lg:py-14">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <p className="font-sansation-regular text-[#6b6b6b] text-base leading-relaxed">
             Ordering boxes from Align or use whatever you have around the office. Also pictured is the Amazon storage container for my office.
@@ -74,8 +74,11 @@ const StepByStepGuideSection = () => {
             <video
               src="/other/sixthVideo.mp4"
               controls
+              autoPlay
+              muted
+              loop
               className="w-full h-auto object-cover"
-              poster="/other/section-3-4.jpeg"
+              poster="/other/videoframe_0.png"
             >
               Your browser does not support the video tag.
             </video>
