@@ -59,7 +59,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Yonatan Ahdut",
       location: "Seattle Washington",
       title: "DCM Yoda",
-      content: "Estimated $180k in Invisalign growth for the first five months of the course. I had been at Platinum Plus but couldn't sustain it. I slid back and got stuck at Gold Plus. But now I am going to hit Platinum Plus during DCM and be able to sustain it while finding a better balance within my entire practice. And I am hoping to reach Diamond over the next six months.",
+             content: "Estimated $180k in Invisalign growth for the first five months of the course. I had been at Platinum Plus but couldn&apos;t sustain it. I slid back and got stuck at Gold Plus. But now I am going to hit Platinum Plus during DCM and be able to sustain it while finding a better balance within my entire practice. And I am hoping to reach Diamond over the next six months.",
       thumbnail: "/doctors/Dr.-Yonatan-Ahdut.png"
     },
     {
@@ -131,7 +131,7 @@ const DCMTestimonialsSection = () => {
       name: "Dr. Ciaran Murphy",
       location: "Fort Collins, Colorado",
       title: "Harbor Dental",
-      content: "Truly, it was a game changer for my practice. Not just for an increase in Invisalign® cases, but also just for increasing our productivity, getting our staff more involved, getting more excited about doing some of these procedures. They really felt like they were much more part of a team. The class helps you get much more efficient with your Invisalign®, first of all, but at the same time it's going to reduce the doctor chair time and increase your staff's chair time, which will make you more productive.",
+      content: "Truly, it was a game changer for my practice. Not just for an increase in Invisalign® cases, but also just for increasing our productivity, getting our staff more involved, getting more excited about doing some of these procedures. They really felt like they were much more part of a team. The class helps you get much more efficient with your Invisalign®, first of all, but at the same time it&apos;s going to reduce the doctor chair time and increase your staff&apos;s chair time, which will make you more productive.",
       thumbnail: "/doctors/dr-ciaran-murphy.png"
     },
     {
