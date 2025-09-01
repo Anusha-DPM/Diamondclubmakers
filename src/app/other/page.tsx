@@ -2,11 +2,11 @@
 
 import Header from "@/components/Header";
 import OtherHeroSection from "@/components/OtherHeroSection";
-import SimpleDCMClassesSection from "@/components/SimpleDCMClassesSection";
 import OtherRecyclingSection from "@/components/OtherRecyclingSection";
 import AttachedSection from "@/components/AttachedSection";
 import StepByStepGuideSection from "@/components/StepByStepGuideSection";
 import ImageCarouselSection from "@/components/ImageCarouselSection";
+import OtherPageDCMClassesSection from "@/components/OtherPageDCMClassesSection";
 import DCMSponsorSection from "@/components/DCMSponsorSection";
 import Footer from "@/components/Footer";
 
@@ -19,7 +19,7 @@ export default function Other() {
       <AttachedSection />
       <StepByStepGuideSection />
       <ImageCarouselSection />
-      <SimpleDCMClassesSection />
+      <OtherPageDCMClassesSection />
       <DCMSponsorSection />
       <Footer />
     </main>
