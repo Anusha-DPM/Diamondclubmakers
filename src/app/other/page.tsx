@@ -3,6 +3,9 @@
 import Header from "@/components/Header";
 import OtherHeroSection from "@/components/OtherHeroSection";
 import SimpleDCMClassesSection from "@/components/SimpleDCMClassesSection";
+import OtherRecyclingSection from "@/components/OtherRecyclingSection";
+import AttachedSection from "@/components/AttachedSection";
+import StepByStepGuideSection from "@/components/StepByStepGuideSection";
 import Footer from "@/components/Footer";
 
 export default function Other() {
@@ -10,6 +13,9 @@ export default function Other() {
     <main className="min-h-screen">
       <Header />
       <OtherHeroSection />
+      <OtherRecyclingSection />
+      <AttachedSection />
+      <StepByStepGuideSection />
       <SimpleDCMClassesSection />
       <Footer />
     </main>
