@@ -10,7 +10,7 @@ const LearnHowHeroSection = () => {
           lineHeight: 1.2,
           paddingBottom: '30px'
         }}>
-          Learn "How" From North America's Largest Solo Doctor Invisalign Provider!
+          Learn &quot;How&quot; From North America&apos;s Largest Solo Doctor Invisalign Provider!
         </h1>
       </div>
     </section>

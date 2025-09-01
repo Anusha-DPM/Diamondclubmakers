@@ -101,7 +101,7 @@ const InTheirOwnWordsSection = () => {
       video: "/doctor-video/dr-karen-ho-video.mp4",
       thumbnail: "/doctors/dr-karen-ho-video.png",
       content: [
-        "I learned so much in these last six months, and with Mike's help, I was able to jump from Platinum to Diamond Top 1% Provider. All within six months."
+        "I learned so much in these last six months, and with Mike&apos;s help, I was able to jump from Platinum to Diamond Top 1% Provider. All within six months."
       ]
     },
     {
@@ -308,8 +308,8 @@ const InTheirOwnWordsSection = () => {
       video: "/doctor-video/Dr-Lindsey-Papac.mp4",
       thumbnail: "/doctors/Dr-Lindsey-Papac.png",
       content: [
-        "I feel less overwhelmed about all the cases I'm managing and taking on, I have more efficient systems in place, my assistants are more efficient, my use of time is better and it's constantly improving.",
-        "So I would say that if someone is looking to be challenged, to be pushed, to be better at what they're doing…this is the right thing to do and you won't be disappointed doing this program."
+        "I feel less overwhelmed about all the cases I&apos;m managing and taking on, I have more efficient systems in place, my assistants are more efficient, my use of time is better and it&apos;s constantly improving.",
+        "So I would say that if someone is looking to be challenged, to be pushed, to be better at what they&apos;re doing…this is the right thing to do and you won&apos;t be disappointed doing this program."
       ]
     },
     {
@@ -321,7 +321,7 @@ const InTheirOwnWordsSection = () => {
       thumbnail: "/doctors/Amir-Daoud.png",
       content: [
         "I urge anybody who is serious about increasing their numbers of Invisalign®, not just increasing numbers but also looking at some of the systems that they have in their practice, to seriously consider taking this. I&apos;m a big believer in &apos;Numbers don&apos;t lie&apos;…prior to taking the Diamond Club, my best ever six months was Platinum, which was 65 cases.",
-        "I'm four months into it…and I'm at 95 cases as of today, with still two months to go, so I'm actually on pace to hit Diamond."
+        "I&apos;m four months into it…and I&apos;m at 95 cases as of today, with still two months to go, so I&apos;m actually on pace to hit Diamond."
       ]
     },
     {
@@ -332,7 +332,7 @@ const InTheirOwnWordsSection = () => {
       video: "/bhullar-testimonial.mp4",
       thumbnail: "/doctors/bhullar-testimonial.png",
       content: [
-        "Jumping in with the DCM and Mike's leadership allowed her to do more cases and acquire new patients into the practice. That turned into other treatment…that treatment turned into more crown and bridge, more restorations, more fillings, more hygiene appointments into the practice, so it's really allowed her to increase her revenue from a practice that's still doing over a million in a three-day work-week to almost fifty per cent more in the first 6 months of 2021."
+        "Jumping in with the DCM and Mike&apos;s leadership allowed her to do more cases and acquire new patients into the practice. That turned into other treatment…that treatment turned into more crown and bridge, more restorations, more fillings, more hygiene appointments into the practice, so it&apos;s really allowed her to increase her revenue from a practice that&apos;s still doing over a million in a three-day work-week to almost fifty per cent more in the first 6 months of 2021."
       ]
     },
     {

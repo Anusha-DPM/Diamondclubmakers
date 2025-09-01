@@ -259,7 +259,7 @@ const DCMTestimonialsSection = () => {
       name: "Amir Daoud, DDS",
       location: "Clearwater, FL",
       title: "Feather Sound Smiles",
-             content: "I urge anybody who is serious about increasing their numbers of Invisalign®, not just increasing numbers but also looking at some of the systems that they have in their practice, to seriously consider taking this. I&apos;m a big believer in &quot;Numbers don&apos;t lie&quot;…prior to taking the Diamond Club, my best ever six months was Platinum, which was 65 cases. I&apos;m four months into it…and I&apos;m at 95 cases as of today, with still two months to go, so I&apos;m actually on pace to hit Diamond.",
+             content: "I urge anybody who is serious about increasing their numbers of Invisalign®, not just increasing numbers but also looking at some of the systems that they have in their practice, to seriously consider taking this. I&apos;m a big believer in &apos;Numbers don&apos;t lie&apos;…prior to taking the Diamond Club, my best ever six months was Platinum, which was 65 cases. I&apos;m four months into it…and I&apos;m at 95 cases as of today, with still two months to go, so I&apos;m actually on pace to hit Diamond.",
       thumbnail: "/doctors/Amir-Daoud.png"
     },
     {

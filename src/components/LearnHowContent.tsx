@@ -9,7 +9,7 @@ const LearnHowContent = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Heading */}
           <h2 className="font-sansation-regular text-[#004681] text-center mb-8 sm:mb-12" style={{ fontSize: 'clamp(24px, 5vw, 32px)' }}>
-            It Pays to "Learn How" From Extraordinary<br />Experts:
+            It Pays to &quot;Learn How&quot; From Extraordinary<br />Experts:
           </h2>
 
           {/* Central Content Box */}
@@ -35,7 +35,7 @@ const LearnHowContent = () => {
               fontSize: 'clamp(20px, 4vw, 27px)',
               lineHeight: '1.1'
             }}>
-              Learn "How" From North America's Largest Solo Doctor Invisalign Provider!
+              Learn &quot;How&quot; From North America&apos;s Largest Solo Doctor Invisalign Provider!
             </h3>
           </div>
         </div>
@@ -53,7 +53,7 @@ const LearnHowContent = () => {
               color: '#6b6b6b'
             }}>
               <p className="font-sansation-regular leading-relaxed">
-                <strong>Hello!</strong> It pays to listen to the world's most successful dentists…who are actually doing it TODAY! One such <strong>PROVEN</strong> & <strong>DOCUMENTED EXPERT</strong> is Dr. Mike Wollock. A two-decade chrisad client in the Philadelphia suburb of Ardmore, Dr. Wollock is Invisalign's <strong>LARGEST Solo Doctor Invisalign Provider</strong> in North America <strong>SIX+ YEARS IN A ROW!</strong>
+                <strong>Hello!</strong> It pays to listen to the world&apos;s most successful dentists…who are actually doing it TODAY! One such <strong>PROVEN</strong> & <strong>DOCUMENTED EXPERT</strong> is Dr. Mike Wollock. A two-decade chrisad client in the Philadelphia suburb of Ardmore, Dr. Wollock is Invisalign&apos;s <strong>LARGEST Solo Doctor Invisalign Provider</strong> in North America <strong>SIX+ YEARS IN A ROW!</strong>
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ const LearnHowContent = () => {
               borderRadius: '8px'
             }}>
               <h3 className="font-sansation-regular mb-4 text-left" style={{ fontSize: '30px', color: '#004681' }}>
-                Consider Mike's Invisalign Course: Immediately More Than DOUBLE Invisalign Production…Forever!
+                Consider Mike&apos;s Invisalign Course: Immediately More Than DOUBLE Invisalign Production…Forever!
               </h3>
               <p style={{
                 fontSize: '16px',
@@ -94,7 +94,7 @@ const LearnHowContent = () => {
                 lineHeight: '1.6',
                 marginBottom: '16px'
               }}>
-                If you know anything about the management of dental practices, you'll know this is a guy you need to both look up to…& listen to. We believe in passing on information to you that we believe will change your life for the better. As you may know, we refuse any compensation for any recommendation we offer. We simply want you to do as best as you can.
+                If you know anything about the management of dental practices, you&apos;ll know this is a guy you need to both look up to…& listen to. We believe in passing on information to you that we believe will change your life for the better. As you may know, we refuse any compensation for any recommendation we offer. We simply want you to do as best as you can.
               </p>
               <p style={{
                 fontSize: '16px',
@@ -102,7 +102,7 @@ const LearnHowContent = () => {
                 lineHeight: '1.6',
                 marginBottom: '16px'
               }}>
-                His course, called "<strong>Diamond Club Makers</strong>", teaches you how to make a lot more money, with a lot less work…on Invisalign. While not inexpensive, most of the 200+ dentists who have completed this course immediately at least double their profit per hour on their Invisalign cases. They learn to more consistently solve difficult movements like laterals with fewer corrections/refinements while expanding their expertise on more difficult case types.
+                His course, called &quot;<strong>Diamond Club Makers</strong>&quot;, teaches you how to make a lot more money, with a lot less work…on Invisalign. While not inexpensive, most of the 200+ dentists who have completed this course immediately at least double their profit per hour on their Invisalign cases. They learn to more consistently solve difficult movements like laterals with fewer corrections/refinements while expanding their expertise on more difficult case types.
               </p>
               <p style={{
                 fontSize: '16px',
