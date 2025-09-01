@@ -11,7 +11,7 @@ const Header = () => {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'Apply', path: '/apply' },
-    { name: 'Community', path: '/dcm-community-videos' },
+    { name: 'Community', path: '/community' },
     { name: 'Submit', path: '/submit' },
     { name: 'Other', path: '/other' }
   ];
