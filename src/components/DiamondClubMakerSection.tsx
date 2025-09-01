@@ -309,12 +309,13 @@ const DiamondClubMakerSection = () => {
 
             {/* Apply Now Button */}
             <div className="mb-4">
-              <button 
-                className="font-sansation-regular bg-[#029fde] text-white px-10 py-2.5 hover:bg-[#0288c7] transition-colors duration-200 font-semibold"
-                style={{ fontSize: '20px', borderRadius: '5px' }}
+              <a 
+                href="/apply"
+                className="font-sansation-regular bg-[#029fde] text-white px-10 py-2.5 hover:bg-[#0288c7] transition-colors duration-200 font-semibold inline-block"
+                style={{ fontSize: '20px', borderRadius: '5px', textDecoration: 'none' }}
               >
                 Apply Now
-              </button>
+              </a>
             </div>
 
             {/* Descriptive Text */}
@@ -573,17 +574,19 @@ const DiamondClubMakerSection = () => {
 
                  {/* Apply Now Button */}
                  <div className="mb-6">
-                   <button 
-                     className="font-sansation-regular text-white font-semibold hover:opacity-90 transition-opacity duration-200"
+                   <a 
+                     href="/apply"
+                     className="font-sansation-regular text-white font-semibold hover:opacity-90 transition-opacity duration-200 inline-block"
                      style={{ 
                        fontSize: '16px',
                        backgroundColor: '#004681',
                        padding: '6px 15px',
-                       borderRadius: '0'
+                       borderRadius: '0',
+                       textDecoration: 'none'
                      }}
                    >
                      Apply Now
-                   </button>
+                   </a>
                  </div>
 
                  {/* Secondary Text Block */}
