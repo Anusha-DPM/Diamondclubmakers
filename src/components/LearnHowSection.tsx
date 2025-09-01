@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const LearnHowSection = () => {
   return (
@@ -46,16 +47,17 @@ const LearnHowSection = () => {
           </p>
         </div>
 
-        {/* Read More Button */}
-        <button 
-          className="bg-[#004681] text-white font-medium hover:bg-[#003366] transition-colors duration-300"
+        {/* Read More Button - Now Links to Learn How Page */}
+        <Link 
+          href="/learn-how-from-north-americas-largest-solo-doctor-invisalign-provider"
+          className="bg-[#004681] text-white font-medium hover:bg-[#003366] transition-colors duration-300 inline-block px-4 py-2 rounded"
           style={{
-            padding: '6px 15px',
-            fontSize: '16px'
+            fontSize: '16px',
+            textDecoration: 'none'
           }}
         >
           Read More
-        </button>
+        </Link>
       </div>
     </section>
   );

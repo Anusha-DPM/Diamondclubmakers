@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const InTheirOwnWordsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -503,18 +504,20 @@ const InTheirOwnWordsSection = () => {
 
                                                                                                              {/* Read More Button for each testimonial */}
                          <div className="flex justify-start mt-6">
-                           <button 
-                             className="font-sansation-regular text-white bg-[#004681] hover:bg-[#003366] transition-colors duration-200"
+                           <Link 
+                             href="/dcm-community-videos"
+                             className="font-sansation-regular text-white bg-[#004681] hover:bg-[#003366] transition-colors duration-200 inline-block"
                              style={{ 
                                fontSize: '16px', 
                                padding: '6px 15px',
                                borderRadius: '0',
                                marginTop: '30px',
-                               marginLeft: '150px'
+                               marginLeft: '150px',
+                               textDecoration: 'none'
                              }}
                            >
                              Read More
-                           </button>
+                           </Link>
                          </div>
                    </div>
                  </div>
