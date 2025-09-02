@@ -20,7 +20,7 @@ const communityPosts = [
     author: "Viviana Waich from DCM Neo",
     slug: "getting-ready-dcm",
     content: "i was shaking my green juice so i can ve strong and healthy for GRC but..... massive explosion happen .... i still laughing🤣🤣🤣",
-    image: "/community/community-2"
+    image: "/community/community-1.jpeg"
   },
   {
     id: 3,
@@ -29,7 +29,8 @@ const communityPosts = [
     author: "Viviana Waich from DCM Neo",
     slug: "dcm",
     content: "great DCM moment",
-    image: "/community/community-3.jpeg"
+    image: "/community/community-2.jpeg",
+    image2: "/community/community-3.jpeg"
   },
   {
     id: 4,
@@ -145,18 +146,49 @@ const CommunityContentSection = () => {
                   </div>
                 )}
 
-                {/* Image */}
+                {/* Images */}
                 {post.image && (
-                  <div className="flex-shrink-0">
-                    <div className="relative w-[273px] h-[204px]">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        fill
-                        className="object-cover rounded-lg"
-                        sizes="273px"
-                      />
-                    </div>
+                  <div className={`flex-shrink-0 ${!post.content ? 'ml-auto' : ''}`}>
+                    {post.image2 ? (
+                      // Two images layout - first image left-aligned under content, second image right-aligned
+                      <div className="flex flex-col gap-4">
+                        {/* First image left-aligned under content */}
+                        <div className="flex justify-start">
+                          <div className="relative w-[273px] h-[204px]">
+                            <Image
+                              src={post.image}
+                              alt={post.title}
+                              fill
+                              className="object-cover rounded-lg"
+                              sizes="273px"
+                            />
+                          </div>
+                        </div>
+                        {/* Second image right-aligned */}
+                        <div className="flex justify-end">
+                          <div className="relative w-[273px] h-[204px]">
+                            <Image
+                              src={post.image2}
+                              alt={post.title}
+                              fill
+                              className="object-cover rounded-lg"
+                              sizes="273px"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      // Single image layout
+                      <div className="relative w-[273px] h-[204px]">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          fill
+                          className="object-cover rounded-lg"
+                          sizes="273px"
+                        />
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
