@@ -1,5 +1,3 @@
-"use client";
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,229 +5,117 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { notFound } from 'next/navigation';
 
-// Community post data
+// Community posts data (same as in CommunityContentSection)
 const communityPosts = [
   {
     id: 1,
-    title: "DCM Success Story: From Silver to Diamond in 6 Months",
-    excerpt: "Discover how Dr. Sarah Johnson transformed her practice using DCM principles and achieved Diamond status in just 6 months...",
-    content: `
-      <p>Dr. Sarah Johnson's journey from Silver to Diamond status in just 6 months is a testament to the power of the Diamond Club Makers program. When she first joined DCM, Dr. Johnson was struggling with low Invisalign case acceptance rates and feeling overwhelmed by the complexity of treatment planning.</p>
-      
-      <p>Through the systematic approach taught in DCM, she learned to:</p>
-      <ul>
-        <li>Streamline her consultation process</li>
-        <li>Implement effective case presentation strategies</li>
-        <li>Train her team to handle routine tasks</li>
-        <li>Optimize her scheduling for maximum efficiency</li>
-      </ul>
-      
-      <p>The results were remarkable. Within 6 months, Dr. Johnson's practice saw:</p>
-      <ul>
-        <li>A 300% increase in Invisalign case starts</li>
-        <li>Improved patient satisfaction scores</li>
-        <li>Reduced chair time per case</li>
-        <li>Significant increase in practice revenue</li>
-      </ul>
-      
-      <p>"The DCM program gave me the confidence and systems I needed to transform my practice," says Dr. Johnson. "I'm now able to help more patients achieve their smile goals while running a more efficient and profitable practice."</p>
-    `,
-    image: "/community/community-1.jpeg",
-    date: "March 15, 2024",
-    author: "Dr. Sarah Johnson",
-    slug: "dcm-success-story-silver-to-diamond"
+    title: "Thank you, Mike! From the Wince's!",
+    date: "June 15, 2022",
+    author: "Stacy Wince from DCM Neo",
+    slug: "thank-you-mike-from-the-winces",
+    content: "",
+    image: null
   },
   {
     id: 2,
-    title: "5 Key Strategies for Increasing Invisalign Case Acceptance",
-    excerpt: "Learn the proven strategies that top DCM providers use to increase their Invisalign case acceptance rates...",
-    content: `
-      <p>Increasing Invisalign case acceptance is crucial for practice growth and patient satisfaction. Based on the experiences of top DCM providers, here are the five key strategies that consistently deliver results:</p>
-      
-      <h3>1. Master the Consultation Process</h3>
-      <p>A well-structured consultation is the foundation of case acceptance. Focus on understanding patient concerns, presenting clear treatment options, and addressing objections proactively.</p>
-      
-      <h3>2. Leverage Before-and-After Images</h3>
-      <p>Visual evidence of successful outcomes is incredibly powerful. Maintain a comprehensive gallery of before-and-after cases to show patients what's possible.</p>
-      
-      <h3>3. Implement Team Training</h3>
-      <p>Your team should be knowledgeable about Invisalign and able to answer common questions. Regular training sessions ensure everyone is on the same page.</p>
-      
-      <h3>4. Use Technology Effectively</h3>
-      <p>Modern tools like iTero scans and ClinCheck presentations can significantly enhance patient understanding and confidence in treatment.</p>
-      
-      <h3>5. Follow Up Consistently</h3>
-      <p>Regular follow-up with potential patients keeps Invisalign top-of-mind and demonstrates your commitment to their care.</p>
-    `,
-    image: "/community/community-2",
-    date: "March 12, 2024",
-    author: "Dr. Mike Wollock",
-    slug: "5-key-strategies-invisalign-case-acceptance"
+    title: "getting ready DCM",
+    date: "June 15, 2022",
+    author: "Viviana Waich from DCM Neo",
+    slug: "getting-ready-dcm",
+    content: "i was shaking my green juice so i can ve strong and healthy for GRC but..... massive explosion happen .... i still laughing🤣🤣🤣",
+    image: "/community/community-2"
   },
   {
     id: 3,
-    title: "Building Your Dream Team: Staff Training for Invisalign Success",
-    excerpt: "How to train and empower your team to handle more Invisalign cases efficiently...",
-    content: `
-      <p>Your team is the backbone of your Invisalign success. A well-trained, motivated staff can handle routine tasks, answer patient questions, and create a positive experience that encourages case acceptance.</p>
-      
-      <h3>Essential Training Areas</h3>
-      <p>Focus on these key areas when training your team:</p>
-      <ul>
-        <li>Invisalign treatment basics and terminology</li>
-        <li>Patient communication and education</li>
-        <li>Appointment scheduling and management</li>
-        <li>Treatment monitoring and progress tracking</li>
-      </ul>
-      
-      <h3>Creating a Learning Culture</h3>
-      <p>Encourage continuous learning by providing regular training opportunities, recognizing achievements, and creating an environment where questions are welcome.</p>
-    `,
-    image: "/community/community-3.jpeg",
-    date: "March 10, 2024",
-    author: "Dr. Emily Chen",
-    slug: "building-dream-team-staff-training"
+    title: "DCM",
+    date: "June 15, 2022",
+    author: "Viviana Waich from DCM Neo",
+    slug: "dcm",
+    content: "great DCM moment",
+    image: "/community/community-3.jpeg"
   },
   {
     id: 4,
-    title: "Marketing Your Invisalign Practice: Digital Strategies That Work",
-    excerpt: "Effective digital marketing strategies to attract more Invisalign patients to your practice...",
-    content: `
-      <p>Digital marketing has become essential for attracting Invisalign patients in today's competitive landscape. Here are proven strategies that DCM providers use to grow their practices:</p>
-      
-      <h3>Social Media Marketing</h3>
-      <p>Platforms like Instagram and Facebook are perfect for showcasing before-and-after results, sharing patient testimonials, and educating potential patients about Invisalign benefits.</p>
-      
-      <h3>Content Marketing</h3>
-      <p>Create valuable content that addresses common patient concerns and questions. Blog posts, videos, and infographics can establish your expertise and attract organic traffic.</p>
-      
-      <h3>Search Engine Optimization</h3>
-      <p>Optimize your website and content for relevant keywords to improve your visibility in local search results.</p>
-    `,
-    image: "/community/community-4.jpeg",
-    date: "March 8, 2024",
-    author: "Dr. James Rodriguez",
-    slug: "marketing-invisalign-practice-digital-strategies"
+    title: "Sandhya Anantuni",
+    date: "June 16, 2022",
+    author: "Sandhya Anantuni from DCM Neo",
+    slug: "sandhya-anantuni",
+    content: "",
+    image: "/community/community-4.jpeg"
   },
   {
     id: 5,
-    title: "Case Study: Complex Invisalign Treatment Planning",
-    excerpt: "A detailed look at how to approach complex Invisalign cases with confidence...",
-    content: `
-      <p>Complex Invisalign cases require careful planning and systematic execution. This case study demonstrates how to approach challenging treatments with confidence.</p>
-      
-      <h3>Case Overview</h3>
-      <p>Patient presented with severe crowding, deep bite, and midline discrepancy. Traditional treatment would have required multiple phases and extended treatment time.</p>
-      
-      <h3>Treatment Strategy</h3>
-      <p>Using DCM principles, we developed a comprehensive treatment plan that addressed all issues systematically while maintaining patient comfort and compliance.</p>
-      
-      <h3>Results</h3>
-      <p>Treatment completed in 18 months with excellent results and high patient satisfaction. The systematic approach ensured predictable outcomes.</p>
-    `,
-    image: "/community/community-5.jpeg",
-    date: "March 5, 2024",
-    author: "Dr. Lisa Thompson",
-    slug: "case-study-complex-invisalign-treatment"
+    title: "DCM Diamond Award",
+    date: "June 16, 2022",
+    author: "Amir Daoud from DCM Neo",
+    slug: "dcm-diamond-award",
+    content: "My DCM journey officially started in Jan 2021. Truth is I had already been listening to all the advise I could from Dr Mike Wollack whom I have known for several years on the AACA Board.\nWhat I didn't expect was the explosive growth my practice would have. We are now relocating to a new location to be able to continue our growth.\nThe group of fellow DCMers will always be so close because of the like minded nature of what we do.\nDCM for LIFe !!!!",
+    image: "/community/community-5.jpeg"
   },
   {
     id: 6,
-    title: "Time Management: How to See More Patients in Less Time",
-    excerpt: "Efficient scheduling and time management techniques for busy Invisalign providers...",
-    content: `
-      <p>Efficient time management is crucial for Invisalign providers who want to maximize their impact and profitability. Here are proven techniques used by successful DCM practitioners.</p>
-      
-      <h3>Optimize Your Schedule</h3>
-      <p>Group similar appointments together, use template scheduling, and allocate appropriate time for different types of visits.</p>
-      
-      <h3>Delegate Effectively</h3>
-      <p>Train your team to handle routine tasks, allowing you to focus on complex treatment planning and patient care.</p>
-      
-      <h3>Use Technology Wisely</h3>
-      <p>Implement systems that streamline your workflow and reduce administrative overhead.</p>
-    `,
-    image: "/community/community-6.jpeg",
-    date: "March 3, 2024",
-    author: "Dr. Robert Kim",
-    slug: "time-management-more-patients-less-time"
+    title: "DCM Pitt achieve Diamond Status!",
+    date: "June 20, 2022",
+    author: "Saba Rizvi from DCM Pitt",
+    slug: "dcm-pitt-achieve-diamond-status",
+    content: "Fellow DCMer achieving Diamond status and his daughter graduate dental school!!!! What a huge accomplishment in one week! So happy for his success and for his daughter's future!",
+    image: "/community/community-6.jpeg"
   },
   {
     id: 7,
-    title: "Patient Communication: Building Trust and Confidence",
-    excerpt: "Communication strategies that help patients feel confident about their Invisalign treatment...",
-    content: `
-      <p>Effective communication is the foundation of patient trust and successful Invisalign treatment. Here are strategies that help patients feel confident and committed to their care.</p>
-      
-      <h3>Active Listening</h3>
-      <p>Take time to understand patient concerns and goals. This builds trust and helps you tailor your recommendations.</p>
-      
-      <h3>Clear Explanations</h3>
-      <p>Use simple language and visual aids to explain treatment options and expected outcomes.</p>
-      
-      <h3>Ongoing Support</h3>
-      <p>Provide consistent communication throughout treatment to maintain patient engagement and confidence.</p>
-    `,
-    image: "/community/community-7.jpeg",
-    date: "March 1, 2024",
-    author: "Dr. Amanda Wilson",
-    slug: "patient-communication-building-trust"
+    title: "Dr. Lauren Lee and her arm candy.",
+    date: "June 20, 2022",
+    author: "Jim Olsen from DCM Norton",
+    slug: "dr-lauren-lee-and-her-arm-candy",
+    content: "I love this pic of Lauren and her \"arm candy\". Lauren brought the spirit of fun, hard work, and authentic connection to us all in DCM Norton while we struggled to show up and keep up. Thx Lauren for being such a bright spot every week for us in this group.",
+    image: "/community/community-7.jpeg"
   },
   {
     id: 8,
-    title: "Financial Planning: Maximizing Profitability in Your Practice",
-    excerpt: "Financial strategies to maximize profitability while providing excellent patient care...",
-    content: `
-      <p>Financial success in Invisalign practice requires careful planning and strategic decision-making. Here are key strategies for maximizing profitability while maintaining high-quality care.</p>
-      
-      <h3>Pricing Strategy</h3>
-      <p>Develop a pricing structure that reflects the value you provide while remaining competitive in your market.</p>
-      
-      <h3>Cost Management</h3>
-      <p>Monitor and optimize your operational costs without compromising patient care quality.</p>
-      
-      <h3>Revenue Diversification</h3>
-      <p>Consider additional services and products that complement your Invisalign practice and increase overall profitability.</p>
-    `,
-    image: "/community/community-8.jpeg",
-    date: "February 28, 2024",
-    author: "Dr. David Park",
-    slug: "financial-planning-maximizing-profitability"
+    title: "Dr Isaac Perle Passover Blessing",
+    date: "June 20, 2022",
+    author: "Simran Bawa from DCM Norton",
+    slug: "dr-isaac-perle-passover-blessing",
+    content: "We were all amazed when Isaac completed an astounding 31.5 cases in a single week! His faith and strength in the almighty has shown us the light during this amazing journey together.",
+    image: "/community/community-8.jpeg"
   },
   {
     id: 9,
-    title: "Technology Integration: Tools That Enhance Patient Experience",
-    excerpt: "Modern technology tools that can enhance your patients' Invisalign experience...",
-    content: `
-      <p>Technology integration can significantly enhance the patient experience and improve treatment outcomes. Here are the most effective tools for modern Invisalign practices.</p>
-      
-      <h3>Digital Scanning</h3>
-      <p>iTero and similar scanning technologies provide comfortable, accurate impressions and enhance patient comfort.</p>
-      
-      <h3>Treatment Visualization</h3>
-      <p>ClinCheck presentations help patients understand their treatment journey and expected results.</p>
-      
-      <h3>Patient Communication Platforms</h3>
-      <p>Use technology to maintain regular communication and provide ongoing support throughout treatment.</p>
-    `,
-    image: "/community/community-9.jpeg",
-    date: "February 25, 2024",
-    author: "Dr. Jennifer Lee",
-    slug: "technology-integration-enhance-patient-experience"
+    title: "Future of dental and DCM",
+    date: "June 20, 2022",
+    author: "Andrew Paek from DCM Pitt",
+    slug: "future-of-dental-and-dcm",
+    content: "Fellow DCMer attending his daughter's dental school graduation! Cheers to the future of our profession and DCM!",
+    image: "/community/community-9.jpeg"
+  },
+  {
+    id: 10,
+    title: "Insta famous",
+    date: "June 20, 2022",
+    author: "Andrew Paek from DCM Pitt",
+    slug: "insta-famous",
+    content: "Amazing insight from our DCMer on how to utilize social media successfully!",
+    image: null
   }
 ];
 
-interface CommunityPostPageProps {
-  params: {
+interface PageProps {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function CommunityPostPage({ params }: CommunityPostPageProps) {
-  const post = communityPosts.find(p => p.slug === params.slug);
-
+export default async function CommunityPost({ params }: PageProps) {
+  const { slug } = await params;
+  const post = communityPosts.find(p => p.slug === slug);
+  
   if (!post) {
     notFound();
   }
+
+  const currentIndex = communityPosts.findIndex(p => p.slug === slug);
+  const prevPost = currentIndex > 0 ? communityPosts[currentIndex - 1] : null;
+  const nextPost = currentIndex < communityPosts.length - 1 ? communityPosts[currentIndex + 1] : null;
 
   return (
     <main className="min-h-screen">
@@ -238,6 +124,14 @@ export default function CommunityPostPage({ params }: CommunityPostPageProps) {
       {/* Hero Section */}
       <section className="bg-[#004681] py-16 sm:py-20 lg:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Main Heading */}
+          <h1 
+            className="text-white font-sansation-regular text-3xl sm:text-4xl lg:text-5xl font-bold mb-6"
+            style={{ fontSize: 'clamp(28px, 6vw, 45px)' }}
+          >
+            Community
+          </h1>
+
           {/* Breadcrumb Navigation */}
           <div className="mb-6">
             <nav className="text-sm sm:text-base">
@@ -255,65 +149,107 @@ export default function CommunityPostPage({ params }: CommunityPostPageProps) {
                 Community
               </Link>
               <span className="text-white mx-2">»</span>
-              <span className="text-white font-sansation-regular">Post</span>
+              <span className="text-white font-sansation-regular">{post.title}</span>
             </nav>
           </div>
-
-          {/* Post Title */}
-          <h1 
-            className="text-white font-sansation-regular text-2xl sm:text-3xl lg:text-4xl font-bold mb-6"
-            style={{ fontSize: 'clamp(24px, 5vw, 36px)' }}
-          >
-            {post.title}
-          </h1>
-
-          {/* Post Meta */}
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-6 text-white text-sm sm:text-base">
-            <span className="font-sansation-regular">By {post.author}</span>
-            <span className="font-sansation-regular">{post.date}</span>
-          </div>
         </div>
       </section>
 
-      {/* Post Content */}
+      {/* Content Section */}
       <section className="bg-white py-16 sm:py-20 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Featured Image */}
-          <div className="mb-8 sm:mb-12">
-            <div className="relative h-64 sm:h-80 lg:h-96 rounded-lg overflow-hidden">
-              <Image
-                src={post.image}
-                alt={post.title}
-                fill
-                className="object-cover"
-              />
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            {/* Post Header */}
+            <div className="mb-8">
+              <h1 
+                className="font-sansation-regular font-bold mb-4"
+                style={{ 
+                  fontSize: '30px', 
+                  color: '#004681' 
+                }}
+              >
+                {post.title}
+              </h1>
+              <p 
+                className="font-sansation-regular"
+                style={{ 
+                  fontSize: '17px', 
+                  color: '#6b6b6b' 
+                }}
+              >
+                {post.date} by {post.author}
+              </p>
+            </div>
+
+            {/* Post Content */}
+            {post.content && (
+              <div 
+                className="font-sansation-regular mb-8"
+                style={{ 
+                  fontSize: '17px', 
+                  color: '#6b6b6b' 
+                }}
+              >
+                <p className="whitespace-pre-line">{post.content}</p>
+              </div>
+            )}
+
+            {/* Post Image */}
+            {post.image && (
+              <div className="flex justify-end mb-8">
+                <div className="relative w-[273px] h-[204px]">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover rounded-lg"
+                    sizes="273px"
+                  />
+                </div>
+              </div>
+            )}
+
+            {/* Navigation */}
+            <div className="flex justify-between items-center pt-8 border-t border-[#004681] border-opacity-20">
+              <div className="flex-1">
+                {prevPost && (
+                  <Link 
+                    href={`/community/${prevPost.slug}`}
+                    className="inline-flex items-center text-[#004681] hover:text-[#003366] transition-colors duration-200 font-sansation-regular"
+                    style={{ fontSize: '17px' }}
+                  >
+                    <span className="mr-2">←</span>
+                    <span className="truncate max-w-xs">{prevPost.title}</span>
+                  </Link>
+                )}
+              </div>
+              
+              <div className="flex-1 text-center">
+                <Link 
+                  href="/community"
+                  className="text-[#004681] hover:text-[#003366] transition-colors duration-200 font-sansation-regular"
+                  style={{ fontSize: '17px' }}
+                >
+                  Back to Community
+                </Link>
+              </div>
+              
+              <div className="flex-1 text-right">
+                {nextPost && (
+                  <Link 
+                    href={`/community/${nextPost.slug}`}
+                    className="inline-flex items-center text-[#004681] hover:text-[#003366] transition-colors duration-200 font-sansation-regular"
+                    style={{ fontSize: '17px' }}
+                  >
+                    <span className="truncate max-w-xs">{nextPost.title}</span>
+                    <span className="ml-2">→</span>
+                  </Link>
+                )}
+              </div>
             </div>
           </div>
-
-          {/* Post Content */}
-          <article className="prose prose-lg max-w-none">
-            <div 
-              className="font-sansation-regular leading-relaxed"
-              style={{ fontSize: '17px', color: '#6b6b6b' }}
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
-          </article>
-
-          {/* Back to Community Link */}
-          <div className="mt-12 sm:mt-16 text-center">
-            <Link 
-              href="/community"
-              className="inline-flex items-center text-[#004681] hover:text-[#024093] font-semibold transition-colors duration-200 font-sansation-regular"
-            >
-              <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              Back to Community
-            </Link>
-          </div>
         </div>
       </section>
-
       <Footer />
     </main>
   );

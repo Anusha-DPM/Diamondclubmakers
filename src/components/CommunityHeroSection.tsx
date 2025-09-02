@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const CommunityHeroSection = () => {
   return (
@@ -15,12 +16,12 @@ const CommunityHeroSection = () => {
         {/* Breadcrumb Navigation */}
         <div className="mb-6">
           <nav className="text-sm sm:text-base">
-            <a 
+            <Link 
               href="/" 
               className="text-blue-400 hover:text-blue-300 transition-colors duration-200 font-sansation-regular"
             >
               Home
-            </a>
+            </Link>
             <span className="text-white mx-2">»</span>
             <span className="text-white font-sansation-regular">Community</span>
           </nav>

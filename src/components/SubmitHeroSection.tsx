@@ -11,7 +11,7 @@ const SubmitHeroSection = () => {
           lineHeight: 1.2,
           color: '#ffffff'
         }}>
-          Submit a Community Post
+          Submit
         </h1>
         
         {/* Breadcrumb Navigation */}
@@ -27,7 +27,7 @@ const SubmitHeroSection = () => {
             »
           </span>
           <span className="font-sansation-regular text-[#029fde]" style={{ fontSize: 'clamp(14px, 3vw, 18px)' }}>
-            Submit a Community Post
+            Submit
           </span>
         </div>
       </div>
