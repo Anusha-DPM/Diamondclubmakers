@@ -11,7 +11,7 @@ const communityPosts = [
     author: "Diana from DCM Norton",
     slug: "super-happy-dr-w",
     content: "",
-    image: "/community/community-1.jpeg"
+    image: "/community/community6-1.jpeg"
   },
   {
     id: 52,
@@ -20,7 +20,7 @@ const communityPosts = [
     author: "Joan Werleman from DCM Pitt",
     slug: "meeting-dcm-nortons-noelle",
     content: "",
-    image: "/community/community-2"
+    image: "/community/community6-2.jpeg"
   },
   {
     id: 53,
@@ -29,7 +29,7 @@ const communityPosts = [
     author: "Joan Werleman from DCM Pitt",
     slug: "with-the-one-and-only",
     content: "",
-    image: "/community/community-3.jpeg"
+    image: "/community/community6-3.jpeg"
   },
   {
     id: 54,
@@ -38,7 +38,7 @@ const communityPosts = [
     author: "Diana from DCM Norton",
     slug: "thank-u-dr-w",
     content: "",
-    image: "/community/community-4.jpeg"
+    image: "/community/community6-4.jpeg"
   },
   {
     id: 55,
@@ -47,7 +47,7 @@ const communityPosts = [
     author: "Diana from DCM Norton",
     slug: "diana",
     content: "The master minds all reunited!!",
-    image: "/community/community-5.jpeg"
+    image: "/community/community6-5.jpeg"
   },
   {
     id: 56,
@@ -56,7 +56,7 @@ const communityPosts = [
     author: "Eric Murias from DCM Norton",
     slug: "eric-murias",
     content: "",
-    image: "/community/community-6.jpeg"
+    image: "/community/community6-6.jpeg"
   },
   {
     id: 57,
@@ -65,7 +65,8 @@ const communityPosts = [
     author: "Amir Daoud from DCM Neo",
     slug: "the-man-the-myth-the-legend-dr-wollock",
     content: "",
-    image: "/community/community-7.jpeg"
+    image: "/community/community6-7",
+    image2: "/community/community6-7-2.jpeg"
   },
   {
     id: 58,
@@ -74,7 +75,7 @@ const communityPosts = [
     author: "Brock Arms from DCM Norton",
     slug: "schu",
     content: "Schu and I ready to add some pressure to make Diamond this cycle starting today!",
-    image: "/community/community-8.jpeg"
+    image: "/community/community6-8.jpeg"
   },
   {
     id: 59,
@@ -83,7 +84,11 @@ const communityPosts = [
     author: "Angie Anton from DCM Destruction",
     slug: "angie-anton",
     content: "Fun times at GRC 2022",
-    image: "/community/community-9.jpeg"
+    image: "/community/community6-9-1",
+    image2: "/community/community6-9-2",
+    image3: "/community/community6-9-3",
+    image4: "/community/community6-9-4.jpeg",
+    image5: "/community/community6-9-5"
   },
   {
     id: 60,
@@ -92,7 +97,7 @@ const communityPosts = [
     author: "Ciaran Murphy from DCM Destruction",
     slug: "true-dcm-destruction-legend",
     content: "Nothing speaks to the nature of DCM like our man Rob Herron. He is all about helping others achieve their goals, and loves sharing stories about his family. Cheers to all the DCM family!",
-    image: null
+    image: "/community/community6-10.jpeg"
   }
 ];
 
@@ -147,16 +152,15 @@ const CommunityContentSection6 = () => {
 
                 {/* Image */}
                 {post.image && (
-                  <div className="flex-shrink-0">
-                    <div className="relative w-[273px] h-[204px]">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        fill
-                        className="object-cover rounded-lg"
-                        sizes="273px"
-                      />
-                    </div>
+                  <div className={`flex-shrink-0 ${!post.content ? 'ml-auto' : ''}`}>
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={500}
+                      height={400}
+                      className="object-cover rounded-lg"
+                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                    />
                   </div>
                 )}
               </div>

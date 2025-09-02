@@ -152,42 +152,39 @@ const CommunityContentSection = () => {
                     {post.image2 ? (
                       // Two images layout - first image left-aligned under content, second image right-aligned
                       <div className="flex flex-col gap-4">
-                        {/* First image left-aligned under content */}
-                        <div className="flex justify-start">
-                          <div className="relative w-[273px] h-[204px]">
-                            <Image
-                              src={post.image}
-                              alt={post.title}
-                              fill
-                              className="object-cover rounded-lg"
-                              sizes="273px"
-                            />
-                          </div>
-                        </div>
-                        {/* Second image right-aligned */}
-                        <div className="flex justify-end">
-                          <div className="relative w-[273px] h-[204px]">
-                            <Image
-                              src={post.image2}
-                              alt={post.title}
-                              fill
-                              className="object-cover rounded-lg"
-                              sizes="273px"
-                            />
-                          </div>
-                        </div>
+                                                 {/* First image left-aligned under content */}
+                         <div className="flex justify-start">
+                           <Image
+                             src={post.image}
+                             alt={post.title}
+                             width={500}
+                             height={400}
+                             className="object-cover rounded-lg"
+                             style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                           />
+                         </div>
+                         {/* Second image right-aligned */}
+                         <div className="flex justify-end">
+                           <Image
+                             src={post.image2}
+                             alt={post.title}
+                             width={500}
+                             height={400}
+                             className="object-cover rounded-lg"
+                             style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                           />
+                         </div>
                       </div>
                     ) : (
                       // Single image layout
-                      <div className="relative w-[273px] h-[204px]">
-                        <Image
-                          src={post.image}
-                          alt={post.title}
-                          fill
-                          className="object-cover rounded-lg"
-                          sizes="273px"
-                        />
-                      </div>
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        width={500}
+                        height={400}
+                        className="object-cover rounded-lg"
+                        style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                      />
                     )}
                   </div>
                 )}

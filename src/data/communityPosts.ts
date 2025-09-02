@@ -191,7 +191,7 @@ export const communityPosts = [
     author: "Diana from DCM Norton",
     slug: "dr-simran-bawa-laser-focus",
     content: "Simran, this message reminded me of why I wanted to join the DCM community: my screws were removed and it changed the aligment of my own loupes👁.",
-    image: "/community/community-1.jpeg"
+    image: "/community/community3-1.jpeg"
   },
   {
     id: 22,
@@ -200,7 +200,7 @@ export const communityPosts = [
     author: "Cara Lund from DCM Pitt",
     slug: "always-first-on-friday",
     content: "I loved seeing Dr. Joan Werleman's Friday posts. she was pretty much always the first to post, giving me something to look forward to when I would sleepily grab my phone on Friday morning and open DCM Pitt. As a cat lover, this pic is a favorite.",
-    image: "/community/community-2"
+    image: "/community/community3-2.jpeg"
   },
   {
     id: 23,
@@ -209,7 +209,7 @@ export const communityPosts = [
     author: "Kaushal Gandhi from DCM Pitt",
     slug: "tgif",
     content: "When it's been a long week and you're tired! Loved this photo of Matt and his kids!",
-    image: "/community/community-3.jpeg"
+    image: "/community/community3-3.jpeg"
   },
   {
     id: 24,
@@ -218,7 +218,7 @@ export const communityPosts = [
     author: "Hazem Elbialy from DCM Norton",
     slug: "0-125",
     content: "I would like to eat these snacky snacks at 0.125",
-    image: "/community/community-4.jpeg"
+    image: "/community/community3-4.jpeg"
   },
   {
     id: 25,
@@ -227,7 +227,7 @@ export const communityPosts = [
     author: "Elliot Singer from DCM Norton",
     slug: "ashley-hill-got-married",
     content: "She got married during this journey!\nCongratulations!!!",
-    image: "/community/community-5.jpeg"
+    image: "/community/community3-5.jpeg"
   },
   {
     id: 26,
@@ -236,7 +236,7 @@ export const communityPosts = [
     author: "Frank neves from DCM Pitt",
     slug: "double-post-as-usual-it-takes-me-a-few-tries-but-i-get-it-eventually",
     content: "",
-    image: "/community/community-6.jpeg"
+    image: "/community/community3-6.jpeg"
   },
   {
     id: 27,
@@ -245,7 +245,7 @@ export const communityPosts = [
     author: "Andrea Ho-Fatt Wang from DCM Norton",
     slug: "isaac-hurts-his-shoulder-skiing",
     content: "Isaac hurts his shoulder on the ski hill but doesn't stop him from doing video consults leading him to Diamond status! Super inspirational – I want to be Isaac when I grow up 🙂",
-    image: "/community/community-7.jpeg"
+    image: "/community/community3-7.jpg"
   },
   {
     id: 28,
@@ -254,7 +254,7 @@ export const communityPosts = [
     author: "Mike from DCM other",
     slug: "mike",
     content: "",
-    image: "/community/community-8.jpeg"
+    image: "/community/community3-8.jpeg"
   },
   {
     id: 29,
@@ -263,7 +263,7 @@ export const communityPosts = [
     author: "Brock Arms from DCM Norton",
     slug: "one-of-our-exceptional-diamonds-making-time-for-the-important-things",
     content: "",
-    image: "/community/community-9.jpeg"
+    image: "/community/community3-9.jpeg"
   },
   {
     id: 30,
@@ -272,7 +272,7 @@ export const communityPosts = [
     author: "Kelly Smudde from DCM Norton",
     slug: "i-love-babies",
     content: "Bill Fessler has a new grand baby that is already training to be an Irish Guard! It's never too early to start trading them up right. Go ND!!!",
-    image: null
+    image: "/community/community3-10.jpeg"
   },
   // Page 4 posts (31-40)
   {
@@ -282,7 +282,7 @@ export const communityPosts = [
     author: "Daniel Blazo from DCM Pitt",
     slug: "daniel-blazo",
     content: "Shout out to my fellow tiger fan Shari! Go tigers!",
-    image: "/community/community-1.jpeg"
+    image: "/community/community4-1.jpeg"
   },
   {
     id: 32,
@@ -291,7 +291,7 @@ export const communityPosts = [
     author: "Supriya shetty from DCM Pitt",
     slug: "best-ever-bagel-ride",
     content: "",
-    image: "/community/community-2"
+    image: "/community/community4-2.jpeg"
   },
   {
     id: 33,
@@ -300,7 +300,7 @@ export const communityPosts = [
     author: "Alexander Moqattash from DCM Pitt",
     slug: "post-of-appreciation",
     content: "Wanted to thank Matthew for reaching out during a time of difficulty. Your help had an immense impact on my practice",
-    image: "/community/community-3.jpeg"
+    image: "/community/community4-3.jpeg"
   },
   {
     id: 34,
@@ -309,7 +309,7 @@ export const communityPosts = [
     author: "Will sung from DCM Norton",
     slug: "brocks-pathfinder-camping",
     content: "Brock's picture brought back memories of when I was in the pathfinders. Always looked forward to the camporees, thank you for sharing.",
-    image: "/community/community-4.jpeg"
+    image: "/community/community4-4.jpg"
   },
   {
     id: 35,
@@ -318,7 +318,7 @@ export const communityPosts = [
     author: "Joan Werleman from DCM Pitt",
     slug: "no-excuses",
     content: "I love this picture of Talia Davidson. Talia birthed a beautiful child during DCM Pitt class and kept on going. Checking clinchecks and never missed a step. Assistants scanning back at the office and you submitting cases in between feedings and diaper changes and virtually no sleep. I am so proud of you 👏🏻 ⭐️⭐️⭐️⭐️⭐️",
-    image: "/community/community-5.jpeg"
+    image: "/community/community4-5.jpeg"
   },
   {
     id: 36,
@@ -327,7 +327,7 @@ export const communityPosts = [
     author: "Jovan Spinnato from DCM Norton",
     slug: "jovan-spinnato",
     content: "Lauren Lee, you are too hilarious. One of my favourite photos of the past 6 months.",
-    image: "/community/community-6.jpeg"
+    image: "/community/community4-6.jpeg"
   },
   {
     id: 37,
@@ -336,7 +336,7 @@ export const communityPosts = [
     author: "Talia Davidson from DCM Pitt",
     slug: "my-family",
     content: "",
-    image: "/community/community-7.jpeg"
+    image: "/community/community4-7.jpeg"
   },
   {
     id: 38,
@@ -345,7 +345,7 @@ export const communityPosts = [
     author: "Amanda Sheehan from DCM Pitt",
     slug: "daddys-got-you",
     content: "Dr. Alex and his beautiful daughter. Just a moment of time caught on camera, showing the pure love between father and daughter.",
-    image: "/community/community-8.jpeg"
+    image: "/community/community4-8.jpeg"
   },
   {
     id: 39,
@@ -354,7 +354,7 @@ export const communityPosts = [
     author: "Talia Davidson from DCM Pitt",
     slug: "you-go-girl",
     content: "Mackenzie really rocked it during the last 6 months. I feel like she gave the course her all and she got a lot out of it as a result. And it also looks like she has fun in her spare time too. The sky's the limit for her!",
-    image: "/community/community-9.jpeg"
+    image: "/community/community4-9.jpeg"
   },
   {
     id: 40,
@@ -363,7 +363,7 @@ export const communityPosts = [
     author: "Izzy Perle from DCM Norton",
     slug: "thank-you-simran",
     content: "Simran, I have been looking up to you and your tremendous success. I derived my inspiration from you. A man of faith. A man of honesty and integrity. A man that has been the leader since the beginning. Thank you., Simran",
-    image: null
+    image: "/community/community4-10.jpeg"
   },
   // Page 5 posts (41-50)
   {
@@ -373,7 +373,7 @@ export const communityPosts = [
     author: "Richard Racanelli",
     slug: "richard-racanelli",
     content: "Love this pic of newly minted Diamond Jim Olsen rocking new shades for the start of golf season !",
-    image: "/community/community-1.jpeg"
+    image: "/community/community5-1.jpeg"
   },
   {
     id: 42,
@@ -382,7 +382,7 @@ export const communityPosts = [
     author: "Jeff from DCM Pitt.",
     slug: "getting-time-away",
     content: "Love this, taking time to reconnect and recharge with spouse.",
-    image: "/community/community-2"
+    image: "/community/community5-2.jpeg"
   },
   {
     id: 43,
@@ -391,7 +391,7 @@ export const communityPosts = [
     author: "Bella Kramer",
     slug: "community",
     content: "Thank you to all for such an adventure. Getting to know each of you was a true pleasure!\nDuring the past six months we saw eachother ups and downs and became a real community. I definitely struggled with implementing a lot of this and it's a work in progress. Many of you have inspired me to get out of my box and routines and go for it!!! Seeing Michaels techniques have so much success for many of us is proof of how successful one can be if they go out of their comfort zone. Thank you Michael for challenging us all to go outside of our comfort for more success!",
-    image: "/community/community-3.jpeg"
+    image: "/community/community5-3.jpeg"
   },
   {
     id: 44,
@@ -400,7 +400,7 @@ export const communityPosts = [
     author: "Ghanem Ghannam from DCM Pitt",
     slug: "family-time",
     content: "Always enjoyed the family photos. This one especially of a shared activity.",
-    image: "/community/community-4.jpeg"
+    image: "/community/community5-4.jpeg"
   },
   {
     id: 45,
@@ -409,7 +409,7 @@ export const communityPosts = [
     author: "Aimee Russo-Mounger from DCM Norton",
     slug: "one-of-my-favorite-posts",
     content: "Wealth accelerator you tube video was great. Started listening to this guy!! Thanks",
-    image: "/community/community-5.jpeg"
+    image: "/community/community5-5.jpeg"
   },
   {
     id: 46,
@@ -418,7 +418,7 @@ export const communityPosts = [
     author: "Harjinder Girn from DCM Norton",
     slug: "simran-family-time",
     content: "Love seeing different generations of families spending time together not only at home but vacation getaways. Simran is truly an honourable man of integrity and great values.",
-    image: "/community/community-6.jpeg"
+    image: "/community/community5-6.jpeg"
   },
   {
     id: 47,
@@ -427,7 +427,7 @@ export const communityPosts = [
     author: "Jay Kansal from DCM Pitt",
     slug: "an-amazing-group-with-lots-of-skills",
     content: "I've had the pleasure of interacting with Dr. Meghna Dassani in another mastermind group. I was luckily to interact with her even more in our Dcm Pitt group. She is a treasure trove of info on airway, so definitely reach out to her!",
-    image: "/community/community-7.jpeg"
+    image: "/community/community5-7.jpeg"
   },
   {
     id: 48,
@@ -436,7 +436,7 @@ export const communityPosts = [
     author: "Les Neville from DCM Norton",
     slug: "les-neville",
     content: "",
-    image: "/community/community-8.jpeg"
+    image: "/community/community5-8.jpeg"
   },
   {
     id: 49,
@@ -445,7 +445,7 @@ export const communityPosts = [
     author: "Rush bhatnagar from DCM Destruction",
     slug: "2022-opening-session",
     content: "#DCMDestruction",
-    image: "/community/community-9.jpeg"
+    image: "/community/community5-9.jpeg"
   },
   {
     id: 50,
@@ -454,7 +454,7 @@ export const communityPosts = [
     author: "Diana from DCM Norton",
     slug: "norton-representing",
     content: "",
-    image: null
+    image: "/community/community5-10.jpeg"
   },
   // Page 6 posts (51-60)
   {
@@ -464,7 +464,7 @@ export const communityPosts = [
     author: "Diana from DCM Norton",
     slug: "super-happy-dr-w",
     content: "",
-    image: "/community/community-1.jpeg"
+    image: "/community/community6-1.jpeg"
   },
   {
     id: 52,
@@ -473,7 +473,7 @@ export const communityPosts = [
     author: "Joan Werleman from DCM Pitt",
     slug: "meeting-dcm-nortons-noelle",
     content: "",
-    image: "/community/community-2"
+    image: "/community/community6-2.jpeg"
   },
   {
     id: 53,
@@ -482,7 +482,7 @@ export const communityPosts = [
     author: "Joan Werleman from DCM Pitt",
     slug: "with-the-one-and-only",
     content: "",
-    image: "/community/community-3.jpeg"
+    image: "/community/community6-3.jpeg"
   },
   {
     id: 54,
@@ -491,7 +491,7 @@ export const communityPosts = [
     author: "Diana from DCM Norton",
     slug: "thank-u-dr-w",
     content: "",
-    image: "/community/community-4.jpeg"
+    image: "/community/community6-4.jpeg"
   },
   {
     id: 55,
@@ -500,7 +500,7 @@ export const communityPosts = [
     author: "Diana from DCM Norton",
     slug: "diana",
     content: "The master minds all reunited!!",
-    image: "/community/community-5.jpeg"
+    image: "/community/community6-5.jpeg"
   },
   {
     id: 56,
@@ -509,7 +509,7 @@ export const communityPosts = [
     author: "Eric Murias from DCM Norton",
     slug: "eric-murias",
     content: "",
-    image: "/community/community-6.jpeg"
+    image: "/community/community6-6.jpeg"
   },
   {
     id: 57,
@@ -518,7 +518,8 @@ export const communityPosts = [
     author: "Amir Daoud from DCM Neo",
     slug: "the-man-the-myth-the-legend-dr-wollock",
     content: "",
-    image: "/community/community-7.jpeg"
+    image: "/community/community6-7",
+    image2: "/community/community6-7-2.jpeg"
   },
   {
     id: 58,
@@ -527,7 +528,7 @@ export const communityPosts = [
     author: "Brock Arms from DCM Norton",
     slug: "schu",
     content: "Schu and I ready to add some pressure to make Diamond this cycle starting today!",
-    image: "/community/community-8.jpeg"
+    image: "/community/community6-8.jpeg"
   },
   {
     id: 59,
@@ -536,7 +537,11 @@ export const communityPosts = [
     author: "Angie Anton from DCM Destruction",
     slug: "angie-anton",
     content: "Fun times at GRC 2022",
-    image: "/community/community-9.jpeg"
+    image: "/community/community6-9-1",
+    image2: "/community/community6-9-2",
+    image3: "/community/community6-9-3",
+    image4: "/community/community6-9-4.jpeg",
+    image5: "/community/community6-9-5"
   },
   {
     id: 60,
@@ -545,7 +550,7 @@ export const communityPosts = [
     author: "Ciaran Murphy from DCM Destruction",
     slug: "true-dcm-destruction-legend",
     content: "Nothing speaks to the nature of DCM like our man Rob Herron. He is all about helping others achieve their goals, and loves sharing stories about his family. Cheers to all the DCM family!",
-    image: null
+    image: "/community/community6-10.jpeg"
   },
   // Page 7 posts (61-70)
   {

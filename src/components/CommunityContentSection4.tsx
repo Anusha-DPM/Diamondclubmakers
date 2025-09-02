@@ -11,7 +11,7 @@ const communityPosts = [
     author: "Daniel Blazo from DCM Pitt",
     slug: "daniel-blazo",
     content: "Shout out to my fellow tiger fan Shari! Go tigers!",
-    image: "/community/community-1.jpeg"
+    image: "/community/community4-1.jpeg"
   },
   {
     id: 32,
@@ -20,7 +20,7 @@ const communityPosts = [
     author: "Supriya shetty from DCM Pitt",
     slug: "best-ever-bagel-ride",
     content: "",
-    image: "/community/community-2"
+    image: "/community/community4-2.jpeg"
   },
   {
     id: 33,
@@ -29,7 +29,7 @@ const communityPosts = [
     author: "Alexander Moqattash from DCM Pitt",
     slug: "post-of-appreciation",
     content: "Wanted to thank Matthew for reaching out during a time of difficulty. Your help had an immense impact on my practice",
-    image: "/community/community-3.jpeg"
+    image: "/community/community4-3.jpeg"
   },
   {
     id: 34,
@@ -38,7 +38,7 @@ const communityPosts = [
     author: "Will sung from DCM Norton",
     slug: "brocks-pathfinder-camping",
     content: "Brock's picture brought back memories of when I was in the pathfinders. Always looked forward to the camporees, thank you for sharing.",
-    image: "/community/community-4.jpeg"
+    image: "/community/community4-4.jpg"
   },
   {
     id: 35,
@@ -47,7 +47,7 @@ const communityPosts = [
     author: "Joan Werleman from DCM Pitt",
     slug: "no-excuses",
     content: "I love this picture of Talia Davidson. Talia birthed a beautiful child during DCM Pitt class and kept on going. Checking clinchecks and never missed a step. Assistants scanning back at the office and you submitting cases in between feedings and diaper changes and virtually no sleep. I am so proud of you 👏🏻 ⭐️⭐️⭐️⭐️⭐️",
-    image: "/community/community-5.jpeg"
+    image: "/community/community4-5.jpeg"
   },
   {
     id: 36,
@@ -56,7 +56,7 @@ const communityPosts = [
     author: "Jovan Spinnato from DCM Norton",
     slug: "jovan-spinnato",
     content: "Lauren Lee, you are too hilarious. One of my favourite photos of the past 6 months.",
-    image: "/community/community-6.jpeg"
+    image: "/community/community4-6.jpeg"
   },
   {
     id: 37,
@@ -65,7 +65,7 @@ const communityPosts = [
     author: "Talia Davidson from DCM Pitt",
     slug: "my-family",
     content: "",
-    image: "/community/community-7.jpeg"
+    image: "/community/community4-7.jpeg"
   },
   {
     id: 38,
@@ -74,7 +74,7 @@ const communityPosts = [
     author: "Amanda Sheehan from DCM Pitt",
     slug: "daddys-got-you",
     content: "Dr. Alex and his beautiful daughter. Just a moment of time caught on camera, showing the pure love between father and daughter.",
-    image: "/community/community-8.jpeg"
+    image: "/community/community4-8.jpeg"
   },
   {
     id: 39,
@@ -83,7 +83,7 @@ const communityPosts = [
     author: "Talia Davidson from DCM Pitt",
     slug: "you-go-girl",
     content: "Mackenzie really rocked it during the last 6 months. I feel like she gave the course her all and she got a lot out of it as a result. And it also looks like she has fun in her spare time too. The sky's the limit for her!",
-    image: "/community/community-9.jpeg"
+    image: "/community/community4-9.jpeg"
   },
   {
     id: 40,
@@ -92,7 +92,7 @@ const communityPosts = [
     author: "Izzy Perle from DCM Norton",
     slug: "thank-you-simran",
     content: "Simran, I have been looking up to you and your tremendous success. I derived my inspiration from you. A man of faith. A man of honesty and integrity. A man that has been the leader since the beginning. Thank you., Simran",
-    image: null
+    image: "/community/community4-10.jpeg"
   }
 ];
 
@@ -147,16 +147,15 @@ const CommunityContentSection4 = () => {
 
                 {/* Image */}
                 {post.image && (
-                  <div className="flex-shrink-0">
-                    <div className="relative w-[273px] h-[204px]">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        fill
-                        className="object-cover rounded-lg"
-                        sizes="273px"
-                      />
-                    </div>
+                  <div className={`flex-shrink-0 ${!post.content ? 'ml-auto' : ''}`}>
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={500}
+                      height={400}
+                      className="object-cover rounded-lg"
+                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                    />
                   </div>
                 )}
               </div>

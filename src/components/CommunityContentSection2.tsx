@@ -151,36 +151,33 @@ const CommunityContentSection2 = () => {
                     {post.image2 ? (
                       // Two images layout (left and right)
                       <div className="flex gap-4">
-                        <div className="relative w-[273px] h-[204px]">
-                          <Image
-                            src={post.image}
-                            alt={post.title}
-                            fill
-                            className="object-cover rounded-lg"
-                            sizes="273px"
-                          />
-                        </div>
-                        <div className="relative w-[273px] h-[204px]">
-                          <Image
-                            src={post.image2}
-                            alt={post.title}
-                            fill
-                            className="object-cover rounded-lg"
-                            sizes="273px"
-                          />
-                        </div>
-                      </div>
-                    ) : (
-                      // Single image layout
-                      <div className="relative w-[273px] h-[204px]">
                         <Image
                           src={post.image}
                           alt={post.title}
-                          fill
+                          width={500}
+                          height={400}
                           className="object-cover rounded-lg"
-                          sizes="273px"
+                          style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                        />
+                        <Image
+                          src={post.image2}
+                          alt={post.title}
+                          width={500}
+                          height={400}
+                          className="object-cover rounded-lg"
+                          style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
                         />
                       </div>
+                    ) : (
+                      // Single image layout
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        width={500}
+                        height={400}
+                        className="object-cover rounded-lg"
+                        style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                      />
                     )}
                   </div>
                 )}

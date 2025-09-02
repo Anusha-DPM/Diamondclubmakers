@@ -15,7 +15,7 @@ interface PageProps {
 export default async function CommunityPost({ params }: PageProps) {
   const { slug } = await params;
   const post = communityPosts.find(p => p.slug === slug);
-  
+
   if (!post) {
     notFound();
   }
@@ -74,9 +74,9 @@ export default async function CommunityPost({ params }: PageProps) {
                   fontSize: '30px', 
                   color: '#004681' 
                 }}
-              >
-                {post.title}
-              </h1>
+          >
+            {post.title}
+          </h1>
               <p 
                 className="font-sansation-regular"
                 style={{ 
@@ -86,9 +86,9 @@ export default async function CommunityPost({ params }: PageProps) {
               >
                 {post.date} by {post.author}
               </p>
-            </div>
+        </div>
 
-            {/* Post Content */}
+      {/* Post Content */}
             {post.content && (
               <div 
                 className="font-sansation-regular mb-8"
@@ -105,15 +105,15 @@ export default async function CommunityPost({ params }: PageProps) {
             {post.image && (
               <div className="flex justify-end mb-8">
                 <div className="relative w-[273px] h-[204px]">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
                     className="object-cover rounded-lg"
                     sizes="273px"
-                  />
-                </div>
-              </div>
+              />
+            </div>
+          </div>
             )}
 
             {/* Navigation */}
@@ -132,13 +132,13 @@ export default async function CommunityPost({ params }: PageProps) {
               </div>
               
               <div className="flex-1 text-center">
-                <Link 
-                  href="/community"
+            <Link 
+              href="/community"
                   className="text-[#004681] hover:text-[#003366] transition-colors duration-200 font-sansation-regular"
                   style={{ fontSize: '17px' }}
-                >
-                  Back to Community
-                </Link>
+            >
+              Back to Community
+            </Link>
               </div>
               
               <div className="flex-1 text-right">

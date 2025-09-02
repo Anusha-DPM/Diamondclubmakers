@@ -11,7 +11,7 @@ const communityPosts = [
     author: "Richard Racanelli",
     slug: "richard-racanelli",
     content: "Love this pic of newly minted Diamond Jim Olsen rocking new shades for the start of golf season !",
-    image: "/community/community-1.jpeg"
+    image: "/community/community5-1.jpeg"
   },
   {
     id: 42,
@@ -20,7 +20,7 @@ const communityPosts = [
     author: "Jeff from DCM Pitt.",
     slug: "getting-time-away",
     content: "Love this, taking time to reconnect and recharge with spouse.",
-    image: "/community/community-2"
+    image: "/community/community5-2.jpeg"
   },
   {
     id: 43,
@@ -29,7 +29,7 @@ const communityPosts = [
     author: "Bella Kramer",
     slug: "community",
     content: "Thank you to all for such an adventure. Getting to know each of you was a true pleasure!\nDuring the past six months we saw eachother ups and downs and became a real community. I definitely struggled with implementing a lot of this and it's a work in progress. Many of you have inspired me to get out of my box and routines and go for it!!! Seeing Michaels techniques have so much success for many of us is proof of how successful one can be if they go out of their comfort zone. Thank you Michael for challenging us all to go outside of our comfort for more success!",
-    image: "/community/community-3.jpeg"
+    image: "/community/community5-3.jpeg"
   },
   {
     id: 44,
@@ -38,7 +38,7 @@ const communityPosts = [
     author: "Ghanem Ghannam from DCM Pitt",
     slug: "family-time",
     content: "Always enjoyed the family photos. This one especially of a shared activity.",
-    image: "/community/community-4.jpeg"
+    image: "/community/community5-4.jpeg"
   },
   {
     id: 45,
@@ -47,7 +47,7 @@ const communityPosts = [
     author: "Aimee Russo-Mounger from DCM Norton",
     slug: "one-of-my-favorite-posts",
     content: "Wealth accelerator you tube video was great. Started listening to this guy!! Thanks",
-    image: "/community/community-5.jpeg"
+    image: "/community/community5-5.jpeg"
   },
   {
     id: 46,
@@ -56,7 +56,7 @@ const communityPosts = [
     author: "Harjinder Girn from DCM Norton",
     slug: "simran-family-time",
     content: "Love seeing different generations of families spending time together not only at home but vacation getaways. Simran is truly an honourable man of integrity and great values.",
-    image: "/community/community-6.jpeg"
+    image: "/community/community5-6.jpeg"
   },
   {
     id: 47,
@@ -65,7 +65,7 @@ const communityPosts = [
     author: "Jay Kansal from DCM Pitt",
     slug: "an-amazing-group-with-lots-of-skills",
     content: "I've had the pleasure of interacting with Dr. Meghna Dassani in another mastermind group. I was luckily to interact with her even more in our Dcm Pitt group. She is a treasure trove of info on airway, so definitely reach out to her!",
-    image: "/community/community-7.jpeg"
+    image: "/community/community5-7.jpeg"
   },
   {
     id: 48,
@@ -74,7 +74,7 @@ const communityPosts = [
     author: "Les Neville from DCM Norton",
     slug: "les-neville",
     content: "",
-    image: "/community/community-8.jpeg"
+    image: "/community/community5-8.jpeg"
   },
   {
     id: 49,
@@ -83,7 +83,7 @@ const communityPosts = [
     author: "Rush bhatnagar from DCM Destruction",
     slug: "2022-opening-session",
     content: "#DCMDestruction",
-    image: "/community/community-9.jpeg"
+    image: "/community/community5-9.jpeg"
   },
   {
     id: 50,
@@ -92,7 +92,7 @@ const communityPosts = [
     author: "Diana from DCM Norton",
     slug: "norton-representing",
     content: "",
-    image: null
+    image: "/community/community5-10.jpeg"
   }
 ];
 
@@ -147,16 +147,15 @@ const CommunityContentSection5 = () => {
 
                 {/* Image */}
                 {post.image && (
-                  <div className="flex-shrink-0">
-                    <div className="relative w-[273px] h-[204px]">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        fill
-                        className="object-cover rounded-lg"
-                        sizes="273px"
-                      />
-                    </div>
+                  <div className={`flex-shrink-0 ${!post.content ? 'ml-auto' : ''}`}>
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={500}
+                      height={400}
+                      className="object-cover rounded-lg"
+                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                    />
                   </div>
                 )}
               </div>

@@ -147,16 +147,15 @@ const CommunityContentSection8 = () => {
 
                 {/* Image */}
                 {post.image && (
-                  <div className="flex-shrink-0">
-                    <div className="relative w-[273px] h-[204px]">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        fill
-                        className="object-cover rounded-lg"
-                        sizes="273px"
-                      />
-                    </div>
+                  <div className={`flex-shrink-0 ${!post.content ? 'ml-auto' : ''}`}>
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={500}
+                      height={400}
+                      className="object-cover rounded-lg"
+                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                    />
                   </div>
                 )}
               </div>

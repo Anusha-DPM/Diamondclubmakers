@@ -11,7 +11,7 @@ const communityPosts = [
     author: "Diana from DCM Norton",
     slug: "dr-simran-bawa-laser-focus",
     content: "Simran, this message reminded me of why I wanted to join the DCM community: my screws were removed and it changed the aligment of my own loupes👁.",
-    image: "/community/community-1.jpeg"
+    image: "/community/community3-1.jpeg"
   },
   {
     id: 22,
@@ -20,7 +20,7 @@ const communityPosts = [
     author: "Cara Lund from DCM Pitt",
     slug: "always-first-on-friday",
     content: "I loved seeing Dr. Joan Werleman's Friday posts. she was pretty much always the first to post, giving me something to look forward to when I would sleepily grab my phone on Friday morning and open DCM Pitt. As a cat lover, this pic is a favorite.",
-    image: "/community/community-2"
+    image: "/community/community3-2.jpeg"
   },
   {
     id: 23,
@@ -29,7 +29,7 @@ const communityPosts = [
     author: "Kaushal Gandhi from DCM Pitt",
     slug: "tgif",
     content: "When it's been a long week and you're tired! Loved this photo of Matt and his kids!",
-    image: "/community/community-3.jpeg"
+    image: "/community/community3-3.jpeg"
   },
   {
     id: 24,
@@ -38,7 +38,7 @@ const communityPosts = [
     author: "Hazem Elbialy from DCM Norton",
     slug: "0-125",
     content: "I would like to eat these snacky snacks at 0.125",
-    image: "/community/community-4.jpeg"
+    image: "/community/community3-4.jpeg"
   },
   {
     id: 25,
@@ -47,7 +47,7 @@ const communityPosts = [
     author: "Elliot Singer from DCM Norton",
     slug: "ashley-hill-got-married",
     content: "She got married during this journey!\nCongratulations!!!",
-    image: "/community/community-5.jpeg"
+    image: "/community/community3-5.jpeg"
   },
   {
     id: 26,
@@ -56,7 +56,7 @@ const communityPosts = [
     author: "Frank neves from DCM Pitt",
     slug: "double-post-as-usual-it-takes-me-a-few-tries-but-i-get-it-eventually",
     content: "",
-    image: "/community/community-6.jpeg"
+    image: "/community/community3-6.jpeg"
   },
   {
     id: 27,
@@ -65,7 +65,7 @@ const communityPosts = [
     author: "Andrea Ho-Fatt Wang from DCM Norton",
     slug: "isaac-hurts-his-shoulder-skiing",
     content: "Isaac hurts his shoulder on the ski hill but doesn't stop him from doing video consults leading him to Diamond status! Super inspirational – I want to be Isaac when I grow up 🙂",
-    image: "/community/community-7.jpeg"
+    image: "/community/community3-7.jpg"
   },
   {
     id: 28,
@@ -74,7 +74,7 @@ const communityPosts = [
     author: "Mike from DCM other",
     slug: "mike",
     content: "",
-    image: "/community/community-8.jpeg"
+    image: "/community/community3-8.jpeg"
   },
   {
     id: 29,
@@ -83,7 +83,7 @@ const communityPosts = [
     author: "Brock Arms from DCM Norton",
     slug: "one-of-our-exceptional-diamonds-making-time-for-the-important-things",
     content: "",
-    image: "/community/community-9.jpeg"
+    image: "/community/community3-9.jpeg"
   },
   {
     id: 30,
@@ -92,7 +92,7 @@ const communityPosts = [
     author: "Kelly Smudde from DCM Norton",
     slug: "i-love-babies",
     content: "Bill Fessler has a new grand baby that is already training to be an Irish Guard! It's never too early to start trading them up right. Go ND!!!",
-    image: null
+    image: "/community/community3-10.jpeg"
   }
 ];
 
@@ -147,16 +147,15 @@ const CommunityContentSection3 = () => {
 
                 {/* Image */}
                 {post.image && (
-                  <div className="flex-shrink-0">
-                    <div className="relative w-[273px] h-[204px]">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        fill
-                        className="object-cover rounded-lg"
-                        sizes="273px"
-                      />
-                    </div>
+                  <div className={`flex-shrink-0 ${!post.content ? 'ml-auto' : ''}`}>
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={500}
+                      height={400}
+                      className="object-cover rounded-lg"
+                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                    />
                   </div>
                 )}
               </div>
