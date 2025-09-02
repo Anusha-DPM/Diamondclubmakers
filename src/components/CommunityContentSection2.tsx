@@ -2,101 +2,101 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Community posts data
+// Community posts data for page 2
 const communityPosts = [
   {
-    id: 1,
-    title: "Thank you, Mike! From the Wince's!",
-    date: "June 15, 2022",
-    author: "Stacy Wince from DCM Neo",
-    slug: "thank-you-mike-from-the-winces",
-    content: "",
-    image: null
+    id: 11,
+    title: "Alvin Lo gets ready for Vegas!",
+    date: "June 20, 2022",
+    author: "Sheila Farahani from DCM Norton",
+    slug: "alvin-lo-gets-ready-for-vegas",
+    content: "We all gotta look good on stage and Alvin is taking it seriously in the run up to Vegas!",
+    image: "/community/community-1.jpeg"
   },
   {
-    id: 2,
-    title: "getting ready DCM",
-    date: "June 15, 2022",
-    author: "Viviana Waich from DCM Neo",
-    slug: "getting-ready-dcm",
-    content: "i was shaking my green juice so i can ve strong and healthy for GRC but..... massive explosion happen .... i still laughing🤣🤣🤣",
+    id: 12,
+    title: "Marathon",
+    date: "June 20, 2022",
+    author: "Eric Kwon from DCM Pitt",
+    slug: "marathon",
+    content: "Shout out to my fellow Trojan, Dr. Shari Morningstar! Love this photo which captures our journey together—a reminder that life is about this journey (not just the destination) and that we are running a marathon (not a sprint) together. Fight on DCMers!",
     image: "/community/community-2"
   },
   {
-    id: 3,
-    title: "DCM",
-    date: "June 15, 2022",
-    author: "Viviana Waich from DCM Neo",
-    slug: "dcm",
-    content: "great DCM moment",
+    id: 13,
+    title: "What a great couple",
+    date: "June 20, 2022",
+    author: "Yaerin Lee from DCM Norton",
+    slug: "what-a-great-couple",
+    content: "William Fessler with his wife 😍 love all smiles on your face",
     image: "/community/community-3.jpeg"
   },
   {
-    id: 4,
-    title: "Sandhya Anantuni",
-    date: "June 16, 2022",
-    author: "Sandhya Anantuni from DCM Neo",
-    slug: "sandhya-anantuni",
+    id: 14,
+    title: "Favorite DCM NORTON PIC",
+    date: "June 20, 2022",
+    author: "William Fessler from DCM Norton",
+    slug: "favorite-dcm-norton-pic",
     content: "",
     image: "/community/community-4.jpeg"
   },
   {
-    id: 5,
-    title: "DCM Diamond Award",
-    date: "June 16, 2022",
-    author: "Amir Daoud from DCM Neo",
-    slug: "dcm-diamond-award",
-    content: "My DCM journey officially started in Jan 2021. Truth is I had already been listening to all the advise I could from Dr Mike Wollack whom I have known for several years on the AACA Board.\nWhat I didn't expect was the explosive growth my practice would have. We are now relocating to a new location to be able to continue our growth.\nThe group of fellow DCMers will always be so close because of the like minded nature of what we do.\nDCM for LIFe !!!!",
+    id: 15,
+    title: "Dr Joel getting engaged- Norton",
+    date: "June 20, 2022",
+    author: "Darcy Murphy from DCM Norton",
+    slug: "dr-joel-getting-engaged-norton",
+    content: "On top of that world",
     image: "/community/community-5.jpeg"
   },
   {
-    id: 6,
-    title: "DCM Pitt achieve Diamond Status!",
+    id: 16,
+    title: "DCM Norton has some impressive people!",
     date: "June 20, 2022",
-    author: "Saba Rizvi from DCM Pitt",
-    slug: "dcm-pitt-achieve-diamond-status",
-    content: "Fellow DCMer achieving Diamond status and his daughter graduate dental school!!!! What a huge accomplishment in one week! So happy for his success and for his daughter's future!",
+    author: "Lauren Lee from DCM Norton",
+    slug: "dcm-norton-has-some-impressive-people",
+    content: "Even though Dr. Aimee Russo-Mounger is in Africa on a mission trip right now, she will still grace us with her presence in Vegas next week. Talk about amazing!",
     image: "/community/community-6.jpeg"
   },
   {
-    id: 7,
-    title: "Dr. Lauren Lee and her arm candy.",
+    id: 17,
+    title: "New beginnings!❤️",
     date: "June 20, 2022",
-    author: "Jim Olsen from DCM Norton",
-    slug: "dr-lauren-lee-and-her-arm-candy",
-    content: "I love this pic of Lauren and her \"arm candy\". Lauren brought the spirit of fun, hard work, and authentic connection to us all in DCM Norton while we struggled to show up and keep up. Thx Lauren for being such a bright spot every week for us in this group.",
+    author: "Jennifer Schau from DCM Pitt",
+    slug: "new-beginnings",
+    content: "I love that Talia took the time to grow her practice whilst growing a human and family!! Talk about changing your life on so many levels!! Major new beginnings…..impressive!",
     image: "/community/community-7.jpeg"
   },
   {
-    id: 8,
-    title: "Dr Isaac Perle Passover Blessing",
+    id: 18,
+    title: "Dr. Jen celebrating St. Patty's Day with her team",
     date: "June 20, 2022",
-    author: "Simran Bawa from DCM Norton",
-    slug: "dr-isaac-perle-passover-blessing",
-    content: "We were all amazed when Isaac completed an astounding 31.5 cases in a single week! His faith and strength in the almighty has shown us the light during this amazing journey together.",
+    author: "Geoff Jackson from DCM Pitt",
+    slug: "dr-jen-celebrating-st-pattys-day-with-her-team",
+    content: "",
     image: "/community/community-8.jpeg"
   },
   {
-    id: 9,
-    title: "Future of dental and DCM",
+    id: 19,
+    title: "Moved to a new office",
     date: "June 20, 2022",
-    author: "Andrew Paek from DCM Pitt",
-    slug: "future-of-dental-and-dcm",
-    content: "Fellow DCMer attending his daughter's dental school graduation! Cheers to the future of our profession and DCM!",
+    author: "Nicole Apollon Chirouze from DCM Pitt",
+    slug: "moved-to-a-new-office",
+    content: "Stefanie grew in numbers all while moving office spaces during our DCM Pitt course! Awesome!",
     image: "/community/community-9.jpeg"
   },
   {
-    id: 10,
-    title: "Insta famous",
+    id: 20,
+    title: "Twinning!",
     date: "June 20, 2022",
-    author: "Andrew Paek from DCM Pitt",
-    slug: "insta-famous",
-    content: "Amazing insight from our DCMer on how to utilize social media successfully!",
+    author: "Stefanie Sunnes from DCM Pitt",
+    slug: "twinning",
+    content: "Taking care of the cutie pie niece, way to go Dr. B!!",
     image: null
   }
 ];
 
-const CommunityContentSection = () => {
+const CommunityContentSection2 = () => {
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-24">
       <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -173,4 +173,4 @@ const CommunityContentSection = () => {
   );
 };
 
-export default CommunityContentSection;
+export default CommunityContentSection2;

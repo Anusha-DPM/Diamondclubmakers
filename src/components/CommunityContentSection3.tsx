@@ -1,0 +1,176 @@
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+// Community posts data for page 3
+const communityPosts = [
+  {
+    id: 21,
+    title: "Dr. Simran Bawa, laser focus",
+    date: "June 20, 2022",
+    author: "Diana from DCM Norton",
+    slug: "dr-simran-bawa-laser-focus",
+    content: "Simran, this message reminded me of why I wanted to join the DCM community: my screws were removed and it changed the aligment of my own loupes👁.",
+    image: "/community/community-1.jpeg"
+  },
+  {
+    id: 22,
+    title: "Always First on Friday",
+    date: "June 20, 2022",
+    author: "Cara Lund from DCM Pitt",
+    slug: "always-first-on-friday",
+    content: "I loved seeing Dr. Joan Werleman's Friday posts. she was pretty much always the first to post, giving me something to look forward to when I would sleepily grab my phone on Friday morning and open DCM Pitt. As a cat lover, this pic is a favorite.",
+    image: "/community/community-2"
+  },
+  {
+    id: 23,
+    title: "TGIF",
+    date: "June 20, 2022",
+    author: "Kaushal Gandhi from DCM Pitt",
+    slug: "tgif",
+    content: "When it's been a long week and you're tired! Loved this photo of Matt and his kids!",
+    image: "/community/community-3.jpeg"
+  },
+  {
+    id: 24,
+    title: "0.125",
+    date: "June 21, 2022",
+    author: "Hazem Elbialy from DCM Norton",
+    slug: "0-125",
+    content: "I would like to eat these snacky snacks at 0.125",
+    image: "/community/community-4.jpeg"
+  },
+  {
+    id: 25,
+    title: "Ashley Hill Got Married!",
+    date: "June 21, 2022",
+    author: "Elliot Singer from DCM Norton",
+    slug: "ashley-hill-got-married",
+    content: "She got married during this journey!\nCongratulations!!!",
+    image: "/community/community-5.jpeg"
+  },
+  {
+    id: 26,
+    title: "Double post!!!!!! As usual it takes me a few tries, but I get it eventually👍👍",
+    date: "June 21, 2022",
+    author: "Frank neves from DCM Pitt",
+    slug: "double-post-as-usual-it-takes-me-a-few-tries-but-i-get-it-eventually",
+    content: "",
+    image: "/community/community-6.jpeg"
+  },
+  {
+    id: 27,
+    title: "Isaac hurts his shoulder skiing",
+    date: "June 21, 2022",
+    author: "Andrea Ho-Fatt Wang from DCM Norton",
+    slug: "isaac-hurts-his-shoulder-skiing",
+    content: "Isaac hurts his shoulder on the ski hill but doesn't stop him from doing video consults leading him to Diamond status! Super inspirational – I want to be Isaac when I grow up 🙂",
+    image: "/community/community-7.jpeg"
+  },
+  {
+    id: 28,
+    title: "Mike",
+    date: "June 22, 2022",
+    author: "Mike from DCM other",
+    slug: "mike",
+    content: "",
+    image: "/community/community-8.jpeg"
+  },
+  {
+    id: 29,
+    title: "One of our exceptional diamonds making time for the important things!",
+    date: "June 22, 2022",
+    author: "Brock Arms from DCM Norton",
+    slug: "one-of-our-exceptional-diamonds-making-time-for-the-important-things",
+    content: "",
+    image: "/community/community-9.jpeg"
+  },
+  {
+    id: 30,
+    title: "I love babies!",
+    date: "June 22, 2022",
+    author: "Kelly Smudde from DCM Norton",
+    slug: "i-love-babies",
+    content: "Bill Fessler has a new grand baby that is already training to be an Irish Guard! It's never too early to start trading them up right. Go ND!!!",
+    image: null
+  }
+];
+
+const CommunityContentSection3 = () => {
+  return (
+    <section className="bg-white py-16 sm:py-20 lg:py-24">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="space-y-8">
+          {communityPosts.map((post, index) => (
+            <div key={post.id}>
+              {/* Post Header */}
+              <div className="mb-4">
+                <Link 
+                  href={`/community/${post.slug}`}
+                  className="hover:opacity-80 transition-opacity duration-200"
+                >
+                  <h2 
+                    className="font-sansation-bold mb-2"
+                    style={{ 
+                      fontSize: '30px', 
+                      color: '#004681' 
+                    }}
+                  >
+                    {post.title}
+                  </h2>
+                </Link>
+                <p 
+                  className="font-sansation-regular"
+                  style={{ 
+                    fontSize: '17px', 
+                    color: '#6b6b6b' 
+                  }}
+                >
+                  {post.date} by {post.author}
+                </p>
+              </div>
+
+              {/* Post Content and Image */}
+              <div className="flex flex-col lg:flex-row gap-6">
+                {/* Text Content */}
+                {post.content && (
+                  <div 
+                    className="font-sansation-regular flex-1"
+                    style={{ 
+                      fontSize: '17px', 
+                      color: '#6b6b6b' 
+                    }}
+                  >
+                    <p className="whitespace-pre-line">{post.content}</p>
+                  </div>
+                )}
+
+                {/* Image */}
+                {post.image && (
+                  <div className="flex-shrink-0">
+                    <div className="relative w-[273px] h-[204px]">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover rounded-lg"
+                        sizes="273px"
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Separator Line */}
+              {index < communityPosts.length - 1 && (
+                <div className="mt-8 pt-8 border-t border-[#004681] border-opacity-20"></div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CommunityContentSection3;

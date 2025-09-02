@@ -2,17 +2,17 @@
 
 import Header from "@/components/Header";
 import CommunityHeroSection from "@/components/CommunityHeroSection";
-import CommunityContentSection from "@/components/CommunityContentSection";
+import CommunityContentSection3 from "@/components/CommunityContentSection3";
 import Pagination from "@/components/Pagination";
 import Footer from "@/components/Footer";
 
-export default function Community() {
+export default function CommunityPage3() {
   return (
     <main className="min-h-screen">
       <Header />
       <CommunityHeroSection />
-      <CommunityContentSection />
-      <Pagination currentPage={1} totalPages={12} basePath="/community" />
+      <CommunityContentSection3 />
+      <Pagination currentPage={3} totalPages={12} basePath="/community" />
       <Footer />
     </main>
   );
