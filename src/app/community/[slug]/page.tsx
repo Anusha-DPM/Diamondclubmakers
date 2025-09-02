@@ -29,7 +29,7 @@ export default async function CommunityPost({ params }: PageProps) {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-[#004681] py-16 sm:py-20 lg:py-24">
+      <section className="bg-[#004681] py-8 sm:py-10 lg:py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Main Heading */}
           <h1 
@@ -69,7 +69,7 @@ export default async function CommunityPost({ params }: PageProps) {
             {/* Post Header */}
             <div className="mb-8">
               <h1 
-                className="font-sansation-regular font-bold mb-4"
+                className="font-sansation-regular mb-4"
                 style={{ 
                   fontSize: '30px', 
                   color: '#004681' 
