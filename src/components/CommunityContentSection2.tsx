@@ -145,40 +145,17 @@ const CommunityContentSection2 = () => {
                   </div>
                 )}
 
-                {/* Images */}
+                {/* Image */}
                 {post.image && (
                   <div className={`flex-shrink-0 ${!post.content ? 'ml-auto' : ''}`}>
-                    {post.image2 ? (
-                      // Two images layout (left and right)
-                      <div className="flex gap-4">
-                        <Image
-                          src={post.image}
-                          alt={post.title}
-                          width={500}
-                          height={400}
-                          className="object-cover rounded-lg"
-                          style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                        />
-                        <Image
-                          src={post.image2}
-                          alt={post.title}
-                          width={500}
-                          height={400}
-                          className="object-cover rounded-lg"
-                          style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                        />
-                      </div>
-                    ) : (
-                      // Single image layout
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        width={500}
-                        height={400}
-                        className="object-cover rounded-lg"
-                        style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                      />
-                    )}
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={500}
+                      height={400}
+                      className="object-cover rounded-lg"
+                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                    />
                   </div>
                 )}
               </div>
