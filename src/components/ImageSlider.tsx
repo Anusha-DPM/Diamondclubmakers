@@ -27,7 +27,7 @@ const ImageSlider = () => {
 
   return (
     <div>
-      <section className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] overflow-hidden bg-[#004681]" style={{ paddingBottom: '43px' }}>
+      <section className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[500px] overflow-hidden bg-[#004681]">
         {/* Image Container */}
         <div className="relative w-full h-full">
           {images.map((image, index) => (
@@ -47,6 +47,7 @@ const ImageSlider = () => {
                 fill
                 className="object-cover"
                 priority={index === 0}
+                sizes="100vw"
               />
             </div>
           ))}
@@ -54,16 +55,17 @@ const ImageSlider = () => {
       </section>
 
       {/* Carousel Indicators - Outside the slider background */}
-      <div className="flex justify-center space-x-1.5 sm:space-x-2 mt-3 sm:mt-4">
+      <div className="flex justify-center space-x-2 sm:space-x-3 mt-4 sm:mt-5">
         {images.map((_, index) => (
           <button
             key={index}
-            className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-colors duration-300 ${
+            className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-colors duration-300 ${
               index === currentIndex 
                 ? 'bg-[#004681]' 
                 : 'bg-gray-300'
             }`}
             onClick={() => setCurrentIndex(index)}
+            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>

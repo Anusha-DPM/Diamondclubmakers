@@ -5,13 +5,13 @@ const StepByStepGuideSection = () => {
   return (
     <section className="bg-white py-10 sm:py-12 lg:py-14">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-8">
-          <p className="font-sansation-regular text-[#6b6b6b] text-base leading-relaxed">
+        <div className="mb-6 sm:mb-8">
+          <p className="font-sansation-regular text-[#6b6b6b] text-sm sm:text-base leading-relaxed">
             Ordering boxes from Align or use whatever you have around the office. Also pictured is the Amazon storage container for my office.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
           {/* Top Row */}
           {/* Image 1 - Top Left */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
