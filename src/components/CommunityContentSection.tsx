@@ -107,7 +107,7 @@ const CommunityContentSection = () => {
               {/* Clickable Article Area */}
               <Link 
                 href={`/community/${post.slug}`}
-                className="block hover:bg-gray-50 hover:opacity-95 transition-all duration-200 rounded-lg p-2 -m-2"
+                className="block hover:opacity-95 transition-all duration-200 rounded-lg p-2 -m-2"
               >
                 {/* Post Header */}
                 <div className="mb-1 sm:mb-4">

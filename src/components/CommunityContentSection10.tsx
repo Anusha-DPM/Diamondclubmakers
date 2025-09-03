@@ -106,7 +106,7 @@ const CommunityContentSection10 = () => {
               {/* Clickable Article Area */}
               <Link 
                 href={`/community/${post.slug}`}
-                className="block hover:bg-gray-50 hover:opacity-95 transition-all duration-200 rounded-lg p-2 -m-2"
+                className="block hover:opacity-95 transition-all duration-200 rounded-lg p-2 -m-2"
               >
                 {/* Post Header */}
                 <div className="mb-4">
@@ -160,7 +160,7 @@ const CommunityContentSection10 = () => {
 
               {/* Separator Line */}
               {index < communityPosts.length - 1 && (
-                <div className="mt-8 pt-8 border-t border-[#004681] border-opacity-20"></div>
+                <div className="mt-8 border-t border-[#004681] border-opacity-20"></div>
               )}
             </div>
           ))}
