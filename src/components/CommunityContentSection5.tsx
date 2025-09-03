@@ -99,8 +99,8 @@ const communityPosts = [
 const CommunityContentSection5 = () => {
   return (
     <section className="bg-white py-8 sm:py-10 lg:py-12">
-      <div className="w-full" style={{ paddingLeft: '150px', paddingRight: '150px' }}>
-        <div className="space-y-8">
+      <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 2xl:px-40">
+        <div className="space-y-6 sm:space-y-8">
           {communityPosts.map((post, index) => (
             <div key={post.id}>
               {/* Clickable Article Area */}
@@ -109,20 +109,18 @@ const CommunityContentSection5 = () => {
                 className="block hover:opacity-95 transition-all duration-200 rounded-lg p-2 -m-2"
               >
                 {/* Post Header */}
-                <div className="mb-4">
+                <div className="mb-3 sm:mb-4">
                   <h2 
-                    className="font-sansation-bold mb-2"
+                    className="font-sansation-regular mb-2 text-[27px] sm:text-[30px]"
                     style={{ 
-                      fontSize: '30px', 
                       color: '#004681' 
                     }}
                   >
                     {post.title}
                   </h2>
                 <p 
-                  className="font-sansation-regular"
+                  className="font-sansation-regular text-[16px] sm:text-[17px]"
                   style={{ 
-                    fontSize: '17px', 
                     color: '#6b6b6b' 
                   }}
                 >
@@ -133,9 +131,8 @@ const CommunityContentSection5 = () => {
               {/* Post Content */}
               {post.content && (
                 <div 
-                  className="font-sansation-regular mb-4"
+                  className="font-sansation-regular mb-3 sm:mb-4 text-[16px] sm:text-[17px]"
                   style={{ 
-                    fontSize: '17px', 
                     color: '#6b6b6b' 
                   }}
                 >
@@ -145,14 +142,14 @@ const CommunityContentSection5 = () => {
 
               {/* Image */}
               {post.image && (
-                <div className="w-full flex justify-end">
+                <div className="w-full flex justify-start sm:justify-end">
                   <Image
                     src={post.image}
                     alt={post.title}
                     width={300}
                     height={250}
-                    className="object-cover rounded-lg"
-                    style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                    className="object-cover rounded-lg w-full sm:w-auto"
+                    style={{ maxWidth: '100%', height: 'auto' }}
                   />
                 </div>
               )}
@@ -160,7 +157,7 @@ const CommunityContentSection5 = () => {
 
               {/* Separator Line */}
               {index < communityPosts.length - 1 && (
-                <div className="mt-8 border-t border-[#004681] border-opacity-20"></div>
+                <div className="mt-6 sm:mt-8 border-t border-[#004681] border-opacity-20"></div>
               )}
             </div>
           ))}
