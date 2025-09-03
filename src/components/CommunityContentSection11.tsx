@@ -11,7 +11,7 @@ const communityPosts = [
     author: "Ciaran Murphy from DCM Destruction",
     slug: "rob-herron-preparing-for-his-teen-invisalign-lecture",
     content: "DCM has changed my practice in so many ways, but I have also got to meet some amazing people including Rob Herron. He is a true inspiration in life, a practice owner, and an amazing teacher of Invisalign.",
-    image: "/community/community-1.jpeg"
+    image: "/community/community11-1.jpeg"
   },
   {
     id: 102,
@@ -20,7 +20,7 @@ const communityPosts = [
     author: "Brittany McKinley from DCM other",
     slug: "dcm-rebellion",
     content: "Two of my favorite ladies! The amazing, talented and beautiful Gina Marcus and Tracy Blessing. Gina is a fellow member of rebellion and Tracy allowed me to rock some Botox and fillers.",
-    image: "/community/community-2"
+    image: "/community/community11-2.jpeg"
   },
   {
     id: 103,
@@ -29,7 +29,7 @@ const communityPosts = [
     author: "Scott Schumann aka SCHU from DCM Norton",
     slug: "hanging-with-the-big-dog-jim-olsen",
     content: "I love meeting up with fellow DCM Norton Bad Ass Teammates, Our Fearless Leaders, and Friends from the past while listening to them just dropping bombs of Knowledge!",
-    image: "/community/community-3.jpeg"
+    image: "/community/community11-3.jpg"
   },
   {
     id: 104,
@@ -38,7 +38,7 @@ const communityPosts = [
     author: "Brian Brodersen from DCM other",
     slug: "favorite-photo-brad",
     content: "Who doesn't love Christmas jammies? Great picture of Brad Jonnes and his family!",
-    image: "/community/community-4.jpeg"
+    image: "/community/community11-4.jpg"
   },
   {
     id: 105,
@@ -47,7 +47,7 @@ const communityPosts = [
     author: "Dr. Marta Rivera DCM from DCM Rebellion",
     slug: "second-grc-first-time-dcmer",
     content: "",
-    image: "/community/community-5.jpeg"
+    image: "/community/community11-5.jpeg"
   },
   {
     id: 106,
@@ -56,7 +56,7 @@ const communityPosts = [
     author: "Sheena Sood from DCM Yoda",
     slug: "with-the-man-himself",
     content: "👏👏👏👏",
-    image: "/community/community-6.jpeg"
+    image: "/community/community11-6.jpeg"
   },
   {
     id: 107,
@@ -65,7 +65,7 @@ const communityPosts = [
     author: "Haniel Rosemond from DCM Yoda",
     slug: "grc-white-party",
     content: "",
-    image: "/community/community-7.jpeg"
+    image: "/community/community11-7.jpeg"
   },
   {
     id: 108,
@@ -74,7 +74,7 @@ const communityPosts = [
     author: "Amy from DCM Yoda",
     slug: "the-best-lecture-by-our-own-dcm-class-yoda",
     content: "Thank you! Sheena for amazing lecture.\nWe are so lucky to have you in our class and we can't wait to learn ab what you do!😆😆",
-    image: "/community/community-8.jpeg"
+    image: "/community/community11-8.jpeg"
   },
   {
     id: 109,
@@ -83,7 +83,7 @@ const communityPosts = [
     author: "Amy from DCM Yoda",
     slug: "dcm-community",
     content: "We are all lucky to learn from you. Dr. Wollock.🦷🤍🤍",
-    image: "/community/community-9.jpeg"
+    image: "/community/community11-9.jpeg"
   },
   {
     id: 110,
@@ -92,7 +92,7 @@ const communityPosts = [
     author: "Jessica Nieva from DCM Yoda",
     slug: "the-finest-example-ever",
     content: "",
-    image: null
+    image: "/community/community11-9.jpeg"
   }
 ];
 
@@ -151,8 +151,8 @@ const CommunityContentSection11 = () => {
                     <Image
                       src={post.image}
                       alt={post.title}
-                      width={500}
-                      height={400}
+                      width={300}
+                      height={250}
                       className="object-cover rounded-lg"
                       style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
                     />

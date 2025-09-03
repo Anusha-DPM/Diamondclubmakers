@@ -11,7 +11,7 @@ const communityPosts = [
     author: "Sheena Sood from DCM other",
     slug: "winston-feng",
     content: "Celebrating his team getting on board. I love the smile 😃",
-    image: "/community/community-1.jpeg"
+    image: "/community/community9-1.jpeg"
   },
   {
     id: 82,
@@ -20,7 +20,7 @@ const communityPosts = [
     author: "David Tapani from DCM other",
     slug: "golfer-from-another-mother",
     content: "Ken, thank you for your friendship. We leaned on each other a lot over the last 6 months and together we've accomplished a great feat. I look forward to having a drink with you in Vegas!",
-    image: "/community/community-2"
+    image: "/community/community9-2.jpeg"
   },
   {
     id: 83,
@@ -29,7 +29,7 @@ const communityPosts = [
     author: "Andrew Holovnia from DCM other",
     slug: "abinaash-kaur-queen-of-clear-aligners-and-compassion",
     content: "Abinaash's beautiful smile is a pure reflection of her heart and compassion. Her caring words and actions helped immensely during a time I was really struggling. Her attitude rubbed off on me and helped propel me to reach new heights and blow past previous personal best! I'm proud to consider you a friend and I've got a drink with your name on it when I see you in Vegas!",
-    image: "/community/community-3.jpeg"
+    image: "/community/community9-3.png"
   },
   {
     id: 84,
@@ -38,7 +38,7 @@ const communityPosts = [
     author: "Rani Dasgupta from DCM other",
     slug: "four-of-diamonds-richard-a-dickinson-sr-and-family",
     content: "",
-    image: "/community/community-4.jpeg"
+    image: "/community/community9-4.jpeg"
   },
   {
     id: 85,
@@ -47,7 +47,7 @@ const communityPosts = [
     author: "Linty John-Varghese from DCM other",
     slug: "tiktok-ig-queen-shiva-soleimani",
     content: "More have I learned from my DCM YODA fam, Shiva, The Queen of TikTok & IG, .. about Strength of Social media, Creating Presence & Content, Introduction to the World of Chat GPT and her immense Love for Rescuing Cats. Rockstar Dentist with a Heart of Gold,.. an absolute Honor to have you as my Friend for Life ❤️.",
-    image: "/community/community-5.jpeg"
+    image: "/community/community9-5.jpeg"
   },
   {
     id: 86,
@@ -56,7 +56,7 @@ const communityPosts = [
     author: "Linty John-Varghese from DCM other",
     slug: "shiva-soleimani-queen-of-tiktok-ig",
     content: "More have I learned from my DCM YODA fam, Shiva Soleimani, .. The Queen of TikTok & IG, .. about Strength of Social media, Creating Presence & Content, Introduction to the World of Chat GPT and her immense Love for Rescuing Cats. Rockstar Dentist with a Heart of Gold,.. an absolute Honor to have you as my Friend for Life ❤️.",
-    image: "/community/community-6.jpeg"
+    image: "/community/community9-6.jpeg"
   },
   {
     id: 87,
@@ -65,7 +65,7 @@ const communityPosts = [
     author: "Andreea Torok",
     slug: "andreea-torok",
     content: "Richard, you are such an inspiration to me and this group. I am amazed of your passion and dedication to our profession and patients after so many years in the field.",
-    image: "/community/community-7.jpeg"
+    image: "/community/community9-4.jpeg"
   },
   {
     id: 88,
@@ -74,7 +74,7 @@ const communityPosts = [
     author: "Andreea Torok from DCM other",
     slug: "andreea-torok-2",
     content: "David\nThis pic was too funny not to share\nI love your positivity and great attitude\nYou lifted my mood every Friday",
-    image: "/community/community-8.jpeg"
+    image: "/community/community9-7.jpeg"
   },
   {
     id: 89,
@@ -83,7 +83,7 @@ const communityPosts = [
     author: "DCM2022 from DCM other",
     slug: "relaxation",
     content: "",
-    image: "/community/community-9.jpeg"
+    image: "/community/community9-8.jpeg"
   },
   {
     id: 90,
@@ -92,7 +92,7 @@ const communityPosts = [
     author: "Shilpa Desai from DCM other",
     slug: "inspiration-unlimited",
     content: "~Richard A. Dickinson Sr , you are an inspiration to me. You taught me that age is no limit just follow ur dreams.",
-    image: null
+    image: "/community/community9-9.jpeg"
   }
 ];
 
@@ -151,8 +151,8 @@ const CommunityContentSection9 = () => {
                     <Image
                       src={post.image}
                       alt={post.title}
-                      width={500}
-                      height={400}
+                      width={300}
+                      height={250}
                       className="object-cover rounded-lg"
                       style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
                     />

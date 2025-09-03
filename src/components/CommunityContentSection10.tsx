@@ -11,7 +11,7 @@ const communityPosts = [
     author: "Andrew Reingold from DCM other",
     slug: "family-time",
     content: "These are the moments that we work for.",
-    image: "/community/community-1.jpeg"
+    image: "/community/community10-1.jpeg"
   },
   {
     id: 92,
@@ -20,7 +20,7 @@ const communityPosts = [
     author: "Haniel Rosemond from DCM other",
     slug: "haniel-rosemond",
     content: "David I always look forward to your messages . Always humorous and positive . See you in Vegas !!",
-    image: "/community/community-2"
+    image: "/community/community10-2.jpeg"
   },
   {
     id: 93,
@@ -29,7 +29,7 @@ const communityPosts = [
     author: "CECILIO PO from DCM other",
     slug: "cecilio-po",
     content: "",
-    image: "/community/community-3.jpeg"
+    image: "/community/community10-3.jpg"
   },
   {
     id: 94,
@@ -38,7 +38,7 @@ const communityPosts = [
     author: "Anu Sood from DCM other",
     slug: "dcm-yoda-our-biggest-encourager-and-cheerleader",
     content: "Through the entire 6 months, Linty has been such a positive inspiration to our DCM family. She's an eloquent writer and would beautifully convey what so many of us felt during this incredible journey. Can't wait to meet in Vegas!",
-    image: "/community/community-4.jpeg"
+    image: "/community/community10-4.jpg"
   },
   {
     id: 95,
@@ -47,7 +47,7 @@ const communityPosts = [
     author: "Vasudha Narra from DCM other",
     slug: "vasudha-narra",
     content: "Shout out to fellow yoda Brian Rencher . Always with a smile reaching new heights with implementing everything he learns . Inspiration for me.",
-    image: "/community/community-5.jpeg"
+    image: "/community/community10-5.jpeg"
   },
   {
     id: 96,
@@ -56,7 +56,7 @@ const communityPosts = [
     author: "Amir Daoud from DCM Neo",
     slug: "dr-isaac-perle",
     content: "Love this photo of Dr Perle in front of his bookcase.\nWhat a wealth of knowledge that he always shares.",
-    image: "/community/community-6.jpeg"
+    image: "/community/community10-6.jpeg"
   },
   {
     id: 97,
@@ -65,7 +65,7 @@ const communityPosts = [
     author: "Danny Lawen from DCM Neo",
     slug: "summit-selfie",
     content: "Great to see fellow DCM at a TTi summit in Orlando !",
-    image: "/community/community-7.jpeg"
+    image: "/community/community10-7.jpg"
   },
   {
     id: 98,
@@ -74,7 +74,7 @@ const communityPosts = [
     author: "Kelly smudde from DCM Norton",
     slug: "kelly-smudde",
     content: "Thank you Hazem for always motivating me to eat right!!",
-    image: "/community/community-8.jpeg"
+    image: "/community/community10-8.jpeg"
   },
   {
     id: 99,
@@ -83,7 +83,7 @@ const communityPosts = [
     author: "Lindsey Papac from DCM Neo",
     slug: "multiple-dcm-classes-all-together-at-the-january-2023-kol-meeting",
     content: "",
-    image: "/community/community-9.jpeg"
+    image: "/community/community10-9.jpeg"
   },
   {
     id: 100,
@@ -92,7 +92,7 @@ const communityPosts = [
     author: "Lauren Lee from DCM Norton",
     slug: "aim-for-my-bucket-list",
     content: "So inspired by fellow DCMers and their travels. It is important to break away from the office to recharge and make memories. Hope to see the tulips in the Netherlands one day sooner than later!",
-    image: null
+    image: "/community/community10-10.jpeg"
   }
 ];
 
@@ -151,8 +151,8 @@ const CommunityContentSection10 = () => {
                     <Image
                       src={post.image}
                       alt={post.title}
-                      width={500}
-                      height={400}
+                      width={300}
+                      height={250}
                       className="object-cover rounded-lg"
                       style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
                     />

@@ -11,7 +11,7 @@ const communityPosts = [
     author: "Amy Jung from DCM other",
     slug: "true-passion-toward-diamond-and-dcm",
     content: "\"Your passion for dentistry is what sets apart. Keep pushing your dreams and never give up!\" by Dr. Wollock.\nDr. Dang's commitment and passion inspired me so much!",
-    image: "/community/community-1.jpeg"
+    image: "/community/community8-1.jpeg"
   },
   {
     id: 72,
@@ -20,7 +20,7 @@ const communityPosts = [
     author: "Abinaash Kaur from DCM other",
     slug: "shiva",
     content: "A rising star dentist, an humble human being, and\na wicked social media content creator. Love her creativity and positive energy.",
-    image: "/community/community-2"
+    image: "/community/community8-2.jpeg"
   },
   {
     id: 73,
@@ -29,7 +29,7 @@ const communityPosts = [
     author: "Olga Dontsova from DCM other",
     slug: "sheena-sood-with-her-niece",
     content: "Would like to honor Sheena, an amazing human, who is always helping others.\nThank you Sheena for being there, you inspired me and taught me a lot.\nThank you for sharing your wisdom with everyone, who would like to learn, such a generous heart.",
-    image: "/community/community-3.jpeg"
+    image: "/community/community8-3.png"
   },
   {
     id: 74,
@@ -38,7 +38,7 @@ const communityPosts = [
     author: "Brian Rencher from DCM other",
     slug: "quyen-dang-coolest-dude-out-there",
     content: "DCM Goals!!! Quyen is the coolest dude out there and we all want to be like him, from achieving Diamond Status to looking Rico Suave in a leather coat and a fast bike! One day I want to be like you!",
-    image: "/community/community-4.jpeg"
+    image: "/community/community8-4.jpeg"
   },
   {
     id: 75,
@@ -47,7 +47,7 @@ const communityPosts = [
     author: "Rani Dasgupta from DCM other",
     slug: "quyen-dang-journey-on-a-diamond-road-to-success",
     content: "",
-    image: "/community/community-5.jpeg"
+    image: "/community/community8-4.jpeg"
   },
   {
     id: 76,
@@ -56,7 +56,7 @@ const communityPosts = [
     author: "Linda Wu from DCM other",
     slug: "deep-thought-linty",
     content: "I always look forward to your posts…you always view the world with a full glass!!",
-    image: "/community/community-6.jpeg"
+    image: "/community/community8-6.jpeg"
   },
   {
     id: 77,
@@ -65,7 +65,7 @@ const communityPosts = [
     author: "Moshe Rechthand from DCM other",
     slug: "yoni",
     content: "Here's to Yoni Ahdut – the best smile in DCM YODA.",
-    image: "/community/community-7.jpeg"
+    image: "/community/community8-7.jpeg"
   },
   {
     id: 78,
@@ -74,7 +74,7 @@ const communityPosts = [
     author: "Jessica Nieva from DCM other",
     slug: "linty-our-yoda-voice",
     content: "Linty has a way to be resilient, encouraging, be optimistic, spread gratitude and be our biggest cheerleader with her eloquent talent of writing🥰.",
-    image: "/community/community-8.jpeg"
+    image: "/community/community8-8.jpeg"
   },
   {
     id: 79,
@@ -83,7 +83,7 @@ const communityPosts = [
     author: "Annah Tran from DCM other",
     slug: "dcm-yoda-life-coach",
     content: "To the most inspiring person I have never met. I look forward to your posts almost as much as Dr. Wollock's because I know it will instantly inspire me to do better. Meet you soon in Vegas!",
-    image: "/community/community-9.jpeg"
+    image: "/community/community8-9.jpeg"
   },
   {
     id: 80,
@@ -92,7 +92,7 @@ const communityPosts = [
     author: "Lauren Shepard from DCM other",
     slug: "jessica-nieva",
     content: "This girls is one strong, powerful, beautiful mom boss! She has overcome so many challenges, yet still strives for more! She also sets a wonderful example for her precious girl gang! She truly exemplifies the DCM spirit!",
-    image: null
+    image: "/community/community8-10.jpeg"
   }
 ];
 
@@ -151,8 +151,8 @@ const CommunityContentSection8 = () => {
                     <Image
                       src={post.image}
                       alt={post.title}
-                      width={500}
-                      height={400}
+                      width={300}
+                      height={250}
                       className="object-cover rounded-lg"
                       style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
                     />

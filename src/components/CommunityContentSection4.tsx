@@ -99,7 +99,7 @@ const communityPosts = [
 const CommunityContentSection4 = () => {
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-24">
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8" style={{ paddingLeft: '30px', paddingRight: '30px' }}>
         <div className="space-y-8">
           {communityPosts.map((post, index) => (
             <div key={post.id}>
@@ -151,8 +151,8 @@ const CommunityContentSection4 = () => {
                     <Image
                       src={post.image}
                       alt={post.title}
-                      width={500}
-                      height={400}
+                      width={300}
+                      height={250}
                       className="object-cover rounded-lg"
                       style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
                     />
