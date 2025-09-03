@@ -230,16 +230,15 @@ const DCMDiamondsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main Heading */}
         <h1 
-          className="font-sansation-regular text-[#004681] mb-6"
-          style={{ fontSize: '30px' }}
+          className="font-sansation-regular text-[#004681] mb-6 text-[27px] sm:text-[30px]"
+          style={{ fontWeight: 400, lineHeight: '1.2' }}
         >
           DCM Diamonds
         </h1>
 
         {/* Introductory Text */}
         <p 
-          className="font-sansation-regular text-[#6b6b6b] mb-12 max-w-6xl mx-auto leading-relaxed"
-          style={{ fontSize: '17px' }}
+          className="font-sansation-regular text-[#6b6b6b] mb-12 max-w-6xl mx-auto leading-relaxed text-[16px] sm:text-[17px]"
         >
           Congratulations to the many DCM graduates who have now reached Diamond or even Diamond Plus. These are some of the top Invisalign GP dentists in all of North America. Their desire to be better has guided their successful climb to the top. Well done!
         </p>

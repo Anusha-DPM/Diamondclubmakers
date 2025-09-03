@@ -397,8 +397,8 @@ const InTheirOwnWordsSection = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
                  <h2 
-           className="font-sansation-regular text-white text-center mb-0"
-           style={{ fontSize: '30px' }}
+           className="font-sansation-regular text-white text-center mb-0 text-[27px] sm:text-[30px]"
+           style={{ fontWeight: 400, lineHeight: '1.2' }}
          >
            In Their Own Words
          </h2>
@@ -415,12 +415,12 @@ const InTheirOwnWordsSection = () => {
               {testimonials.map((testimonial, index) => (
                                  <div 
                    key={testimonial.id}
-                   className="flex flex-col lg:flex-row items-center lg:items-center gap-8 lg:gap-12 px-20 min-w-full"
+                   className="flex flex-col lg:flex-row items-center lg:items-center gap-8 lg:gap-12 px-4 sm:px-8 md:px-12 lg:px-20 min-w-full"
                  >
                                        {/* Video Section - Left Side */}
                     <div className="w-full lg:w-[30%] flex justify-center">
-                     <div className="relative w-[200px] h-[300px]">
-                       <div className="relative w-[200px] h-[300px] rounded-lg overflow-hidden shadow-lg">
+                     <div className="relative w-[160px] h-[240px] sm:w-[180px] sm:h-[270px] md:w-[200px] md:h-[300px]">
+                       <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg">
                          {/* Video Thumbnail - shown when not playing */}
                          {playingVideoIndex !== index && (
                            <>
@@ -429,7 +429,7 @@ const InTheirOwnWordsSection = () => {
                                alt={testimonial.name}
                                width={200}
                                height={300}
-                               className="w-[200px] h-[300px] object-cover"
+                               className="w-full h-full object-cover"
                              />
                              
                              {/* Play Button Overlay */}
@@ -451,7 +451,7 @@ const InTheirOwnWordsSection = () => {
                                                    {/* Video Element - shown when playing */}
                           {playingVideoIndex === index && (
                             <video 
-                              className="w-[200px] h-[300px] object-cover"
+                              className="w-full h-full object-cover"
                               src={testimonial.video}
                               controls
                               autoPlay
@@ -472,8 +472,7 @@ const InTheirOwnWordsSection = () => {
                        {testimonial.content.map((text, textIndex) => (
                          <p 
                            key={textIndex}
-                           className="font-sansation-regular text-white leading-relaxed"
-                           style={{ fontSize: '17px' }}
+                           className="font-sansation-regular text-white leading-relaxed text-[16px] sm:text-[17px]"
                          >
                            {text}
                          </p>
@@ -483,20 +482,17 @@ const InTheirOwnWordsSection = () => {
                                          {/* Attribution */}
                      <div className="text-right space-y-1">
                        <p 
-                         className="font-sansation-regular text-white font-semibold"
-                         style={{ fontSize: '16px' }}
+                         className="font-sansation-regular text-white font-semibold text-[16px]"
                        >
                          {testimonial.name}
                        </p>
                        <p 
-                         className="font-sansation-regular text-white"
-                         style={{ fontSize: '16px' }}
+                         className="font-sansation-regular text-white text-[16px]"
                        >
                          {testimonial.location}
                        </p>
                        <p 
-                         className="font-sansation-regular text-white"
-                         style={{ fontSize: '16px' }}
+                         className="font-sansation-regular text-white text-[16px]"
                        >
                          {testimonial.title}
                        </p>
@@ -506,13 +502,9 @@ const InTheirOwnWordsSection = () => {
                          <div className="flex justify-start mt-6">
                            <Link 
                              href="/dcm-community-videos"
-                             className="font-sansation-regular text-white bg-[#004681] hover:bg-[#003366] transition-colors duration-200 inline-block"
+                             className="font-sansation-regular text-white bg-[#004681] hover:bg-[#003366] transition-colors duration-200 inline-block text-[16px] px-4 py-2"
                              style={{ 
-                               fontSize: '16px', 
-                               padding: '6px 15px',
                                borderRadius: '0',
-                               marginTop: '30px',
-                               marginLeft: '150px',
                                textDecoration: 'none'
                              }}
                            >

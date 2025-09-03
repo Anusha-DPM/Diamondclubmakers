@@ -104,7 +104,7 @@ const WhatILearnedInDCM = () => {
              <div className="max-w-4xl mx-auto px-2 sm:px-3 lg:px-4">
         {/* Main Heading with Navigation */}
         <div className="flex items-center justify-between mb-8">
-          <h2 className="font-sansation-regular text-[#004681] text-center flex-1" style={{ fontSize: '30px' }}>
+          <h2 className="font-sansation-regular text-[#004681] text-center flex-1 text-[27px] sm:text-[30px]" style={{ fontWeight: 400, lineHeight: '1.2' }}>
             What I Learned In DCM
           </h2>
           
@@ -128,18 +128,18 @@ const WhatILearnedInDCM = () => {
                  {/* Case Study Content */}
          <div className="space-y-6">
                        {/* Case Study Name/Doctor */}
-            <h3 className="font-sansation-regular text-[#004681] mb-0" style={{ fontSize: '27px' }}>
+            <h3 className="font-sansation-regular text-[#004681] mb-0 text-[27px]" style={{ fontWeight: 400, lineHeight: '1.2' }}>
               {currentCase.name}
             </h3>
             
             {/* Achievement/Status */}
-            <p className="font-sansation-regular text-[#004681] mt-0" style={{ fontSize: '27px' }}>
+            <p className="font-sansation-regular text-[#004681] mt-0 text-[27px]" style={{ fontWeight: 400, lineHeight: '1.2' }}>
               {currentCase.achievement}
             </p>
           
                                  {/* Profit Information */}
             {currentCase.profit && (
-              <p className="font-sansation-regular text-[#6b6b6b] -mt-4" style={{ fontSize: '17px' }}>
+              <p className="font-sansation-regular text-[#6b6b6b] -mt-4 text-[16px] sm:text-[17px]">
                 {currentCase.profit}
               </p>
             )}
@@ -149,8 +149,8 @@ const WhatILearnedInDCM = () => {
             {currentCase.content.map((paragraph, index) => (
               <p 
                 key={index} 
-                className="font-sansation-regular text-[#6b6b6b] leading-relaxed" 
-                style={{ fontSize: '17px', lineHeight: '1.7' }}
+                className="font-sansation-regular text-[#6b6b6b] leading-relaxed text-[16px] sm:text-[17px]" 
+                style={{ lineHeight: '1.7' }}
               >
                 {paragraph}
               </p>
