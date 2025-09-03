@@ -92,7 +92,7 @@ const communityPosts = [
     date: "June 20, 2022",
     author: "Andrew Paek from DCM Pitt",
     slug: "insta-famous",
-    content: "Amazing insight from our DCMer on how to utilize social media successfully!\n\n_________________________________________________",
+    content: "Amazing insight from our DCMer on how to utilize social media successfully!",
     image: null
   }
 ];
@@ -146,12 +146,12 @@ const CommunityContentSection = () => {
 
               {/* Images */}
               {post.image && (
-                <div className="w-full flex justify-end">
+                <div className="w-full">
                   {post.image2 ? (
-                    // Two images layout - both images right-aligned
-                    <div className="flex flex-col gap-4">
-                      {/* First image */}
-                      <div className="w-full">
+                    // Two images layout - first left, second right on same line
+                    <div className="flex justify-between items-start gap-4">
+                      {/* First image - left aligned */}
+                      <div className="flex justify-start">
                         <Image
                           src={post.image}
                           alt={post.title}
@@ -161,8 +161,8 @@ const CommunityContentSection = () => {
                           style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
                         />
                       </div>
-                      {/* Second image */}
-                      <div className="w-full">
+                      {/* Second image - right aligned */}
+                      <div className="flex justify-end">
                         <Image
                           src={post.image2}
                           alt={post.title}
@@ -175,22 +175,22 @@ const CommunityContentSection = () => {
                     </div>
                   ) : (
                     // Single image layout
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      width={300}
-                      height={250}
-                      className="object-cover rounded-lg"
-                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                    />
+                    <div className={`w-full ${post.content === "great DCM moment" ? 'flex justify-start' : 'flex justify-end'}`}>
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        width={300}
+                        height={250}
+                        className="object-cover rounded-lg"
+                        style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                      />
+                    </div>
                   )}
                 </div>
               )}
 
               {/* Separator Line */}
-              {index < communityPosts.length - 1 && (
-                <div className="mt-8 pt-8 border-t border-[#004681] border-opacity-20"></div>
-              )}
+              <div className="mt-8 pt-8 border-t border-[#004681] border-opacity-20"></div>
             </div>
           ))}
         </div>
