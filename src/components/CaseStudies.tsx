@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const CaseStudies = () => {
   return (
-    <section className="bg-white py-8 sm:py-12 lg:py-16">
+    <section className="bg-white pt-4 pb-8 sm:py-12 lg:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Title */}

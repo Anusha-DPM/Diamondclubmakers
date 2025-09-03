@@ -393,7 +393,7 @@ const InTheirOwnWordsSection = () => {
   };
 
   return (
-    <div className="bg-[#019fde] w-full py-16 sm:py-20 lg:py-24">
+    <div className="bg-[#019fde] w-full pt-16 pb-0 sm:py-20 lg:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
                  <h2 

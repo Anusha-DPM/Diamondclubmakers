@@ -127,11 +127,11 @@ const DiamondClubMakerSection = () => {
              {/* Video Section with 4 columns (3 videos + 1 empty) */}
        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
 
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                      {/* Video 1 - Helga Idrizi */}
-           <div className="col-span-1">
+           <div className="col-span-1 sm:col-span-1 lg:col-span-1">
              <div className="relative">
-               <div className="relative w-full h-64">
+               <div className="relative w-full h-48 sm:h-56 lg:h-64">
                  {/* Video Thumbnail - shown when not playing */}
                  {playingVideoIndex !== 0 && (
                    <>
@@ -140,7 +140,7 @@ const DiamondClubMakerSection = () => {
                        alt="Helga Idrizi"
                        width={256}
                        height={256}
-                       className="w-full h-64 object-cover rounded-lg"
+                       className="w-full h-full object-cover rounded-lg"
                      />
                      {/* Play Button Overlay - Clickable */}
                      <div 
@@ -182,9 +182,9 @@ const DiamondClubMakerSection = () => {
            </div>
 
                      {/* Video 2 - Moshe Rechthand */}
-           <div className="col-span-1">
+           <div className="col-span-1 sm:col-span-1 lg:col-span-1">
              <div className="relative">
-               <div className="relative w-full h-64">
+               <div className="relative w-full h-48 sm:h-56 lg:h-64">
                  {/* Video Thumbnail - shown when not playing */}
                  {playingVideoIndex !== 1 && (
                    <>
@@ -193,7 +193,7 @@ const DiamondClubMakerSection = () => {
                        alt="Moshe Rechthand"
                        width={256}
                        height={256}
-                       className="w-full h-64 object-cover rounded-lg"
+                       className="w-full h-full object-cover rounded-lg"
                      />
                      {/* Play Button Overlay - Clickable */}
                      <div 
@@ -235,9 +235,9 @@ const DiamondClubMakerSection = () => {
            </div>
 
                      {/* Video 3 - Rebecca Charpentier */}
-           <div className="col-span-1">
+           <div className="col-span-1 sm:col-span-1 lg:col-span-1">
              <div className="relative">
-               <div className="relative w-full h-64">
+               <div className="relative w-full h-48 sm:h-56 lg:h-64">
                  {/* Video Thumbnail - shown when not playing */}
                  {playingVideoIndex !== 2 && (
                    <>
@@ -246,7 +246,7 @@ const DiamondClubMakerSection = () => {
                        alt="Rebecca Charpentier"
                        width={256}
                        height={256}
-                       className="w-full h-64 object-cover rounded-lg"
+                       className="w-full h-full object-cover rounded-lg"
                      />
                      {/* Play Button Overlay - Clickable */}
                      <div 
@@ -288,7 +288,7 @@ const DiamondClubMakerSection = () => {
            </div>
 
           {/* Empty 4th column */}
-          <div className="col-span-1">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             {/* Empty space */}
                      </div>
          </div>

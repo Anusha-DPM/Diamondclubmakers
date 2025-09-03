@@ -36,7 +36,7 @@ const ContentSection = () => {
   }, [testimonials.length]);
 
   return (
-    <section className="bg-white py-12 sm:py-16 lg:py-12">
+    <section className="bg-white pt-12 pb-0 sm:py-16 lg:py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           
