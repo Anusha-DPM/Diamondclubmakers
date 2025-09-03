@@ -254,7 +254,8 @@ export const communityPosts = [
     author: "Mike from DCM other",
     slug: "mike",
     content: "",
-    image: "/community/community3-8.jpeg"
+    image: "/community/community3-8-1",
+    image2: "/community/community3-8.jpeg"
   },
   {
     id: 29,

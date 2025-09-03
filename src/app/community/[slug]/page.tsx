@@ -108,15 +108,46 @@ export default async function CommunityPost({ params }: PageProps) {
             {/* Right Column - Image aligned with heading */}
             {post.image && (
               <div className="flex-shrink-0 w-full sm:w-auto flex justify-center sm:justify-start">
-                <div className="relative w-full max-w-[300px] sm:w-[300px] h-[250px]">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    className="object-cover rounded-lg"
-                    sizes="(max-width: 640px) 100vw, 300px"
-                  />
-                </div>
+                {post.image2 ? (
+                  // Two images layout - side by side
+                  <div className="flex flex-col sm:flex-row gap-4 w-full max-w-[800px]">
+                    <div className="relative w-full sm:w-[400px]">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        width={400}
+                        height={300}
+                        className="object-contain rounded-lg w-full h-auto"
+                        style={{ maxWidth: '100%', height: 'auto' }}
+                        sizes="(max-width: 640px) 100vw, 400px"
+                      />
+                    </div>
+                    <div className="relative w-full sm:w-[400px]">
+                      <Image
+                        src={post.image2}
+                        alt={post.title}
+                        width={400}
+                        height={300}
+                        className="object-contain rounded-lg w-full h-auto"
+                        style={{ maxWidth: '100%', height: 'auto' }}
+                        sizes="(max-width: 640px) 100vw, 400px"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  // Single image layout
+                  <div className="relative w-full max-w-[400px] sm:w-[400px]">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={400}
+                      height={300}
+                      className="object-contain rounded-lg w-full h-auto"
+                      style={{ maxWidth: '100%', height: 'auto' }}
+                      sizes="(max-width: 640px) 100vw, 400px"
+                    />
+                  </div>
+                )}
               </div>
             )}
           </div>
