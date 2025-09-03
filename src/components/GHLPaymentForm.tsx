@@ -3,7 +3,7 @@ import React from 'react';
 const GHLPaymentForm = () => {
   return (
     <section className="bg-white py-10 sm:py-12 lg:py-14">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="w-full">
           <iframe
             src="https://link.digitalpresencematters.com/widget/form/upToMYXviwhY56OhQSjY"
