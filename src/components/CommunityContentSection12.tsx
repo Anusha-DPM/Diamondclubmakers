@@ -39,10 +39,10 @@ const CommunityContentSection12 = () => {
                 {/* Post Header */}
                 <div className="mb-4">
                   <h2 
-                    className="font-sansation-bold mb-2"
+                    className="font-sansation-regular mb-2 text-[27px] sm:text-[30px]"
                     style={{ 
-                      fontSize: '30px', 
-                      color: '#004681' 
+                      color: '#004681',
+                      lineHeight: '1.2'
                     }}
                   >
                     {post.title}
@@ -79,7 +79,7 @@ const CommunityContentSection12 = () => {
                     alt={post.title}
                     width={300}
                     height={250}
-                    className="object-cover rounded-lg"
+                                          className="object-cover"
                     style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
                   />
                 </div>

@@ -108,7 +108,73 @@ export default async function CommunityPost({ params }: PageProps) {
             {/* Right Column - Image aligned with heading */}
             {post.image && (
               <div className="flex-shrink-0 w-full sm:w-auto flex justify-center sm:justify-start">
-                {post.image2 ? (
+                {post.image5 ? (
+                  // Five images layout - 3 top, 1 bottom left, 1 right
+                  <div className="flex flex-col lg:flex-row gap-4 w-full max-w-[800px]">
+                    {/* Left side - 3 top, 1 bottom */}
+                    <div className="flex flex-col gap-2 flex-1">
+                      {/* Top row - 3 images in single line */}
+                      <div className="flex gap-1">
+                        <div className="flex-1">
+                          <Image
+                            src={post.image}
+                            alt={post.title}
+                            width={200}
+                            height={150}
+                            className="object-contain w-full"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <Image
+                            src={post.image2}
+                            alt={post.title}
+                            width={200}
+                            height={150}
+                            className="object-contain w-full"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <Image
+                            src={post.image3}
+                            alt={post.title}
+                            width={200}
+                            height={150}
+                            className="object-contain w-full"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                          />
+                        </div>
+                      </div>
+                      {/* Bottom row - 1 image aligned with first image */}
+                      <div className="flex gap-2">
+                        <div className="flex-1">
+                          <Image
+                            src={post.image4}
+                            alt={post.title}
+                            width={200}
+                            height={150}
+                            className="object-contain w-full"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                          />
+                        </div>
+                        <div className="flex-1"></div>
+                        <div className="flex-1"></div>
+                      </div>
+                    </div>
+                    {/* Right side - 1 image */}
+                    <div className="flex justify-center lg:justify-end lg:w-auto">
+                      <Image
+                        src={post.image5}
+                        alt={post.title}
+                        width={200}
+                        height={150}
+                        className="object-contain w-full max-w-[200px]"
+                        style={{ maxWidth: '100%', height: 'auto' }}
+                      />
+                    </div>
+                  </div>
+                ) : post.image2 ? (
                   // Two images layout - side by side
                   <div className="flex flex-col sm:flex-row gap-4 w-full max-w-[800px]">
                     <div className="relative w-full sm:w-[400px]">
@@ -117,7 +183,7 @@ export default async function CommunityPost({ params }: PageProps) {
                         alt={post.title}
                         width={400}
                         height={300}
-                        className="object-contain rounded-lg w-full h-auto"
+                        className="object-contain w-full h-auto"
                         style={{ maxWidth: '100%', height: 'auto' }}
                         sizes="(max-width: 640px) 100vw, 400px"
                       />
@@ -128,7 +194,7 @@ export default async function CommunityPost({ params }: PageProps) {
                         alt={post.title}
                         width={400}
                         height={300}
-                        className="object-contain rounded-lg w-full h-auto"
+                        className="object-contain w-full h-auto"
                         style={{ maxWidth: '100%', height: 'auto' }}
                         sizes="(max-width: 640px) 100vw, 400px"
                       />
@@ -142,7 +208,7 @@ export default async function CommunityPost({ params }: PageProps) {
                       alt={post.title}
                       width={400}
                       height={300}
-                      className="object-contain rounded-lg w-full h-auto"
+                      className="object-contain w-full h-auto"
                       style={{ maxWidth: '100%', height: 'auto' }}
                       sizes="(max-width: 640px) 100vw, 400px"
                     />

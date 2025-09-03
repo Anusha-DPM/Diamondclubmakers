@@ -113,7 +113,8 @@ const CommunityContentSection5 = () => {
                   <h2 
                     className="font-sansation-regular mb-2 text-[27px] sm:text-[30px]"
                     style={{ 
-                      color: '#004681' 
+                      color: '#004681',
+                      lineHeight: '1.2'
                     }}
                   >
                     {post.title}
@@ -148,7 +149,7 @@ const CommunityContentSection5 = () => {
                     alt={post.title}
                     width={300}
                     height={250}
-                    className="object-cover rounded-lg w-full sm:w-auto"
+                                          className="object-cover w-full sm:w-auto"
                     style={{ maxWidth: '100%', height: 'auto' }}
                   />
                 </div>

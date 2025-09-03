@@ -87,8 +87,8 @@ const communityPosts = [
     image: "/community/community6-9-1",
     image2: "/community/community6-9-2",
     image3: "/community/community6-9-3",
-    image4: "/community/community6-9-4.jpeg",
-    image5: "/community/community6-9-5"
+    image4: "/community/community6-9-5",
+    image5: "/community/community6-9-4.jpeg"
   },
   {
     id: 60,
@@ -104,7 +104,7 @@ const communityPosts = [
 const CommunityContentSection6 = () => {
   return (
     <section className="bg-white py-8 sm:py-10 lg:py-12">
-      <div className="w-full" style={{ paddingLeft: '150px', paddingRight: '150px' }}>
+      <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 2xl:px-40">
         <div className="space-y-8">
           {communityPosts.map((post, index) => (
             <div key={post.id}>
@@ -116,18 +116,17 @@ const CommunityContentSection6 = () => {
                 {/* Post Header */}
                 <div className="mb-4">
                   <h2 
-                    className="font-sansation-bold mb-2"
+                    className="font-sansation-regular mb-2 text-[27px] sm:text-[30px]"
                     style={{ 
-                      fontSize: '30px', 
-                      color: '#004681' 
+                      color: '#004681',
+                      lineHeight: '1.2'
                     }}
                   >
                     {post.title}
                   </h2>
                 <p 
-                  className="font-sansation-regular"
+                  className="font-sansation-regular text-[16px] sm:text-[17px]"
                   style={{ 
-                    fontSize: '17px', 
                     color: '#6b6b6b' 
                   }}
                 >
@@ -138,9 +137,8 @@ const CommunityContentSection6 = () => {
               {/* Post Content */}
               {post.content && (
                 <div 
-                  className="font-sansation-regular mb-4"
+                  className="font-sansation-regular mb-4 text-[16px] sm:text-[17px]"
                   style={{ 
-                    fontSize: '17px', 
                     color: '#6b6b6b' 
                   }}
                 >
@@ -150,15 +148,112 @@ const CommunityContentSection6 = () => {
 
               {/* Image */}
               {post.image && (
-                <div className="w-full flex justify-end">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    width={300}
-                    height={250}
-                    className="object-cover rounded-lg"
-                    style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                  />
+                <div className="w-full">
+                  {post.image5 ? (
+                    // Five images layout - 3 top, 1 bottom left, 1 right
+                    <div className="flex flex-col lg:flex-row gap-4">
+                      {/* Left side - 3 top, 1 bottom */}
+                      <div className="flex flex-col gap-2 flex-1">
+                        {/* Top row - 3 images in single line */}
+                        <div className="flex gap-1">
+                          <div className="flex-1">
+                            <Image
+                              src={post.image}
+                              alt={post.title}
+                              width={200}
+                              height={150}
+                              className="object-cover w-full"
+                              style={{ maxWidth: '100%', height: 'auto' }}
+                            />
+                          </div>
+                          <div className="flex-1">
+                            <Image
+                              src={post.image2}
+                              alt={post.title}
+                              width={200}
+                              height={150}
+                              className="object-cover w-full"
+                              style={{ maxWidth: '100%', height: 'auto' }}
+                            />
+                          </div>
+                          <div className="flex-1">
+                            <Image
+                              src={post.image3}
+                              alt={post.title}
+                              width={200}
+                              height={150}
+                              className="object-cover w-full"
+                              style={{ maxWidth: '100%', height: 'auto' }}
+                            />
+                          </div>
+                        </div>
+                        {/* Bottom row - 1 image aligned with first image */}
+                        <div className="flex gap-2">
+                          <div className="flex-1">
+                            <Image
+                              src={post.image4}
+                              alt={post.title}
+                              width={200}
+                              height={150}
+                              className="object-cover w-full"
+                              style={{ maxWidth: '100%', height: 'auto' }}
+                            />
+                          </div>
+                          <div className="flex-1"></div>
+                          <div className="flex-1"></div>
+                        </div>
+                      </div>
+                      {/* Right side - 1 image */}
+                      <div className="flex justify-center lg:justify-end lg:w-auto">
+                        <Image
+                          src={post.image5}
+                          alt={post.title}
+                          width={200}
+                          height={150}
+                          className="object-cover w-full max-w-[200px]"
+                          style={{ maxWidth: '100%', height: 'auto' }}
+                        />
+                      </div>
+                    </div>
+                  ) : post.image2 ? (
+                    // Two images layout - first left, second right on same line
+                    <div className="flex flex-col sm:flex-row sm:justify-between items-start gap-4">
+                      {/* First image - left aligned */}
+                      <div className="w-full sm:w-auto flex justify-start">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          width={300}
+                          height={250}
+                          className="object-cover w-full sm:w-auto"
+                          style={{ maxWidth: '100%', height: 'auto' }}
+                        />
+                      </div>
+                      {/* Second image - right aligned */}
+                      <div className="w-full sm:w-auto flex justify-start sm:justify-end">
+                        <Image
+                          src={post.image2}
+                          alt={post.title}
+                          width={300}
+                          height={250}
+                          className="object-cover w-full sm:w-auto"
+                          style={{ maxWidth: '100%', height: 'auto' }}
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    // Single image layout (fallback for other posts)
+                    <div className="w-full flex justify-start sm:justify-end">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        width={300}
+                        height={250}
+                        className="object-cover w-full sm:w-auto"
+                        style={{ maxWidth: '100%', height: 'auto' }}
+                      />
+                    </div>
+                  )}
                 </div>
               )}
               </Link>

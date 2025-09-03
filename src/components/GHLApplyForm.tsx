@@ -7,7 +7,14 @@ const GHLApplyForm = () => {
         <div className="w-full">
           <iframe
             src="https://link.digitalpresencematters.com/widget/form/fNnDOghb54E6MtG5vOl9"
-            style={{ width: '100%', height: '3079px', border: 'none', borderRadius: '4px' }}
+            style={{ 
+              width: '100%', 
+              height: '3079px', 
+              border: 'none', 
+              borderRadius: '4px',
+              minHeight: '3079px'
+            }}
+            className="w-full h-auto min-h-[3079px]"
             id="inline-fNnDOghb54E6MtG5vOl9" 
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"

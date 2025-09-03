@@ -29,7 +29,7 @@ const communityPosts = [
     author: "Scott Schumann aka SCHU from DCM Norton",
     slug: "hanging-with-the-big-dog-jim-olsen",
     content: "I love meeting up with fellow DCM Norton Bad Ass Teammates, Our Fearless Leaders, and Friends from the past while listening to them just dropping bombs of Knowledge!",
-    image: "/community/community11-3.jpg"
+    image: "/community/community11-3"
   },
   {
     id: 104,
@@ -83,7 +83,7 @@ const communityPosts = [
     author: "Amy from DCM Yoda",
     slug: "dcm-community",
     content: "We are all lucky to learn from you. Dr. Wollock.🦷🤍🤍",
-    image: "/community/community11-9.jpeg"
+    image: null
   },
   {
     id: 110,
@@ -111,10 +111,10 @@ const CommunityContentSection11 = () => {
                 {/* Post Header */}
                 <div className="mb-4">
                   <h2 
-                    className="font-sansation-bold mb-2"
+                    className="font-sansation-regular mb-2 text-[27px] sm:text-[30px]"
                     style={{ 
-                      fontSize: '30px', 
-                      color: '#004681' 
+                      color: '#004681',
+                      lineHeight: '1.2'
                     }}
                   >
                     {post.title}
@@ -145,15 +145,46 @@ const CommunityContentSection11 = () => {
 
               {/* Image */}
               {post.image && (
-                <div className="w-full flex justify-end">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    width={300}
-                    height={250}
-                    className="object-cover rounded-lg"
-                    style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                  />
+                <div className="w-full">
+                  {post.image2 ? (
+                    // Two images layout - first left, second right on same line
+                    <div className="flex flex-col sm:flex-row sm:justify-between items-start gap-4">
+                      {/* First image - left aligned */}
+                      <div className="w-full sm:w-auto flex justify-start">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          width={300}
+                          height={250}
+                          className="object-cover w-full sm:w-auto"
+                          style={{ maxWidth: '100%', height: 'auto' }}
+                        />
+                      </div>
+                      {/* Second image - right aligned */}
+                      <div className="w-full sm:w-auto flex justify-start sm:justify-end">
+                        <Image
+                          src={post.image2}
+                          alt={post.title}
+                          width={300}
+                          height={250}
+                          className="object-cover w-full sm:w-auto"
+                          style={{ maxWidth: '100%', height: 'auto' }}
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    // Single image layout (fallback for other posts)
+                    <div className="w-full flex justify-start sm:justify-end">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        width={300}
+                        height={250}
+                        className="object-cover w-full sm:w-auto"
+                        style={{ maxWidth: '100%', height: 'auto' }}
+                      />
+                    </div>
+                  )}
                 </div>
               )}
               </Link>

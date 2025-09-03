@@ -541,8 +541,8 @@ export const communityPosts = [
     image: "/community/community6-9-1",
     image2: "/community/community6-9-2",
     image3: "/community/community6-9-3",
-    image4: "/community/community6-9-4.jpeg",
-    image5: "/community/community6-9-5"
+    image4: "/community/community6-9-5",
+    image5: "/community/community6-9-4.jpeg"
   },
   {
     id: 60,
@@ -561,7 +561,7 @@ export const communityPosts = [
     author: "Tran Han from DCM Destruction",
     slug: "tran-han",
     content: "Bring apart of DCM has been amazing but getting to share it with so many awesome people was more than I can ask for. Especially with Rob Herron. This was a night to remember for sure 😉 Thanks to Sarah Pless for getting us out in Vegas!!!",
-    image: "/community/community-1.jpeg"
+    image: "/community/community7-1.jpeg"
   },
   {
     id: 62,
@@ -570,7 +570,9 @@ export const communityPosts = [
     author: "Jim Olsen from DCM Norton",
     slug: "r-r",
     content: "Just a little vacay time on Lake Michigan after GRC. Returning to the office rested and ready!",
-    image: "/community/community-2"
+    image: "/community/community7-2-1",
+    image2: "/community/community7-2-2",
+    image3: "/community/community7-2.jpeg"
   },
   {
     id: 63,
@@ -579,7 +581,7 @@ export const communityPosts = [
     author: "Robin Lucas from DCM Destruction",
     slug: "recent-fave-maryz-makes-gold-plus",
     content: "",
-    image: "/community/community-3.jpeg"
+    image: "/community/community7-3.jpg"
   },
   {
     id: 64,
@@ -588,7 +590,7 @@ export const communityPosts = [
     author: "Harpreet Singh Dhillon from DCM other",
     slug: "cuteness-to-the-max",
     content: "This is one of my favorite photos of my DCM group. It's A fellow DCM Rebel, Brian with his son.",
-    image: "/community/community-4.jpeg"
+    image: "/community/community7-5.jpg"
   },
   {
     id: 65,
@@ -597,7 +599,7 @@ export const communityPosts = [
     author: "Quyen Dang from DCM other",
     slug: "having-fun-while-carving-diamond",
     content: "Dr. Winston Feng is the embodiment of joy in our Yoda class, consistently spreading positivity and humor wherever he goes.",
-    image: "/community/community-5.jpeg"
+    image: "/community/community7-6.jpeg"
   },
   {
     id: 66,
@@ -606,7 +608,7 @@ export const communityPosts = [
     author: "Joshua Chupp",
     slug: "dr-andrew-of-yoda",
     content: "Gets his brush on",
-    image: "/community/community-6.jpeg"
+    image: "/community/community7-7.jpeg"
   },
   {
     id: 67,
@@ -615,7 +617,7 @@ export const communityPosts = [
     author: "Ken Bevan from DCM other",
     slug: "best-friends",
     content: "Always an optimist, always ready to lend a hand and great contributor to our class DCM Yoda; I love that Dr Tapani falls into the category of looking like his dog 🙂",
-    image: "/community/community-7.jpeg"
+    image: "/community/community7-8.jpg"
   },
   {
     id: 68,
@@ -624,7 +626,7 @@ export const communityPosts = [
     author: "Elizabeth Abell from DCM other",
     slug: "amy-jung-a-rising-star",
     content: "Amy, your dedication to your team, office growth, and willingness to always implement course materials quickly has always inspired me. I feel so fortunate to have met you at Rengage 2. I can't wait to see you again soon and value your expertise and friendship! Congratulations on all of your success!",
-    image: "/community/community-8.jpeg"
+    image: "/community/community7-9.jpeg"
   },
   {
     id: 69,
@@ -633,7 +635,7 @@ export const communityPosts = [
     author: "YONATAN AHDUT from DCM other",
     slug: "yonatan-ahdut",
     content: "",
-    image: "/community/community-9.jpeg"
+    image: "/community/community7-7.jpeg"
   },
   {
     id: 70,
@@ -943,7 +945,7 @@ export const communityPosts = [
     author: "Scott Schumann aka SCHU from DCM Norton",
     slug: "hanging-with-the-big-dog-jim-olsen",
     content: "I love meeting up with fellow DCM Norton Bad Ass Teammates, Our Fearless Leaders, and Friends from the past while listening to them just dropping bombs of Knowledge!",
-    image: "/community/community-3.jpeg"
+    image: "/community/community11-3"
   },
   {
     id: 104,
@@ -997,7 +999,7 @@ export const communityPosts = [
     author: "Amy from DCM Yoda",
     slug: "dcm-community",
     content: "We are all lucky to learn from you. Dr. Wollock.🦷🤍🤍",
-    image: "/community/community-9.jpeg"
+    image: null
   },
   {
     id: 110,
