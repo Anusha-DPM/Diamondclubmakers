@@ -98,8 +98,8 @@ const communityPosts = [
 
 const CommunityContentSection5 = () => {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-24">
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+    <section className="bg-white py-8 sm:py-10 lg:py-12">
+      <div className="w-full" style={{ paddingLeft: '150px', paddingRight: '150px' }}>
         <div className="space-y-8">
           {communityPosts.map((post, index) => (
             <div key={post.id}>
@@ -130,35 +130,32 @@ const CommunityContentSection5 = () => {
                 </p>
               </div>
 
-              {/* Post Content and Image */}
-              <div className="flex flex-col lg:flex-row gap-6">
-                {/* Text Content */}
-                {post.content && (
-                  <div 
-                    className="font-sansation-regular flex-1"
-                    style={{ 
-                      fontSize: '17px', 
-                      color: '#6b6b6b' 
-                    }}
-                  >
-                    <p className="whitespace-pre-line">{post.content}</p>
-                  </div>
-                )}
+              {/* Post Content */}
+              {post.content && (
+                <div 
+                  className="font-sansation-regular mb-4"
+                  style={{ 
+                    fontSize: '17px', 
+                    color: '#6b6b6b' 
+                  }}
+                >
+                  <p className="whitespace-pre-line">{post.content}</p>
+                </div>
+              )}
 
-                {/* Image */}
-                {post.image && (
-                  <div className={`flex-shrink-0 ${!post.content ? 'ml-auto' : ''}`}>
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      width={300}
-                      height={250}
-                      className="object-cover rounded-lg"
-                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                    />
-                  </div>
-                )}
-              </div>
+              {/* Image */}
+              {post.image && (
+                <div className="w-full flex justify-end">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    width={300}
+                    height={250}
+                    className="object-cover rounded-lg"
+                    style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                  />
+                </div>
+              )}
 
               {/* Separator Line */}
               {index < communityPosts.length - 1 && (

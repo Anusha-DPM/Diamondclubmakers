@@ -92,15 +92,15 @@ const communityPosts = [
     date: "June 20, 2022",
     author: "Andrew Paek from DCM Pitt",
     slug: "insta-famous",
-    content: "Amazing insight from our DCMer on how to utilize social media successfully!",
+    content: "Amazing insight from our DCMer on how to utilize social media successfully!\n\n_________________________________________________",
     image: null
   }
 ];
 
 const CommunityContentSection = () => {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-24">
-      <div className="w-full px-4 sm:px-6 lg:px-8" style={{ paddingLeft: '30px', paddingRight: '30px' }}>
+    <section className="bg-white py-8 sm:py-10 lg:py-12">
+      <div className="w-full" style={{ paddingLeft: '150px', paddingRight: '150px' }}>
         <div className="space-y-8">
           {communityPosts.map((post, index) => (
             <div key={post.id}>
@@ -131,64 +131,61 @@ const CommunityContentSection = () => {
                 </p>
               </div>
 
-              {/* Post Content and Image */}
-              <div className="flex flex-col lg:flex-row gap-6">
-                {/* Text Content */}
-                {post.content && (
-                  <div 
-                    className="font-sansation-regular flex-1"
-                    style={{ 
-                      fontSize: '17px', 
-                      color: '#6b6b6b' 
-                    }}
-                  >
-                    <p className="whitespace-pre-line">{post.content}</p>
-                  </div>
-                )}
+                            {/* Post Content */}
+              {post.content && (
+                <div 
+                  className="font-sansation-regular mb-4"
+                  style={{ 
+                    fontSize: '17px', 
+                    color: '#6b6b6b' 
+                  }}
+                >
+                  <p className="whitespace-pre-line">{post.content}</p>
+                </div>
+              )}
 
-                {/* Images */}
-                {post.image && (
-                  <div className={`flex-shrink-0 ${!post.content ? 'ml-auto' : ''}`}>
-                    {post.image2 ? (
-                      // Two images layout - first image left-aligned under content, second image right-aligned
-                      <div className="flex flex-col gap-4">
-                                                 {/* First image left-aligned under content */}
-                         <div className="flex justify-start">
-                           <Image
-                             src={post.image}
-                             alt={post.title}
-                             width={300}
-                             height={250}
-                             className="object-cover rounded-lg"
-                             style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                           />
-                         </div>
-                         {/* Second image right-aligned */}
-                         <div className="flex justify-end">
-                           <Image
-                             src={post.image2}
-                             alt={post.title}
-                             width={300}
-                             height={250}
-                             className="object-cover rounded-lg"
-                             style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                           />
-                         </div>
+              {/* Images */}
+              {post.image && (
+                <div className="w-full flex justify-end">
+                  {post.image2 ? (
+                    // Two images layout - both images right-aligned
+                    <div className="flex flex-col gap-4">
+                      {/* First image */}
+                      <div className="w-full">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          width={300}
+                          height={250}
+                          className="object-cover rounded-lg"
+                          style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                        />
                       </div>
-                    ) : (
-                      // Single image layout
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        width={300}
-                        height={250}
-                        className="object-cover rounded-lg"
-                        style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                      />
-                    )}
-                  </div>
-                )}
-              </div>
+                      {/* Second image */}
+                      <div className="w-full">
+                        <Image
+                          src={post.image2}
+                          alt={post.title}
+                          width={300}
+                          height={250}
+                          className="object-cover rounded-lg"
+                          style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    // Single image layout
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={300}
+                      height={250}
+                      className="object-cover rounded-lg"
+                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                    />
+                  )}
+                </div>
+              )}
 
               {/* Separator Line */}
               {index < communityPosts.length - 1 && (

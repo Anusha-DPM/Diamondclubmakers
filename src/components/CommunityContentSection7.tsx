@@ -11,7 +11,7 @@ const communityPosts = [
     author: "Tran Han from DCM Destruction",
     slug: "tran-han",
     content: "Bring apart of DCM has been amazing but getting to share it with so many awesome people was more than I can ask for. Especially with Rob Herron. This was a night to remember for sure 😉 Thanks to Sarah Pless for getting us out in Vegas!!!",
-    image: "/community/community7-1.jpeg"
+    image: "/community/community-1.jpeg"
   },
   {
     id: 62,
@@ -20,7 +20,7 @@ const communityPosts = [
     author: "Jim Olsen from DCM Norton",
     slug: "r-and-r",
     content: "Just a little vacay time on Lake Michigan after GRC. Returning to the office rested and ready!",
-    image: "/community/community7-2.jpeg"
+    image: "/community/community-2"
   },
   {
     id: 63,
@@ -29,7 +29,7 @@ const communityPosts = [
     author: "Robin Lucas from DCM Destruction",
     slug: "recent-fave-maryz-makes-gold-plus",
     content: "",
-    image: "/community/community7-3.jpg"
+    image: "/community/community-3.jpeg"
   },
   {
     id: 64,
@@ -38,7 +38,7 @@ const communityPosts = [
     author: "Harpreet Singh Dhillon from DCM other",
     slug: "cuteness-to-the-max",
     content: "This is one of my favorite photos of my DCM group. It's A fellow DCM Rebel, Brian with his son.",
-    image: "/community/community7-5.jpg"
+    image: "/community/community-4.jpeg"
   },
   {
     id: 65,
@@ -47,7 +47,7 @@ const communityPosts = [
     author: "Quyen Dang from DCM other",
     slug: "having-fun-while-carving-diamond",
     content: "Dr. Winston Feng is the embodiment of joy in our Yoda class, consistently spreading positivity and humor wherever he goes.",
-    image: "/community/community7-5.jpg"
+    image: "/community/community-5.jpeg"
   },
   {
     id: 66,
@@ -56,7 +56,7 @@ const communityPosts = [
     author: "Joshua Chupp",
     slug: "dr-andrew-of-yoda",
     content: "Gets his brush on",
-    image: "/community/community7-6.jpeg"
+    image: "/community/community-6.jpeg"
   },
   {
     id: 67,
@@ -65,7 +65,7 @@ const communityPosts = [
     author: "Ken Bevan from DCM other",
     slug: "best-friends",
     content: "Always an optimist, always ready to lend a hand and great contributor to our class DCM Yoda; I love that Dr Tapani falls into the category of looking like his dog 🙂",
-    image: "/community/community7-7.jpeg"
+    image: "/community/community-7.jpeg"
   },
   {
     id: 68,
@@ -74,7 +74,7 @@ const communityPosts = [
     author: "Elizabeth Abell from DCM other",
     slug: "amy-jung-a-rising-star",
     content: "Amy, your dedication to your team, office growth, and willingness to always implement course materials quickly has always inspired me. I feel so fortunate to have met you at Rengage 2. I can't wait to see you again soon and value your expertise and friendship! Congratulations on all of your success!",
-    image: "/community/community7-8.jpg"
+    image: "/community/community-8.jpeg"
   },
   {
     id: 69,
@@ -83,7 +83,7 @@ const communityPosts = [
     author: "YONATAN AHDUT from DCM other",
     slug: "yonatan-ahdut",
     content: "",
-    image: "/community/community7-9.jpeg"
+    image: "/community/community-9.jpeg"
   },
   {
     id: 70,
@@ -92,14 +92,14 @@ const communityPosts = [
     author: "Jonathan Chen from DCM other",
     slug: "dr-annah-tran",
     content: "Badass Dr Tran getting her Platinum bling 💎💎",
-    image: "/community/community8-10.jpeg"
+    image: null
   }
 ];
 
 const CommunityContentSection7 = () => {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-24">
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+    <section className="bg-white py-8 sm:py-10 lg:py-12">
+      <div className="w-full" style={{ paddingLeft: '150px', paddingRight: '150px' }}>
         <div className="space-y-8">
           {communityPosts.map((post, index) => (
             <div key={post.id}>
@@ -130,35 +130,32 @@ const CommunityContentSection7 = () => {
                 </p>
               </div>
 
-              {/* Post Content and Image */}
-              <div className="flex flex-col lg:flex-row gap-6">
-                {/* Text Content */}
-                {post.content && (
-                  <div 
-                    className="font-sansation-regular flex-1"
-                    style={{ 
-                      fontSize: '17px', 
-                      color: '#6b6b6b' 
-                    }}
-                  >
-                    <p className="whitespace-pre-line">{post.content}</p>
-                  </div>
-                )}
+              {/* Post Content */}
+              {post.content && (
+                <div 
+                  className="font-sansation-regular mb-4"
+                  style={{ 
+                    fontSize: '17px', 
+                    color: '#6b6b6b' 
+                  }}
+                >
+                  <p className="whitespace-pre-line">{post.content}</p>
+                </div>
+              )}
 
-                {/* Image */}
-                {post.image && (
-                  <div className={`flex-shrink-0 ${!post.content ? 'ml-auto' : ''}`}>
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      width={300}
-                      height={250}
-                      className="object-cover rounded-lg"
-                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                    />
-                  </div>
-                )}
-              </div>
+              {/* Image */}
+              {post.image && (
+                <div className="w-full flex justify-end">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    width={300}
+                    height={250}
+                    className="object-cover rounded-lg"
+                    style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                  />
+                </div>
+              )}
 
               {/* Separator Line */}
               {index < communityPosts.length - 1 && (
