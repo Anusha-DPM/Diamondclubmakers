@@ -108,12 +108,13 @@ const CommunityContentSection6 = () => {
         <div className="space-y-8">
           {communityPosts.map((post, index) => (
             <div key={post.id}>
-              {/* Post Header */}
-              <div className="mb-4">
-                <Link 
-                  href={`/community/${post.slug}`}
-                  className="hover:opacity-80 transition-opacity duration-200"
-                >
+              {/* Clickable Article Area */}
+              <Link 
+                href={`/community/${post.slug}`}
+                className="block hover:bg-gray-50 hover:opacity-95 transition-all duration-200 rounded-lg p-2 -m-2"
+              >
+                {/* Post Header */}
+                <div className="mb-4">
                   <h2 
                     className="font-sansation-bold mb-2"
                     style={{ 
@@ -123,7 +124,6 @@ const CommunityContentSection6 = () => {
                   >
                     {post.title}
                   </h2>
-                </Link>
                 <p 
                   className="font-sansation-regular"
                   style={{ 
@@ -161,6 +161,7 @@ const CommunityContentSection6 = () => {
                   />
                 </div>
               )}
+              </Link>
 
               {/* Separator Line */}
               {index < communityPosts.length - 1 && (

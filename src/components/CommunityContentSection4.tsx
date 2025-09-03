@@ -103,12 +103,13 @@ const CommunityContentSection4 = () => {
         <div className="space-y-8">
           {communityPosts.map((post, index) => (
             <div key={post.id}>
-              {/* Post Header */}
-              <div className="mb-4">
-                <Link 
-                  href={`/community/${post.slug}`}
-                  className="hover:opacity-80 transition-opacity duration-200"
-                >
+              {/* Clickable Article Area */}
+              <Link 
+                href={`/community/${post.slug}`}
+                className="block hover:bg-gray-50 hover:opacity-95 transition-all duration-200 rounded-lg p-2 -m-2"
+              >
+                {/* Post Header */}
+                <div className="mb-4">
                   <h2 
                     className="font-sansation-bold mb-2"
                     style={{ 
@@ -118,44 +119,44 @@ const CommunityContentSection4 = () => {
                   >
                     {post.title}
                   </h2>
-                </Link>
-                <p 
-                  className="font-sansation-regular"
-                  style={{ 
-                    fontSize: '17px', 
-                    color: '#6b6b6b' 
-                  }}
-                >
-                  {post.date} by {post.author}
-                </p>
-              </div>
-
-              {/* Post Content */}
-              {post.content && (
-                <div 
-                  className="font-sansation-regular mb-4"
-                  style={{ 
-                    fontSize: '17px', 
-                    color: '#6b6b6b' 
-                  }}
-                >
-                  <p className="whitespace-pre-line">{post.content}</p>
+                  <p 
+                    className="font-sansation-regular"
+                    style={{ 
+                      fontSize: '17px', 
+                      color: '#6b6b6b' 
+                    }}
+                  >
+                    {post.date} by {post.author}
+                  </p>
                 </div>
-              )}
 
-              {/* Image */}
-              {post.image && (
-                <div className="w-full flex justify-end">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    width={300}
-                    height={250}
-                    className="object-cover rounded-lg"
-                    style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
-                  />
-                </div>
-              )}
+                {/* Post Content */}
+                {post.content && (
+                  <div 
+                    className="font-sansation-regular mb-4"
+                    style={{ 
+                      fontSize: '17px', 
+                      color: '#6b6b6b' 
+                    }}
+                  >
+                    <p className="whitespace-pre-line">{post.content}</p>
+                  </div>
+                )}
+
+                {/* Image */}
+                {post.image && (
+                  <div className="w-full flex justify-end">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={300}
+                      height={250}
+                      className="object-cover rounded-lg"
+                      style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+                    />
+                  </div>
+                )}
+              </Link>
 
               {/* Separator Line */}
               {index < communityPosts.length - 1 && (

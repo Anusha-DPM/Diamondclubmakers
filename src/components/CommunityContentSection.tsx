@@ -104,12 +104,13 @@ const CommunityContentSection = () => {
         <div className="space-y-6 sm:space-y-8">
           {communityPosts.map((post, index) => (
             <div key={post.id}>
-              {/* Post Header */}
-              <div className="mb-1 sm:mb-4">
-                <Link 
-                  href={`/community/${post.slug}`}
-                  className="hover:opacity-80 transition-opacity duration-200"
-                >
+              {/* Clickable Article Area */}
+              <Link 
+                href={`/community/${post.slug}`}
+                className="block hover:bg-gray-50 hover:opacity-95 transition-all duration-200 rounded-lg p-2 -m-2"
+              >
+                {/* Post Header */}
+                <div className="mb-1 sm:mb-4">
                   <h2 
                     className="font-sansation-regular mb-2 text-[27px] sm:text-[30px]"
                     style={{ 
@@ -118,37 +119,60 @@ const CommunityContentSection = () => {
                   >
                     {post.title}
                   </h2>
-                </Link>
-                <p 
-                  className="font-sansation-regular text-[16px] sm:text-[17px]"
-                  style={{ 
-                    color: '#6b6b6b' 
-                  }}
-                >
-                  {post.date} by {post.author}
-                </p>
-              </div>
-
-                            {/* Post Content */}
-              {post.content && (
-                <div 
-                  className="font-sansation-regular mb-3 sm:mb-4 text-[16px] sm:text-[17px]"
-                  style={{ 
-                    color: '#6b6b6b' 
-                  }}
-                >
-                  <p className="whitespace-pre-line">{post.content}</p>
+                  <p 
+                    className="font-sansation-regular text-[16px] sm:text-[17px]"
+                    style={{ 
+                      color: '#6b6b6b' 
+                    }}
+                  >
+                    {post.date} by {post.author}
+                  </p>
                 </div>
-              )}
 
-              {/* Images */}
-              {post.image && (
-                <div className="w-full">
-                  {post.image2 ? (
-                    // Two images layout - responsive: side by side on desktop, stacked on mobile
-                    <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-4">
-                      {/* First image - left aligned */}
-                      <div className="w-full lg:w-auto flex justify-start">
+                {/* Post Content */}
+                {post.content && (
+                  <div 
+                    className="font-sansation-regular mb-3 sm:mb-4 text-[16px] sm:text-[17px]"
+                    style={{ 
+                      color: '#6b6b6b' 
+                    }}
+                  >
+                    <p className="whitespace-pre-line">{post.content}</p>
+                  </div>
+                )}
+
+                {/* Images */}
+                {post.image && (
+                  <div className="w-full">
+                    {post.image2 ? (
+                      // Two images layout - responsive: side by side on desktop, stacked on mobile
+                      <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-4">
+                        {/* First image - left aligned */}
+                        <div className="w-full lg:w-auto flex justify-start">
+                          <Image
+                            src={post.image}
+                            alt={post.title}
+                            width={300}
+                            height={250}
+                            className="object-cover rounded-lg w-full sm:w-auto"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                          />
+                        </div>
+                        {/* Second image - right aligned */}
+                        <div className="w-full lg:w-auto flex justify-start lg:justify-end">
+                          <Image
+                            src={post.image2}
+                            alt={post.title}
+                            width={300}
+                            height={250}
+                            className="object-cover rounded-lg w-full sm:w-auto"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      // Single image layout
+                      <div className={`w-full flex ${post.content === "great DCM moment" ? 'justify-start' : 'justify-start sm:justify-end'}`}>
                         <Image
                           src={post.image}
                           alt={post.title}
@@ -158,33 +182,10 @@ const CommunityContentSection = () => {
                           style={{ maxWidth: '100%', height: 'auto' }}
                         />
                       </div>
-                      {/* Second image - right aligned */}
-                      <div className="w-full lg:w-auto flex justify-start lg:justify-end">
-                        <Image
-                          src={post.image2}
-                          alt={post.title}
-                          width={300}
-                          height={250}
-                          className="object-cover rounded-lg w-full sm:w-auto"
-                          style={{ maxWidth: '100%', height: 'auto' }}
-                        />
-                      </div>
-                    </div>
-                  ) : (
-                    // Single image layout
-                    <div className={`w-full flex ${post.content === "great DCM moment" ? 'justify-start' : 'justify-start sm:justify-end'}`}>
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        width={300}
-                        height={250}
-                        className="object-cover rounded-lg w-full sm:w-auto"
-                        style={{ maxWidth: '100%', height: 'auto' }}
-                      />
-                    </div>
-                  )}
-                </div>
-              )}
+                    )}
+                  </div>
+                )}
+              </Link>
 
               {/* Separator Line */}
               <div className="mt-6 sm:mt-8 border-t border-[#004681] border-opacity-20"></div>
