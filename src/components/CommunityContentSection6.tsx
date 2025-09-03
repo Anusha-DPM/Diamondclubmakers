@@ -109,10 +109,10 @@ const CommunityContentSection6 = () => {
           {communityPosts.map((post, index) => (
             <div key={post.id}>
               {/* Clickable Article Area */}
-              <Link 
-                href={`/community/${post.slug}`}
+                <Link 
+                  href={`/community/${post.slug}`}
                 className="block hover:opacity-95 transition-all duration-200 rounded-lg p-2 -m-2"
-              >
+                >
                 {/* Post Header */}
                 <div className="mb-4">
                   <h2 
@@ -135,19 +135,19 @@ const CommunityContentSection6 = () => {
               </div>
 
               {/* Post Content */}
-              {post.content && (
-                <div 
+                {post.content && (
+                  <div 
                   className="font-sansation-regular mb-4 text-[16px] sm:text-[17px]"
-                  style={{ 
-                    color: '#6b6b6b' 
-                  }}
-                >
-                  <p className="whitespace-pre-line">{post.content}</p>
-                </div>
-              )}
+                    style={{ 
+                      color: '#6b6b6b' 
+                    }}
+                  >
+                    <p className="whitespace-pre-line">{post.content}</p>
+                  </div>
+                )}
 
-              {/* Image */}
-              {post.image && (
+                {/* Image */}
+                {post.image && (
                 <div className="w-full">
                   {post.image5 ? (
                     // Five images layout - 3 top, 1 bottom left, 1 right
@@ -244,17 +244,17 @@ const CommunityContentSection6 = () => {
                   ) : (
                     // Single image layout (fallback for other posts)
                     <div className="w-full flex justify-start sm:justify-end">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
+                    <Image
+                      src={post.image}
+                      alt={post.title}
                         width={300}
                         height={250}
                         className="object-cover w-full sm:w-auto"
                         style={{ maxWidth: '100%', height: 'auto' }}
-                      />
-                    </div>
-                  )}
-                </div>
+                    />
+                  </div>
+                )}
+              </div>
               )}
               </Link>
 
