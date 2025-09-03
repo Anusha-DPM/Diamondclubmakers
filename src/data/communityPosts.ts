@@ -1020,7 +1020,7 @@ export const communityPosts = [
     author: "Sumbul Naqvi from DCM other",
     slug: "vlad-and-his-pink-ladies",
     content: "Diamond Provider Vlad from DCM Resolute with his Pink Ladies.",
-    image: "/community/community-1.jpeg"
+    image: "/community/community12-1.jpeg"
   },
   {
     id: 112,
@@ -1029,6 +1029,6 @@ export const communityPosts = [
     author: "Uppasna Chand from DCM other",
     slug: "dcmer-learning-advanced-botox",
     content: "",
-    image: "/community/community-2"
+    image: "/community/community12-2.jpeg"
   }
 ];
