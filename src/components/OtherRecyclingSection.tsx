@@ -28,7 +28,7 @@ const OtherRecyclingSection = () => {
 
             <div className="space-y-3 sm:space-y-4">
               <p className="font-sansation-regular text-[16px] sm:text-[15px] md:text-[16px]" style={{ color: '#6b6b6b', lineHeight: 1.6 }}>
-                There is just no reason a 17 billion dollar company can't work with us to recycle the plastic they put into the environment.  Let's just see what 200 of the highest Invisalign producing dentists in North America can do to make change happen.
+                There is just no reason a 17 billion dollar company can&apos;t work with us to recycle the plastic they put into the environment.  Let&apos;s just see what 200 of the highest Invisalign producing dentists in North America can do to make change happen.
               </p>
 
               <p className="font-sansation-regular text-[16px] sm:text-[15px] md:text-[16px]" style={{ color: '#6b6b6b', lineHeight: 1.6 }}>
