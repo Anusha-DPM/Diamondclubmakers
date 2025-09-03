@@ -29,7 +29,9 @@ const communityPosts = [
     author: "Scott Schumann aka SCHU from DCM Norton",
     slug: "hanging-with-the-big-dog-jim-olsen",
     content: "I love meeting up with fellow DCM Norton Bad Ass Teammates, Our Fearless Leaders, and Friends from the past while listening to them just dropping bombs of Knowledge!",
-    image: "/community/community11-3"
+    image: "/community/community11-3-1",
+    image2: "/community/community11-3-2",
+    image3: "/community/community11-3.jpg"
   },
   {
     id: 104,
@@ -99,8 +101,8 @@ const communityPosts = [
 const CommunityContentSection11 = () => {
   return (
     <section className="bg-white py-8 sm:py-10 lg:py-12">
-      <div className="w-full" style={{ paddingLeft: '150px', paddingRight: '150px' }}>
-        <div className="space-y-8">
+      <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 2xl:px-40">
+        <div className="space-y-6 sm:space-y-8">
           {communityPosts.map((post, index) => (
             <div key={post.id}>
               {/* Clickable Article Area */}
@@ -109,7 +111,7 @@ const CommunityContentSection11 = () => {
                 className="block hover:opacity-95 transition-all duration-200 rounded-lg p-2 -m-2"
               >
                 {/* Post Header */}
-                <div className="mb-4">
+                <div className="mb-3 sm:mb-4">
                   <h2 
                     className="font-sansation-regular mb-2 text-[27px] sm:text-[30px]"
                     style={{ 
@@ -120,9 +122,8 @@ const CommunityContentSection11 = () => {
                     {post.title}
                   </h2>
                 <p 
-                  className="font-sansation-regular"
+                  className="font-sansation-regular text-[16px] sm:text-[17px]"
                   style={{ 
-                    fontSize: '17px', 
                     color: '#6b6b6b' 
                   }}
                 >
@@ -133,9 +134,8 @@ const CommunityContentSection11 = () => {
               {/* Post Content */}
               {post.content && (
                 <div 
-                  className="font-sansation-regular mb-4"
+                  className="font-sansation-regular mb-3 sm:mb-4 text-[16px] sm:text-[17px]"
                   style={{ 
-                    fontSize: '17px', 
                     color: '#6b6b6b' 
                   }}
                 >
@@ -146,7 +146,47 @@ const CommunityContentSection11 = () => {
               {/* Image */}
               {post.image && (
                 <div className="w-full">
-                  {post.image2 ? (
+                  {post.image3 ? (
+                    // Three images layout - first two left, third right on same line
+                    <div className="flex flex-col lg:flex-row lg:justify-between items-start gap-4">
+                      {/* Left side - 2 images */}
+                      <div className="flex flex-col sm:flex-row gap-2 flex-1">
+                        {/* First image */}
+                        <div className="flex-1">
+                          <Image
+                            src={post.image}
+                            alt={post.title}
+                            width={200}
+                            height={150}
+                            className="object-cover w-full"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                          />
+                        </div>
+                        {/* Second image */}
+                        <div className="flex-1">
+                          <Image
+                            src={post.image2}
+                            alt={post.title}
+                            width={200}
+                            height={150}
+                            className="object-cover w-full"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                          />
+                        </div>
+                      </div>
+                      {/* Right side - 1 image */}
+                      <div className="flex justify-center lg:justify-end lg:w-auto">
+                        <Image
+                          src={post.image3}
+                          alt={post.title}
+                          width={200}
+                          height={150}
+                          className="object-cover w-full max-w-[200px]"
+                          style={{ maxWidth: '100%', height: 'auto' }}
+                        />
+                      </div>
+                    </div>
+                  ) : post.image2 ? (
                     // Two images layout - first left, second right on same line
                     <div className="flex flex-col sm:flex-row sm:justify-between items-start gap-4">
                       {/* First image - left aligned */}
@@ -191,7 +231,7 @@ const CommunityContentSection11 = () => {
 
               {/* Separator Line */}
               {index < communityPosts.length - 1 && (
-                <div className="mt-8 border-t border-[#004681] border-opacity-20"></div>
+                <div className="mt-6 sm:mt-8 border-t border-[#004681] border-opacity-20"></div>
               )}
             </div>
           ))}

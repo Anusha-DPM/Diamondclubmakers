@@ -55,61 +55,70 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, basePa
   const pageNumbers = generatePageNumbers();
 
   return (
-    <div className="flex justify-center items-center mt-8 mb-8">
+    <div className="flex justify-center items-center mt-8 mb-8 px-4">
       <div className="flex items-center bg-white border border-gray-300 rounded-lg overflow-hidden shadow-sm">
         {/* Previous Button */}
         <Link
           href={currentPage > 1 ? `${basePath}/page-${currentPage - 1}` : '#'}
-          className={`px-4 py-2 text-sm font-medium border-r border-gray-300 transition-colors duration-200 ${
+          className={`px-2 sm:px-4 py-2 text-xs sm:text-sm font-medium border-r border-gray-300 transition-colors duration-200 ${
             currentPage > 1
               ? 'text-blue-600 hover:text-blue-800 hover:bg-gray-50'
               : 'text-gray-400 cursor-not-allowed'
           }`}
         >
-          Previous
+          <span className="hidden sm:inline">Previous</span>
+          <span className="sm:hidden">Prev</span>
         </Link>
 
-        {/* Page Numbers */}
-        {pageNumbers.map((page, index) => {
-          if (page === '...') {
+        {/* Page Numbers - Hidden on mobile, show on tablet and up */}
+        <div className="hidden sm:flex items-center">
+          {pageNumbers.map((page, index) => {
+            if (page === '...') {
+              return (
+                <span
+                  key={`ellipsis-${index}`}
+                  className="px-2 py-2 text-xs sm:text-sm text-gray-500 border-r border-gray-300"
+                >
+                  ...
+                </span>
+              );
+            }
+
+            const pageNum = page as number;
+            const isActive = pageNum === currentPage;
+
             return (
-              <span
-                key={`ellipsis-${index}`}
-                className="px-3 py-2 text-sm text-gray-500 border-r border-gray-300"
+              <Link
+                key={pageNum}
+                href={pageNum === 1 ? basePath : `${basePath}/page-${pageNum}`}
+                className={`px-2 py-2 text-xs sm:text-sm font-medium border-r border-gray-300 transition-colors duration-200 ${
+                  isActive
+                    ? 'bg-blue-600 text-white'
+                    : 'text-blue-600 hover:text-blue-800 hover:bg-gray-50'
+                }`}
               >
-                ...
-              </span>
+                {pageNum}
+              </Link>
             );
-          }
+          })}
+        </div>
 
-          const pageNum = page as number;
-          const isActive = pageNum === currentPage;
-
-          return (
-            <Link
-              key={pageNum}
-              href={pageNum === 1 ? basePath : `${basePath}/page-${pageNum}`}
-              className={`px-3 py-2 text-sm font-medium border-r border-gray-300 transition-colors duration-200 ${
-                isActive
-                  ? 'bg-blue-600 text-white'
-                  : 'text-blue-600 hover:text-blue-800 hover:bg-gray-50'
-              }`}
-            >
-              {pageNum}
-            </Link>
-          );
-        })}
+        {/* Mobile Page Indicator */}
+        <div className="sm:hidden px-3 py-2 text-xs font-medium text-gray-600 border-r border-gray-300">
+          {currentPage} / {totalPages}
+        </div>
 
         {/* Next Button */}
         <Link
           href={currentPage < totalPages ? `${basePath}/page-${currentPage + 1}` : '#'}
-          className={`px-4 py-2 text-sm font-medium transition-colors duration-200 ${
+          className={`px-2 sm:px-4 py-2 text-xs sm:text-sm font-medium transition-colors duration-200 ${
             currentPage < totalPages
               ? 'text-blue-600 hover:text-blue-800 hover:bg-gray-50'
               : 'text-gray-400 cursor-not-allowed'
           }`}
         >
-          Next
+          <span className="hidden sm:inline">Next</span>
+          <span className="sm:hidden">Next</span>
         </Link>
       </div>
     </div>

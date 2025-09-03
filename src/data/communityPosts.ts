@@ -945,7 +945,9 @@ export const communityPosts = [
     author: "Scott Schumann aka SCHU from DCM Norton",
     slug: "hanging-with-the-big-dog-jim-olsen",
     content: "I love meeting up with fellow DCM Norton Bad Ass Teammates, Our Fearless Leaders, and Friends from the past while listening to them just dropping bombs of Knowledge!",
-    image: "/community/community11-3"
+    image: "/community/community11-3-1",
+    image2: "/community/community11-3-2",
+    image3: "/community/community11-3.jpg"
   },
   {
     id: 104,
