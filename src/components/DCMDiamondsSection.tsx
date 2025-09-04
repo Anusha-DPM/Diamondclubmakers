@@ -80,7 +80,7 @@ const DCMDiamondsSection = () => {
       program: "DCM Yoda", 
       tiers: "3 tiers: Gold Plus to Diamond", 
       diamondCount: 1,
-      image: "/Dr.-Dalvir-Gupta💎💎🦄-300x300.jpg"
+      image: "/Dr-Dalvir-Gupta-300x300.jpg"
     },
     { 
       id: 7, 
@@ -176,7 +176,7 @@ const DCMDiamondsSection = () => {
       program: "DCM Yoda", 
       tiers: "7 tiers: Bronze to Diamond", 
       diamondCount: 1,
-      image: "/Dr. Yujin \"Amy\" Jung.jpeg"
+      image: "/Dr-Yujin-Amy-Jung.jpeg"
     },
     { 
       id: 19, 
