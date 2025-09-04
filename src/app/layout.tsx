@@ -16,11 +16,7 @@ export const metadata: Metadata = {
   title: "Diamond Club Makers",
   description: "North America's largest solo doctor Invisalign provider community",
   icons: {
-    icon: [
-      { url: "/website-logo.ico", sizes: "any" },
-      { url: "/website-logo.ico", sizes: "32x32", type: "image/x-icon" },
-      { url: "/website-logo.ico", sizes: "16x16", type: "image/x-icon" },
-    ],
+    icon: "/website-logo.ico",
     shortcut: "/website-logo.ico",
     apple: "/website-logo.ico",
   },
@@ -33,6 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/website-logo.ico" sizes="any" />
+        <link rel="icon" href="/website-logo.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/website-logo.ico" />
+        <link rel="apple-touch-icon" href="/website-logo.ico" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
