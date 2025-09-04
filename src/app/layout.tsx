@@ -17,11 +17,12 @@ export const metadata: Metadata = {
   description: "North America's largest solo doctor Invisalign provider community",
   icons: {
     icon: [
-      { url: "/website-logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/website-logo.png", sizes: "16x16", type: "image/png" },
+      { url: "/website-logo.ico", sizes: "any" },
+      { url: "/website-logo.ico", sizes: "32x32", type: "image/x-icon" },
+      { url: "/website-logo.ico", sizes: "16x16", type: "image/x-icon" },
     ],
-    shortcut: "/website-logo.png",
-    apple: "/website-logo.png",
+    shortcut: "/website-logo.ico",
+    apple: "/website-logo.ico",
   },
 };
 
